@@ -1,0 +1,43 @@
+body {
+    background-color: #EEEEEE;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFAAAA;
+}
+
+nav {
+    background-color: #AAFFAA;
+}
+
+footer {
+    background-color: #AAAAFF;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.column {
+
+}
+
+.one-third {
+    background-color: #FFFFAA;
+}
+
+.two-thirds {
+    background-color: #FFAAFF;
+}
+
+.full {
+    background-color: #AAFFFF;
+}
+
+h1.site-name {
+    margin: 0;
+}
