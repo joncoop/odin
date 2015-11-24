@@ -22,22 +22,34 @@ footer {
     max-width: 1200px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 .column {
 
 }
 
 .one-third {
     background-color: #FFFFAA;
+    width: 33.3333%;
 }
 
 .two-thirds {
     background-color: #FFAAFF;
+    width: 66.6666%;
 }
 
 .full {
     background-color: #AAFFFF;
+    width: 100%;
 }
 
 h1.site-name {
+    margin: 0;
+}
+
+nav ul {
     margin: 0;
 }
