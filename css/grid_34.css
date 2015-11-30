@@ -17,6 +17,10 @@ body {
     flex-direction: row;
 }
 
+.row > *{ margin: 5px; }    
+.row > :first-child{ margin-left: 0; }
+.row > :last-child{ margin-right: 0; }
+
 .one-third {
     background-color: #FFFFAA;
     width: 33.3333%;
