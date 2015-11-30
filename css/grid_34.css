@@ -1,13 +1,14 @@
 /*** layout styles ***/
 
 body {
-    background-color: #EEEEEE;
+    background-color: #CCCCCC;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .container {
+    background-color: #FFFFFF;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -17,36 +18,39 @@ body {
     flex-direction: row;
 }
 
-.row > *{ margin: 5px; }    
-.row > :first-child{ margin-left: 0; }
-.row > :last-child{ margin-right: 0; }
+.row > * {
+    background-color: #FFFFAA;
+    margin: 5px;
+}
+
+.row > :first-child {
+    margin-left: 0;
+}
+
+.row > :last-child {
+    margin-right: 0;
+}
 
 .one-third {
-    background-color: #FFFFAA;
     width: 33.3333%;
 }
 
 .two-thirds {
-    background-color: #FFAAFF;
     width: 66.6666%;
 }
 
 .one-fourth {
-    background-color: #AAFFAA;
     width: 25%;
 }
 
 .one-half {
-    background-color: #FFAAAA;
     width: 50%;
 }
 
 .three-fourths{
-    background-color: #AAAAFF;
     width: 75%;
 }
 
 .full {
-    background-color: #AAFFFF;
     width: 100%;
 }
