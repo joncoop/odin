@@ -13,6 +13,18 @@ body {
     max-width: 1200px;
 }
 
+.container > * {
+    margin: 5px 0;
+}
+
+.container > :first-child {
+    margin-top: 0;
+}
+
+.container > :last-child {
+    margin-bottom: 0;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -20,7 +32,7 @@ body {
 
 .row > * {
     background-color: #FFFFAA;
-    margin: 5px;
+    margin: 0 5px;
 }
 
 .row > :first-child {
