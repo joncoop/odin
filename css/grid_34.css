@@ -14,7 +14,7 @@ body {
 }
 
 .container > * {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .container > :first-child {
@@ -32,7 +32,7 @@ body {
 
 .row > * {
     background-color: #FFFFAA;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .row > :first-child {
