@@ -44,25 +44,47 @@ body {
 }
 
 .one-third {
-    width: 33.3333%;
+    width: calc(33.3333% - 10px);
 }
 
 .two-thirds {
-    width: 66.6666%;
+    width: calc(66.6666% - 10px);
 }
 
 .one-fourth {
-    width: 25%;
+    width: calc(25% - 10px);
 }
 
 .one-half {
-    width: 50%;
+    width:  calc(50% - 10px);
 }
 
 .three-fourths{
-    width: 75%;
+    width:  calc(75% - 10px);
 }
 
 .full {
     width: 100%;
+}
+
+
+@media (max-width: 600px)
+{
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .one-third,
+    .two-thirds,
+    .one-fourth,
+    .one-half,
+    .three-fourths,
+    .full {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: auto;
+    }   
+
 }
