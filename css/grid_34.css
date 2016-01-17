@@ -1,5 +1,9 @@
 /*** layout styles ***/
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #CCCCCC;
     font-family: sans-serif;
@@ -13,54 +17,37 @@ body {
     max-width: 1200px;
 }
 
-.container > * {
-    margin: 20px 0;
-}
-
-.container > :first-child {
-    margin-top: 0;
-}
-
-.container > :last-child {
-    margin-bottom: 0;
-}
-
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .row > * {
-    background-color: #FFFFAA;
-    margin: 0 10px;
-}
+    /* The border is just to visualize columns during layout. Remove in finished site. */
+    border: 1px solid #BBBBBB;
 
-.row > :first-child {
-    margin-left: 0;
-}
-
-.row > :last-child {
-    margin-right: 0;
+    padding: 15px;
 }
 
 .one-third {
-    width: calc(33.3333% - 10px);
+    width: 33.333333%;
 }
 
 .two-thirds {
-    width: calc(66.6666% - 10px);
+    width: 66.666666%;
 }
 
 .one-fourth {
-    width: calc(25% - 10px);
+    width: 25%;
 }
 
 .one-half {
-    width:  calc(50% - 10px);
+    width: 50%;
 }
 
-.three-fourths{
-    width:  calc(75% - 10px);
+.three-fourths {
+    width: 75%;
 }
 
 .full {
@@ -70,11 +57,6 @@ body {
 
 @media (max-width: 600px)
 {
-    .row {
-        flex-direction: column;
-        margin: 0;
-    }
-
     .one-third,
     .two-thirds,
     .one-fourth,
@@ -83,7 +65,7 @@ body {
     .full {
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         width: auto;
     }   
 
