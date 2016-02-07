@@ -5,8 +5,6 @@
 }
 
 body {
-    background-color: #CCCCCC;
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -30,24 +28,48 @@ body {
     padding: 15px;
 }
 
-.one-third {
-    width: 33.333333%;
+.one-sixth {
+    width: 16.666666%;
 }
 
-.two-thirds {
-    width: 66.666666%;
+.one-fifth {
+    width: 20%;
 }
 
 .one-fourth {
     width: 25%;
 }
 
+.one-third {
+    width: 33.333333%;
+}
+
+.two-fifths {
+    width: 40%;
+}
+
 .one-half {
     width: 50%;
 }
 
+.two-thirds {
+    width: 66.666666%;
+}
+
+.three-fifths {
+    width: 60%;
+}
+
 .three-fourths {
     width: 75%;
+}
+
+.four-fifths {
+    width: 80%;
+}
+
+.five-sixths {
+    width: 83.333333%
 }
 
 .full {
