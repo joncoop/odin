@@ -115,7 +115,40 @@ body {
 }
 
 
-@media (max-width: 600px)
+/* other helper classes */
+
+.upper-left,
+.upper-right,
+.lower-right,
+.lower-left {
+    position: absolute;
+    margin: 0;
+}
+
+.upper-left {
+    top: 15px;
+    left: 15px;
+}
+
+.upper-right {
+    top: 15px;
+    right: 15px;
+}
+
+.lower-right {
+    bottom: 15px;
+    right: 15px;
+}
+
+.lower-left {
+    bottom: 15px;
+    left: 15px;
+}
+
+
+/* media queries */ 
+
+@media screen and (max-width: 600px)
 {
 
     .one-sixth,
