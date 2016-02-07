@@ -26,6 +26,7 @@ body {
     border: 1px solid #BBBBBB;
 
     padding: 15px;
+    position: relative;
 }
 
 .one-sixth {
