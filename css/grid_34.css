@@ -81,8 +81,7 @@ body {
 /* navbar styles */
 
 .navbar {
-    background-color: #AAAAAA;
-    color: #FFFFFF;
+    background-color: #BBBBBB;
 }
 
 .navbar ul {
@@ -94,7 +93,7 @@ body {
 }
 
 .navbar li {
-    border-right: 1px solid #444444;
+    border-right: 1px solid #777777;
 }
 
 .navbar li:last-child {
@@ -102,10 +101,7 @@ body {
 }
 
 .navbar a:link, .navbar a:visited {
-    color: #FFFFFF;
     display: block;
-    font-size: 18px;
-    font-weight: bold;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
