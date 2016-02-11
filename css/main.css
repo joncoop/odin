@@ -1,6 +1,41 @@
+/*** sectioning elements ***/
+
+html {
+
+}
+
 body {
 
 }
+
+header {
+
+}
+
+main {
+    /* I wouldn't recommend applying any styles to this
+       section as the 'main' element is not supported
+       in all browsers yet. */
+}
+
+footer {
+
+}
+
+nav {
+
+}
+
+section {
+
+}
+
+aside {
+
+}
+
+
+/**** base styles ***/
 
 h1 {
 
@@ -62,9 +97,15 @@ td {
 
 }
 
+
+/*** image styles ***/
+
 img  {
 	
 }
+
+
+/*** link styles ***/
 
 a:link {
 
@@ -82,3 +123,5 @@ a:active {
 
 }
 
+
+/*** form styles (coming soon) ***/
