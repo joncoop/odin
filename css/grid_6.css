@@ -120,6 +120,23 @@ body {
 
 /* other helper classes */
 
+.right {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.left {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
 .upper-left,
 .upper-right,
 .lower-right,
@@ -169,4 +186,22 @@ body {
         width: 100%;
     } 
 
+    .hide-mobile {
+        display: none;
+    }
+    
+    .static-mobile {
+        position: static;
+    }
+}
+
+@media (min-width: 601px)
+{
+    .hide-desktop {
+        display: none;
+    }
+    
+    .static-desktop {
+        position: static;
+    }
 }
