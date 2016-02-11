@@ -1,7 +1,13 @@
 /*** layout styles ***/
 
-* {
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    
+    /* technique from https://css-tricks.com/box-sizing/ */
 }
 
 body {
