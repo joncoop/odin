@@ -127,7 +127,7 @@ body {
 }
 
 .left {
-    margin-right: 10px;
+    float: left;
     margin-left: 10px;
     margin-bottom: 10px;
 }
