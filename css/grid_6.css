@@ -1,4 +1,4 @@
-/*** layout styles ***/
+/* resets */
 
 html {
     box-sizing: border-box;
@@ -9,6 +9,9 @@ html {
 
     /* technique from https://css-tricks.com/box-sizing/ */
 }
+
+
+/* container styles */
 
 .container-sm,
 .container-md,
@@ -33,6 +36,9 @@ html {
 .container-sm {
   max-width: 480px;
 }
+
+
+/* grid styles */
 
 .row {
   display: flex;
@@ -223,7 +229,9 @@ html {
 
 
 /* responsive helper classes */
-img.responsive, video.responsive, iframe.responsive {
+img.responsive,
+video.responsive,
+iframe.responsive {
   max-width: 100%;
 }
 

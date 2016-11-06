@@ -19,13 +19,15 @@
 
   <h1>Name of Grid System</h1>
 
+  <h2>Overview</h2>
+  <p>This is a mobile-first grid framework. Therefore, classes prefixed by sm apply to small and larger devices, md to medium and larger, and lg to large only. </p>
+
   <h2>Columns</h2>
   <p>Explain base 12 system here.</h2>
 
-  <h3>Classes available</h3>
-  <p>asdf</p>
-
   <h3>Equal width columns</h3>
+
+  <p>It is possible to have rows with 1, 2, 3, 4, 6, or 12 equal width columns.</p>
 
   <div class="row">
     <div class="col-sm-12"><div class="demo-content">col-sm-12</div></div>
@@ -165,7 +167,6 @@
   </pre>
 
   <h3>Responsive columns</h3>
-  <p>asdf</p>
 
   <p>In this example, the columns will be full width on small devices but will each span one-third of the container on medium devices and larger.</p>
   <div class="row">
@@ -183,7 +184,6 @@
       &lt;/div&gt;
     </code>
   </pre>
-
 
   <p>Here's how to have different column flows for all three device widths.</p>
   <div class="row">
@@ -332,13 +332,18 @@
 
   <h3>Centering within a container</h3>
 
-  <div class="row">
-    <div class="col-sm-6" style="height: 200px;">
+  <div class="row" style="height: 200px;">
+    <div class="col-sm-4">
       <div class="demo-content center-vertical">
         <div class="positioned-demo-content">Content centered vertically</div>
       </div>
     </div>
-    <div class="col-sm-6" style="height: 200px;">
+    <div class="col-sm-4">
+      <div class="demo-content center-horizontal">
+        <div class="positioned-demo-content">Content centered horizontally</div>
+      </div>
+    </div>
+    <div class="col-sm-4">
       <div class="demo-content center-horizontal center-vertical">
         <div class="positioned-demo-content">Content centered vertically and horizontally</div>
       </div>
@@ -350,6 +355,10 @@
       &lt;div class="row"&gt;
         &lt;div class="col-sm-6 center-vertical"&gt;
           Content centered vertically
+        &lt;/div&gt;
+
+        &lt;div class="col-sm-6 center-horizontal"&gt;
+          Content centered horizontally
         &lt;/div&gt;
 
         &lt;div class="col-sm-6 center-horizontal center-vertical"&gt;
@@ -367,7 +376,7 @@
       <div class="upper-right"><div class="positioned-demo-content">upper-right</div></div>
       <div class="lower-left"><div class="positioned-demo-content">lower-left</div></div>
       <div class="lower-right"><div class="positioned-demo-content">lower-right</div></div>
-      <div class="demo-content">Main column content</br>could go here.</div>
+      <div class="demo-content">Main column content could go here.</div>
     </div>
   </div>
 
@@ -415,7 +424,12 @@
   </pre>
 
 
-  <p>The end.</p>
+  <h2>To do:</h2>
+  <ul>
+    <li>Fixed footer (attached to bottom of page)</li>
+    <li>Simple, responsive navigation elements (use hide/show classes + transition)</li>
+    <li>Form styling</li>
+  </ul>
 </div>
 
 
