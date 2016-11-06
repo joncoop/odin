@@ -22,19 +22,35 @@
 
   <h2>Overview</h2>
 
-  <p>NameOfFramework is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create simple, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work</p>
+  <p>NameOfFramework is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create simple, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work.</p>
 
   <p>The grid is based entirely on flexbox and there are no browser prefixes or CSS 'hacks' used. Also, no effort has been made to ensure backwards-compatiblity with older browsers. Still, it will probably work fine with the latest versions of any major browser. (So if compatability with IE <= 9 is important, than this might not be the framework for you.)</p>
 
   <p>You will also notice that many components associated with other frameworks such as carousels, cards, collapsible menus, navigation elements, form styling, etc. are not included. Perhaps at some point, more CSS modules will be added to implement extra features. Or maybe not. If extra functionality is needed, there are plenty of third-party CSS/JS options out there that should be pretty easy to integrate into this framework.</p>
 
-  some download links should go here
+  <button>Download now</button>
+  <button>View on GitHub</button>
 
-  <h2>The Grid</h2>
+  <h2>Documentation</h2>
+
+  <ol>
+    <li><a href="#get_started">Get started</a></li>
+    <li><a href="#the_grid">The grid</a></li>
+    <li><a href="#containers">Containers</a></li>
+    <li><a href="#responsive_features">Responsive features</a></li>
+    <li><a href="#positioning_helper_classes">Positioning helper classes</a></li>
+    <li><a href="#other_helper_classes">Other Helper Classes</a></li>
+  </ol>
+
+  <h3><a name="get_started">Get started</a></h3>
+
+  A description of included files and base html template given here.
+
+  <h3><a name="the_grid">The grid</a></h3>
 
   <p>This framework uses a 12-column grid system. Grids are built in rows. Rows contain columns with classes that define the number (out of 12) columns that each should span. A 'mobile-first' implementation is used. This means that the column column classes will be applied to the specified viewport and larger.</p>
 
-  <h3>Equal width columns</h3>
+  <h4>Equal width columns</h4>
 
   <p>It is possible to have rows with 1, 2, 3, 4, 6, or 12 equal width columns. In this example, a column layout is defined for small viewports and larger. On extra-small viewports (typically phones in portrait orientation), the columns will simply stack.</p>
 
@@ -134,7 +150,7 @@
     </code>
   </pre>
 
-  <h3>Mixed width columns</h3>
+  <h4>Mixed width columns</h4>
   <p>It's totally fine to mix column widths. Just make sure that the sum of the column widths is 12 for each row.</p>
 
   <div class="row">
@@ -175,7 +191,7 @@
     </code>
   </pre>
 
-  <h3>Responsive columns</h3>
+  <h4>Responsive columns</h4>
 
   <p>description goes here. breakpoints.</p>
 
@@ -251,7 +267,7 @@
     </code>
   </pre>
 
-  <h3>Reverse the order of columns</h3>
+  <h4>Reverse the order of columns</h4>
   <p>Sometimes it may make sense for rows to be displayed in reverse order from markup. (Perhaps the order read by a screen reader should differ from the physical page layout.) In this case, a <code>reverse</code> class can be applied to rows.</p>
 
   <div class="row reverse">
@@ -272,7 +288,7 @@
 
   <p>There are also responsive reverse classes that can be applied to specific viewport sizes: <code>reverse-xs</code>, <code>reverse-sm</code>, <code>reverse-md</code>, and <code>reverse-lg</code>.</p>
 
-  <h2>Changing the gutter between columns</h2>
+  <h4>Changing the gutter between columns</h4>
 
   <p>Here's an example of a row with the default gutter. Applying the gutter-default class is optional.</p>
   <div class="row gutter-default">
@@ -316,7 +332,8 @@
     </code>
   </pre>
 
-  <h2>Containers</h2>
+
+  <h3><a name="containers">Containers</a></h3>
 
   <p>centered, fluid-width containers. small container probably useless. should this go at the end? perhaps with helper classes?</p>
 
@@ -343,9 +360,10 @@
     </tr>
   </table>
 
-  <h2>Responsive helper classes</h2>
+  <h3><a name="responsive_features">Responsive features</a></h3>
 
-  <h3>Responsive images</h3>
+  <h4>Responsive images</h4>
+
   <p>Responsive elements are given a max-width of 100% so that they will not overflow their containers. You can observe responsive images in action by resizing the browser window as you look at the example below. The responsive class can be applied to img, video, and iframe elements only.</p>
 
   <div class="row">
@@ -360,7 +378,32 @@
     </code>
   </pre>
 
-  <h2>Positioning Helper Classes</h2>
+  <h4>Hide/show content</h4>
+
+  <p>Helper classes are provided to hide/show content based on the size of the viewport. They can be applied to any element. Usage should be fairly obvious. Resize the browser window to see a demonstration.</p>
+
+  <ul>
+    <li><code>hide-xs</code></li>
+    <li><code>hide-sm</code></li>
+    <li><code>hide-md</code></li>
+    <li><code>hide-lg</code></li>
+    <li><code>show-xs-only</code></li>
+    <li><code>show-sm-only</code></li>
+    <li><code>show-md-only</code></li>
+    <li><code>show-lg-only</code></li>
+  </ul>
+
+  <p class="hide-xs">This sentence is not visible on extra-small viewports.</p>
+  <p class="hide-sm">This sentence is not visible on small viewports.</p>
+  <p class="hide-md">This sentence is not visible on medium viewports.</p>
+  <p class="hide-lg">This sentence is not visible on large viewports.</p>
+  <p class="show-xs-only">This sentence is only visible on extra-small viewports.</p>
+  <p class="show-sm-only">This sentence is only visible on small viewports.</p>
+  <p class="show-md-only">This sentence is only visible on medium viewports.</p>
+  <p class="show-lg-only">This sentence is only visible on large viewports.</p>
+
+
+  <h3><a name="positioning_helper_classes">Positioning helper classes</a></h3>
 
   <p>Notice that positioning classes are applied to the containing columns and not to the centered content.</p>
 
@@ -459,34 +502,9 @@
     </code>
   </pre>
 
-  <h2>Other Helper Classes<h2>
+  <h3><a name="other_helper_classes">Other Helper Classes</a><h3>
 
-  <h3>Hide/show content</h3>
-
-  <p>Helper classes are provided to hide/show content based on the size of the viewport. They can be applied to any element. Usage should be fairly obvious. Resize the browser window to see a demonstration.</p>
-
-  <ul>
-    <li><code>hide-xs</code></li>
-    <li><code>hide-sm</code></li>
-    <li><code>hide-md</code></li>
-    <li><code>hide-lg</code></li>
-    <li><code>show-xs-only</code></li>
-    <li><code>show-sm-only</code></li>
-    <li><code>show-md-only</code></li>
-    <li><code>show-lg-only</code></li>
-  </ul>
-
-  <p class="hide-xs">This sentence is not visible on extra-small viewports.</p>
-  <p class="hide-sm">This sentence is not visible on small viewports.</p>
-  <p class="hide-md">This sentence is not visible on medium viewports.</p>
-  <p class="hide-lg">This sentence is not visible on large viewports.</p>
-  <p class="show-xs-only">This sentence is only visible on extra-small viewports.</p>
-  <p class="show-sm-only">This sentence is only visible on small viewports.</p>
-  <p class="show-md-only">This sentence is only visible on medium viewports.</p>
-  <p class="show-lg-only">This sentence is only visible on large viewports.</p>
-
-
-  <h3>Quick floats</h3>
+  <h4>Quick floats</h4>
 
   <p>Classes left and right can be applied to images (and other elements) to quicly float them. A clear class is also provided to prevent content from filling in space next to floated elements. In the example below, an empty div is used to clear the first floated image.</p>
 
@@ -512,14 +530,6 @@
     </code>
   </pre>
 
-
-  <h2>To do:</h2>
-  <ul>
-    <li>Fixed header/navbar (doesn't scroll with content)</li>
-    <li>Fixed footer (attached to bottom of window even on short pages)</li>
-    <li>Simple, responsive navigation elements (use hide/show classes + transition)</li>
-    <li>Form styling</li>
-  </ul>
 </div>
 
 
