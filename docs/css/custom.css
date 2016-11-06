@@ -27,7 +27,7 @@ code {
   text-align: center;
 }
 
-a:link.button, a:visited {
+a:link.button, a:visited.button {
   border-radius: 3px;
   color: #333;
   text-decoration: none;
