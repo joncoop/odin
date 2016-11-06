@@ -223,7 +223,7 @@ html {
 
 
 /* responsive helper classes */
-.responsive-img, .responsive-video, .responsive-iframe {
+img.responsive, video.responsive, iframe.responsive {
   max-width: 100%;
 }
 

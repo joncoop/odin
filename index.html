@@ -73,6 +73,12 @@
     <div class="col-sm-1"><div class="demo-content">col-sm-1</div></div>
   </div>
 
+  <pre>
+    <code>
+      paste code here
+    </code>
+  </pre>
+
   <h3>Mixed width columns</h3>
   <p>It's totally fine to mix column widths. Just make sure that the sum of the column widths is 12 for each row.</p>
 
@@ -92,6 +98,27 @@
     <div class="col-sm-2"><div class="demo-content">col-sm-2</div></div>
     <div class="col-sm-8"><div class="demo-content">col-sm-8</div></div>
   </div>
+
+  <pre>
+    <code>
+      &lt;div class="row"&gt;
+        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
+        &lt;div class="col-sm-6"&gt;col-sm-6&lt;/div&gt;
+        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="row"&gt;
+        &lt;div class="col-sm-5"&gt;col-sm-5&lt;/div&gt;
+        &lt;div class="col-sm-7"&gt;col-sm-7&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="row"&gt;
+        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
+        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
+        &lt;div class="col-sm-8"&gt;col-sm-8&lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+  </pre>
 
   <h3>Responsive columns</h3>
   <p>asdf</p>
@@ -155,10 +182,19 @@
     <div class="col-md-4"><div class="demo-content">This is column 3</div></div>
   </div>
 
-  <h2>Changing the gutter between columns</h2>
-  <p>There are 3 gutter classes which can be applied to rows: gutter-default, gutter-double, and gutter-none. If no gutter class is applied, then gutter-default will be assumed.</p>
+  <pre>
+    <code>
+      &lt;div class="row row-reverse"&gt;
+        &lt;div class="col-md-4"&gt;This is column 1&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;This is column 2&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;This is column 3&lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+  </pre>
 
-  <p>Here's an example of a row with the default gutter...</p>
+  <h2>Changing the gutter between columns</h2>
+
+  <p>Here's an example of a row with the default gutter. Applying the gutter-default class is optional.</p>
   <div class="row gutter-default">
     <div class="col-sm-3"><div class="demo-content">Column 1</div></div>
     <div class="col-sm-3"><div class="demo-content">Column 2</div></div>
@@ -166,13 +202,25 @@
     <div class="col-sm-3"><div class="demo-content">Column 4</div></div>
   </div>
 
-  <p>Here's an example of a row with a double gutter...</p>
+  <pre>
+    <code>
+      &lt;div class="row gutter-default"&gt;
+    </code>
+  </pre>
+
+  <p>Here's an example of a row with a double-width gutter.</p>
   <div class="row gutter-double">
     <div class="col-sm-3"><div class="demo-content">Column 1</div></div>
     <div class="col-sm-3"><div class="demo-content">Column 2</div></div>
     <div class="col-sm-3"><div class="demo-content">Column 3</div></div>
     <div class="col-sm-3"><div class="demo-content">Column 4</div></div>
   </div>
+
+  <pre>
+    <code>
+      &lt;div class="row gutter-double"&gt;
+    </code>
+  </pre>
 
   <p>Here's an example of a row with no gutter around columns.</p>
   <div class="row gutter-none">
@@ -182,17 +230,27 @@
     <div class="col-sm-3"><div class="demo-content">Column 4</div></div>
   </div>
 
+  <pre>
+    <code>
+      &lt;div class="row gutter-none"&gt;
+    </code>
+  </pre>
+
   <h2>Responsive helper classes</h2>
   <h3>Responsive images</h3>
-  <p>width 100%, example in grid (perhaps 1/3 wide)</p>
+  <p>Responsive elements are given a max-width of 100% so that they will not overflow their containers. You can observe responsive images in action by resizing the browser window as you look at the example below. The responsive class can be applied to img, video, and iframe elements only.</p>
 
   <div class="row">
-    <div class="col-md-4"><img class="responsive-img" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
-    <div class="col-md-4"><img class="responsive-img" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
-    <div class="col-md-4"><img class="responsive-img" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
+    <div class="col-md-4"><img class="responsive" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
+    <div class="col-md-4"><img class="responsive" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
+    <div class="col-md-4"><img class="responsive" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
   </div>
 
-  <p>responsive-video and responsive-iframe classes also exist.</p>
+  <pre>
+    <code>
+      &lt;img class="responsive" src="some_image.jpg" alt="Alt text goes here"&gt;
+    </code>
+  </pre>
 
   <h2>Positioning Helper Classes</h2>
 
@@ -212,6 +270,12 @@
     </div>
   </div>
 
+  <pre>
+    <code>
+      paste code here
+    </code>
+  </pre>
+
   <h3>Centering within a container</h3>
   <p>Notice that the class is applied to the containing column and not to the centered content.</p>
 
@@ -228,6 +292,12 @@
     </div>
   </div>
 
+  <pre>
+    <code>
+      paste code here
+    </code>
+  </pre>
+
   <h3>Absolute positioning within a column</h3>
 
   <div class="row gutter-default">
@@ -240,9 +310,26 @@
     </div>
   </div>
 
+  <pre>
+    <code>
+      &lt;div class="row"&gt;
+        &lt;div class="col-sm-12"&gt;
+          &lt;div class="upper-left"&gt;upper-left&lt;/div&gt;
+          &lt;div class="upper-right"&gt;upper-right&lt;/div&gt;
+          &lt;div class="lower-left"&gt;lower-left&lt;/div&gt;
+          &lt;div class="lower-right"&gt;lower-right&lt;/div&gt;
+
+          Main column content could go here.
+        &lt;/div>
+      &lt;/div>
+    </code>
+  </pre>
+
   <h2>Other Helper Classes<h2>
 
   <h3>Quick floats</h3>
+
+  <p>Classes left and right can be applied to images (and other elements) to quicly float them. A clear class is also provided to prevent content from filling in space next to floated elements. In the example below, an empty div is used to clear the first floated image.</p>
 
   <img class="left" src="https://dummyimage.com/250x250/aaa/fff" alt="">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -253,6 +340,19 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
   <div class="clear"></div>
+
+  <pre>
+    <code>
+      &lt;img class="left" src="https://dummyimage.com/250x250/aaa/fff" alt=""&gt;
+      &lt;p>Lorem ipsum...&lt;/p&gt;
+
+      &lt;div class="clear">&lt;/div&gt;
+
+      &lt;img class="right" src="https://dummyimage.com/250x250/aaa/fff" alt=""&gt;
+      &lt;p>Lorem ipsum...&lt;/p&gt;
+    </code>
+  </pre>
+
 
   <p>The end.</p>
 </div>
