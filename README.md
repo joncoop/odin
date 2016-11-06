@@ -1,6 +1,6 @@
 #Odin: A CSS Framework
 
-Odin is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create simple, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work.
+Odin is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create complex, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work.
 
 The grid is based entirely on flexbox and there are no browser prefixes or CSS 'hacks' used. Also, no effort has been made to ensure backwards-compatiblity with older browsers. Still, it will probably work fine with the latest versions of any major browser. (So if compatability with IE9 or earlier is important, then this might not be the framework for you.)
 
