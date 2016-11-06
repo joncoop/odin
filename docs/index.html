@@ -28,8 +28,8 @@
 
   <p>You will also notice that many components associated with other frameworks such as carousels, cards, collapsible menus, navigation elements, form styling, etc. are not included. Perhaps at some point, more CSS modules will be added to implement extra features. Or maybe not. If extra functionality is needed, there are plenty of third-party CSS/JS options out there that should be pretty easy to integrate into this framework.</p>
 
-  <button>Download now</button>
-  <button>View on GitHub</button>
+  <a class="button" href="https://github.com/joncoop/grid-6/archive/master.zip">Download now</a>
+  <a class="button" href="https://github.com/joncoop/grid-6">View on GitHub</a>
 
   <h2>Documentation</h2>
 
@@ -364,34 +364,17 @@
 
   <h4>Responsive images</h4>
 
-  <p>Responsive elements are given a max-width of 100% so that they will not overflow their containers. You can observe responsive images in action by resizing the browser window as you look at the example below. The responsive class can be applied to img, video, and iframe elements only.</p>
+  <p>The elements img, iframe, and video are given a max-width of 100% by default so that they will not overflow their containers. It is not necessary to apply any extra classes to make these elements responsive. You can observe responsive images in action by resizing the browser window as you look at the example below.</p>
 
   <div class="row">
-    <div class="col-md-4"><img class="responsive" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
-    <div class="col-md-4"><img class="responsive" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
-    <div class="col-md-4"><img class="responsive" src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
+    <div class="col-md-4"><img src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
+    <div class="col-md-4"><img src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
+    <div class="col-md-4"><img src="https://dummyimage.com/600x350/aaa/fff" alt=""></div>
   </div>
-
-  <pre>
-    <code>
-      &lt;img class="responsive" src="example_image.jpg" alt=""&gt;
-    </code>
-  </pre>
 
   <h4>Hide/show content</h4>
 
-  <p>Helper classes are provided to hide/show content based on the size of the viewport. They can be applied to any element. Usage should be fairly obvious. Resize the browser window to see a demonstration.</p>
-
-  <ul>
-    <li><code>hide-xs</code></li>
-    <li><code>hide-sm</code></li>
-    <li><code>hide-md</code></li>
-    <li><code>hide-lg</code></li>
-    <li><code>show-xs-only</code></li>
-    <li><code>show-sm-only</code></li>
-    <li><code>show-md-only</code></li>
-    <li><code>show-lg-only</code></li>
-  </ul>
+  <p>The following helper classes are provided to hide/show content based on the size of the viewport: <code class="highlight">hide-xs</code>, <code>hide-sm</code>, hide-md</code>, <code>hide-lg</code>, <code>show-xs-only</code>, <code>show-sm-only</code>, <code>show-md-only</code>, and <code>show-lg-only</code> They can be applied to any element. Usage should be fairly obvious. Resize the browser window as you view the sentences below to see a demonstration.</p>
 
   <p class="hide-xs">This sentence is not visible on extra-small viewports.</p>
   <p class="hide-sm">This sentence is not visible on small viewports.</p>
@@ -402,6 +385,11 @@
   <p class="show-md-only">This sentence is only visible on medium viewports.</p>
   <p class="show-lg-only">This sentence is only visible on large viewports.</p>
 
+  <pre>
+    <code>
+      &lt;p class="<span class="highlight">hide-xs</span>"&gt;This sentence is not visible on extra-small viewports.&lt;/p&gt;
+    </code>
+  </pre>
 
   <h3><a name="positioning_helper_classes">Positioning helper classes</a></h3>
 

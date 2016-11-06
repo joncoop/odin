@@ -249,12 +249,14 @@ html {
 }
 
 
-/* responsive helper classes */
-img.responsive,
-video.responsive,
-iframe.responsive {
+/* responsive features */
+img,
+iframe,
+video {
   max-width: 100%;
 }
+
+/* responsive helper classes */
 
 @media (max-width: 479px) {
   .hide-xs,

@@ -16,3 +16,11 @@
   padding: 1.2rem;
   background-color: #aaa;
 }
+
+code {
+  color: #777;
+}
+
+.highlight {
+  color: #b00;
+}
