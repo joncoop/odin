@@ -8,6 +8,7 @@
 <!-- Stylesheets -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/grid_6.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/custom.css">
 
@@ -25,12 +26,12 @@
 
   <p>NameOfFramework is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create simple, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work.</p>
 
-  <p>The grid is based entirely on flexbox and there are no browser prefixes or CSS 'hacks' used. Also, no effort has been made to ensure backwards-compatiblity with older browsers. Still, it will probably work fine with the latest versions of any major browser. (So if compatability with IE <= 9 is important, than this might not be the framework for you.)</p>
+  <p>The grid is based entirely on flexbox and there are no browser prefixes or CSS 'hacks' used. Also, no effort has been made to ensure backwards-compatiblity with older browsers. Still, it will probably work fine with the latest versions of any major browser. (So if compatability with IE9 or earlier is important, then this might not be the framework for you.)</p>
 
   <p>You will also notice that many components associated with other frameworks such as carousels, cards, collapsible menus, navigation elements, form styling, etc. are not included. Perhaps at some point, more CSS modules will be added to implement extra features. Or maybe not. If extra functionality is needed, there are plenty of third-party CSS/JS options out there that should be pretty easy to integrate into this framework.</p>
 
-  <a class="button" href="https://github.com/joncoop/grid-6/archive/master.zip">Download now</a>
-  <a class="button" href="https://github.com/joncoop/grid-6">View on GitHub</a>
+  <a class="button" href="https://github.com/joncoop/grid-6/archive/master.zip"><i class="fa fa-download" aria-hidden="true"></i> Download now</a>
+  <a class="button" href="https://github.com/joncoop/grid-6"><i class="fa fa-github" aria-hidden="true"></i> View on GitHub</a>
 
   <h2>Documentation</h2>
 
@@ -52,7 +53,7 @@
 
   <p>The grid framework is fully-responsive and based upon the viewport sizes shown in the table below. Additional helper classes may also target specific viewports. Responsive classes can easily be identified as they are generally suffixed by <code class="highlight">-xs</code>, <code class="highlight">-sm</code>, <code class="highlight">-md</code>, and <code class="highlight">-lg</code>.</p>
 
-  <table border="1">
+  <table>
     <tr>
       <th>Viewport size</th>
       <th>Default width</th>
@@ -222,7 +223,7 @@
 
   <h4>Responsive columns</h4>
 
-  <p>In this example, the columns will be full width on small devices but will each span one-third of the container on medium devices and larger.</p>
+  <p>Column spans can vary based on viewport width. In this example, the columns will be full width on extra-small viewports but will each span one-third of the container on medium viewports and larger.</p>
 
   <div class="row">
     <div class="col-xs-12 col-sm-4"><div class="demo-content">col-xs-12 col-sm-4</div></div>
@@ -240,7 +241,7 @@
     </code>
   </pre>
 
-  <p>Here's how to have different column flows for three device widths. Remember, column classes are defined for <em>the specified size and larger</em>. In this example, columns will span 12 columns on extra-small and small viewports, 6 on medium, and 3 on large.</p>
+  <p>Here's how to have different column flows for three viewport widths. Remember, column classes are defined for <em>the specified size and larger</em>. In this example, columns will span 12 columns on extra-small and small viewports, 6 on medium, and 3 on large.</p>
   <div class="row">
     <div class="col-xs-12 col-md-6 col-lg-3"><div class="demo-content">col-xs-12 col-md-6 col-lg-3</div></div>
     <div class="col-xs-12 col-md-6 col-lg-3"><div class="demo-content">col-xs-12 col-md-6 col-lg-3</div></div>
@@ -294,6 +295,8 @@
   <p>There are also responsive reverse classes that can be applied to specific viewport sizes: <code class="highlight">reverse-xs</code>, <code class="highlight">reverse-sm</code>, <code class="highlight">reverse-md</code>, and <code class="highlight">reverse-lg</code>.</p>
 
   <h4>Changing the gutter between columns</h4>
+
+  <p>There are three options for gutter size: <code class="highlight">gutter-default</code>, <code class="highlight">gutter-double</code>, and <code class="highlight">gutter-none</code>.</p>
 
   <p>Here's an example of a row with the default gutter. Applying the <code>gutter-default</code> class is optional.</p>
   <div class="row gutter-default">
@@ -359,7 +362,7 @@
 
   <p>If desired, content can be wrapped in fluid, centered containers. The containers will expand to the max-width specified in the table below. This page has been wrapped in a <code class="highlight">container-lg</code>.</p>
 
-  <table border="1">
+  <table>
     <tr>
       <th>Class name</th>
       <th>max-width</th>

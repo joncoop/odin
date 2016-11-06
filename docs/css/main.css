@@ -1,7 +1,8 @@
 /*** sectioning elements ***/
 
 body {
-
+  color: #111;
+  font-size: 1.2rem;
 }
 
 header {
@@ -32,21 +33,24 @@ aside {
 /**** base styles ***/
 
 h1 {
-  color: #158;
+  color: #555;
   font-size: 3.6rem;
   text-align: center;
 }
 
 h2 {
+  color: #555;
   font-size: 2.4rem;
 }
 
 h3 {
+  color: #555;
   font-size: 1.6rem;
 }
 
 h4 {
-  font-size: 1.1rem;
+  color: #555;
+  font-size: 1.3rem;
 }
 
 h5 {
@@ -78,7 +82,8 @@ li {
 }
 
 table {
-
+  border: none;
+  border-spacing: 0.6rem;
 }
 
 tr {
@@ -86,11 +91,13 @@ tr {
 }
 
 th {
-
+  border-bottom: 2px solid #555;
+  color: #555;
+  padding: 0.1rem 0.4rem;
 }
 
 td {
-
+  padding: 0.1rem 0.4rem;
 }
 
 
