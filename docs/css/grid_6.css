@@ -316,3 +316,8 @@ video {
     display: block;
     margin: 0 auto;
 }
+
+/* apply .show-gridlines to body when creating initial grid or when debugging */
+.show-gridlines .row > * {
+  border: 1px solid #bbb;
+}

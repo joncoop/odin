@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
 <div class="container-xl">
 
   <h1>NameOfFramework</h1>
@@ -336,10 +337,27 @@
     </code>
   </pre>
 
+  <h4>Helpful gridlines</h4>
+  <p>Because rows and columns have no visible styling, sometimes it can be a little confusing trying to get the grid correct. To help with this, I've created a helper class <code class="highlight">show-gridlines</code> which can be applied to the <code>body</code> (or any element that contains rows). This class isn't meant to be applied to the final project, but it can be helpful when creating the initial layout or when debugging if something goes wrong.</p>
+
+  <p>Here's an example section with gridlines shown. You can see how the gridlines make it easy to identify the error.</p>
+
+  <div class="show-gridlines">
+    <div class="row">
+      <div class="col-sm-3">Column 1</div>
+      <div class="col-sm-3">Column 2</div>
+      <div class="col-sm-3">Column 3</div>
+      <div class="col-sm-3">Column 1</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">Column 2</div>
+      <div class="col-sm-3">Column 3</div>
+    </div>
+  </div>
 
   <h3><a name="containers">Containers</a></h3>
 
-  <p>If desired, content can be wrapped in fluid, centered containers. The containers will expand to the max-width specified in the table below.</p>
+  <p>If desired, content can be wrapped in fluid, centered containers. The containers will expand to the max-width specified in the table below. This page has been wrapped in a <code class="highlight">container-lg</code>.</p>
 
   <table border="1">
     <tr>
@@ -363,17 +381,6 @@
       <td>1200px</td>
     </tr>
   </table>
-
-  <div class="container-lg">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="demo-content">This row is wrapped in a large container.</div>
-      </div>
-      <div class="col-sm-6">
-        <div class="demo-content">A little bit of padding keeps containers from touching the edge of the viewport on small devices.</div>
-      </div>
-    </div>
-  </div>
 
   <pre>
     <code>
@@ -543,7 +550,6 @@
       &lt;p>Lorem ipsum...&lt;/p&gt;
     </code>
   </pre>
-
 </div>
 
 

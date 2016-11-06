@@ -1,8 +1,3 @@
-.row > * {
-  /* The border is just to visualize columns during layout. Remove in finished site. */
-  /* border: 1px solid #BBBBBB; */
-}
-
 .demo-content {
   width: 100%;
   height: 100%;
