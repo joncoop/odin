@@ -23,63 +23,13 @@
   <h2>Overview</h2>
   <p>description goes here.</p>
 
-  <h2>Containers</h2>
-
-  <p>centered, fluid-width containers. small container probably useless. should this go at the end? perhaps with helper classes?</p>
-
-  <table border="1">
-    <tr>
-      <th>class name</th>
-      <th>max-width</th>
-    </tr>
-    <tr>
-      <td>container-sm</td>
-      <td>480px</td>
-    </tr>
-    <tr>
-      <td>container-md</td>
-      <td>720px</td>
-    </tr>
-    <tr>
-      <td>container-lg</td>
-      <td>960px</td>
-    </tr>
-    <tr>
-      <td>container-xl</td>
-      <td>1200px</td>
-    </tr>
-  </table>
-
-  <h2>Breakpoints</h2>
-
-  <p>description goes here.</p>
-
-  <table border="1">
-    <tr>
-      <th>device size</th>
-      <th>viewport width</th>
-    </tr>
-    <tr>
-      <td>sm</td>
-      <td>0 to 719px</td>
-    </tr>
-    <tr>
-      <td>md</td>
-      <td>720 to 959px</td>
-    </tr>
-    <tr>
-      <td>lg</td>
-      <td>960px and up</td>
-    </tr>
-  </table>
-
   <h2>Columns</h2>
 
-  <p>This framework uses a 12-column grid system. This is a mobile-first grid framework. Therefore, column classes prefixed by sm apply to small devices and larger, md to medium and larger, and lg to large only.</p>
+  <p>This framework uses a 12-column grid system. This is a 'mobile-first' grid framework. This means that the column column classes will be applied to the specified viewport and larger.</p>
 
   <h3>Equal width columns</h3>
 
-  <p>It is possible to have rows with 1, 2, 3, 4, 6, or 12 equal width columns.</p>
+  <p>It is possible to have rows with 1, 2, 3, 4, 6, or 12 equal width columns. In this example, a column layout is defined for small viewports and larger. On extra-small viewports (typically phones in portrait orientation), the columns will simply stack.</p>
 
   <div class="row">
     <div class="col-sm-12"><div class="demo-content">col-sm-12</div></div>
@@ -220,43 +170,68 @@
 
   <h3>Responsive columns</h3>
 
+  <p>description goes here. breakpoints.</p>
+
+  <table border="1">
+    <tr>
+      <th>device size</th>
+      <th>viewport width</th>
+    </tr>
+    <tr>
+      <td>xs</td>
+      <td>0 to479px</td>
+    </tr>
+    <tr>
+      <td>sm</td>
+      <td>480 to 719px</td>
+    </tr>
+    <tr>
+      <td>md</td>
+      <td>720px to 959px</td>
+    </tr>
+    <tr>
+      <td>lg</td>
+      <td>960px and up</td>
+    </tr>
+  </table>
+
   <p>In this example, the columns will be full width on small devices but will each span one-third of the container on medium devices and larger.</p>
   <div class="row">
-    <div class="col-sm-12 col-md-4"><div class="demo-content">col-sm-12 col-md-4</div></div>
-    <div class="col-sm-12 col-md-4"><div class="demo-content">col-sm-12 col-md-4</div></div>
-    <div class="col-sm-12 col-md-4"><div class="demo-content">col-sm-12 col-md-4</div></div>
+    <div class="col-xs-12 col-sm-4"><div class="demo-content">col-xs-12 col-sm-4</div></div>
+    <div class="col-xs-12 col-sm-4"><div class="demo-content">col-xs-12 col-sm-4</div></div>
+    <div class="col-xs-12 col-sm-4"><div class="demo-content">col-xs-12 col-sm-4</div></div>
   </div>
 
   <pre>
     <code>
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-12 col-md-4"&gt;1&lt;/div&gt;
-        &lt;div class="col-sm-12 col-md-4"&gt;2&lt;/div&gt;
-        &lt;div class="col-sm-12 col-md-4"&gt;3&lt;/div&gt;
+        &lt;div class="col-xs-12 col-sm-4"&gt;1&lt;/div&gt;
+        &lt;div class="col-xs-12 col-sm-4"&gt;2&lt;/div&gt;
+        &lt;div class="col-xs-12 col-sm-4"&gt;3&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
 
-  <p>Here's how to have different column flows for all three device widths.</p>
+  <p>Here's how to have different column flows for three device widths. Remember, column classes are defined for <em>the specified size and larger</em>. In this example, columns will span 12 columns on extra-small and small viewports, 6 on medium, and 3 on large.</p>
   <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-3"><div class="demo-content">col-sm-12 col-md-6 col-lg-3</div></div>
-    <div class="col-sm-12 col-md-6 col-lg-3"><div class="demo-content">col-sm-12 col-md-6 col-lg-3</div></div>
-    <div class="col-sm-12 col-md-6 col-lg-3"><div class="demo-content">col-sm-12 col-md-6 col-lg-3</div></div>
-    <div class="col-sm-12 col-md-6 col-lg-3"><div class="demo-content">col-sm-12 col-md-6 col-lg-3</div></div>
+    <div class="col-xs-12 col-md-6 col-lg-3"><div class="demo-content">col-xs-12 col-md-6 col-lg-3</div></div>
+    <div class="col-xs-12 col-md-6 col-lg-3"><div class="demo-content">col-xs-12 col-md-6 col-lg-3</div></div>
+    <div class="col-xs-12 col-md-6 col-lg-3"><div class="demo-content">col-xs-12 col-md-6 col-lg-3</div></div>
+    <div class="col-xs-12 col-md-6 col-lg-3"><div class="demo-content">col-xs-12 col-md-6 col-lg-3</div></div>
   </div>
 
   <pre>
     <code>
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
-        &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;2&lt;/div&gt;
-        &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;3&lt;/div&gt;
-        &lt;div class="col-sm-12 col-md-6 col-lg-3"&gt;4&lt;/div&gt;
+        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
+        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
+        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
+        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
 
-  <p>Columns will be full width on small devices by default and the col-sm-12 class can be omitted if desired. Therefore, the following code will produce the same result as the example above.</p>
+  <p>Columns will be full width on extra-small devices by default and the col-xs-12 class can be omitted if desired. Therefore, the following code will produce the same result as the example above.</p>
 
   <pre>
     <code>
@@ -270,9 +245,9 @@
   </pre>
 
   <h3>Reverse the order of columns</h3>
-  <p>why...screen reader/logical layout vs. visual layout</p>
+  <p>Sometimes it may make sense for rows to be displayed in reverse order from markup. (Perhaps the order read by a screen reader should differ from the physical page layout.) In this case, a <code>reverse</code> class can be applied to rows.</p>
 
-  <div class="row row-reverse">
+  <div class="row reverse">
     <div class="col-md-4"><div class="demo-content">This is column 1</div></div>
     <div class="col-md-4"><div class="demo-content">This is column 2</div></div>
     <div class="col-md-4"><div class="demo-content">This is column 3</div></div>
@@ -280,13 +255,15 @@
 
   <pre>
     <code>
-      &lt;div class="row row-reverse"&gt;
+      &lt;div class="row reverse"&gt;
         &lt;div class="col-md-4"&gt;This is column 1&lt;/div&gt;
         &lt;div class="col-md-4"&gt;This is column 2&lt;/div&gt;
         &lt;div class="col-md-4"&gt;This is column 3&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
+
+  <p>There are also responsive reverse classes that can be applied to specific viewport sizes: <code>reverse-xs</code>, <code>reverse-sm</code>, <code>reverse-md</code>, and <code>reverse-lg</code>.</p>
 
   <h2>Changing the gutter between columns</h2>
 
@@ -332,7 +309,35 @@
     </code>
   </pre>
 
+  <h2>Containers</h2>
+
+  <p>centered, fluid-width containers. small container probably useless. should this go at the end? perhaps with helper classes?</p>
+
+  <table border="1">
+    <tr>
+      <th>class name</th>
+      <th>max-width</th>
+    </tr>
+    <tr>
+      <td>container-sm</td>
+      <td>480px</td>
+    </tr>
+    <tr>
+      <td>container-md</td>
+      <td>720px</td>
+    </tr>
+    <tr>
+      <td>container-lg</td>
+      <td>960px</td>
+    </tr>
+    <tr>
+      <td>container-xl</td>
+      <td>1200px</td>
+    </tr>
+  </table>
+
   <h2>Responsive helper classes</h2>
+
   <h3>Responsive images</h3>
   <p>Responsive elements are given a max-width of 100% so that they will not overflow their containers. You can observe responsive images in action by resizing the browser window as you look at the example below. The responsive class can be applied to img, video, and iframe elements only.</p>
 
@@ -454,17 +459,21 @@
   <p>Helper classes are provided to hide/show content based on the size of the viewport. They can be applied to any element. Usage should be fairly obvious. Resize the browser window to see a demonstration.</p>
 
   <ul>
+    <li><code>hide-xs</code></li>
     <li><code>hide-sm</code></li>
     <li><code>hide-md</code></li>
     <li><code>hide-lg</code></li>
+    <li><code>show-xs-only</code></li>
     <li><code>show-sm-only</code></li>
     <li><code>show-md-only</code></li>
     <li><code>show-lg-only</code></li>
   </ul>
 
+  <p class="hide-xs">This sentence is not visible on extra-small viewports.</p>
   <p class="hide-sm">This sentence is not visible on small viewports.</p>
   <p class="hide-md">This sentence is not visible on medium viewports.</p>
   <p class="hide-lg">This sentence is not visible on large viewports.</p>
+  <p class="show-xs-only">This sentence is only visible on extra-small viewports.</p>
   <p class="show-sm-only">This sentence is only visible on small viewports.</p>
   <p class="show-md-only">This sentence is only visible on medium viewports.</p>
   <p class="show-lg-only">This sentence is only visible on large viewports.</p>
