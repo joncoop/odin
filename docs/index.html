@@ -25,7 +25,7 @@
   <h2>Overview</h2>
 
   <img class="right" src="img/odin.jpg" alt="Picture of Odin">
-  
+
   <p>Odin is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create simple, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work.</p>
 
   <p>The grid is based entirely on flexbox and there are no browser prefixes or CSS 'hacks' used. Also, no effort has been made to ensure backwards-compatiblity with older browsers. Still, it will probably work fine with the latest versions of any major browser. (So if compatability with IE9 or earlier is important, then this might not be the framework for you.)</p>
@@ -51,7 +51,28 @@
 
   <h3><a name="get_started">Get started</a></h3>
 
-  A description of included files and base html template given here.
+  <p>The repository contains a <code>dist</code> folder which has the files you need to get started. The framework is defined entirely in <code>odin.css</code>. The <code>main.css</code> file just contains a somewhat organized template for adding any custom CSS. It is not a part of the framework. <a href="https://github.com/necolas/normalize.css">Normalize</a> is useful, but not required. It is included in the repository for convenience.</p>
+
+  <pre>
+    <code>
+      dist/
+      ├── css/
+      │   ├── odin.css
+      │   ├── main.css
+      │   └── normalize.css
+      └── index.html
+    </code>
+  </pre>
+
+  <p>The repository contains a <code>dist</code> folder which has the files you need to get started. The fastest way to get started is simply to clone the dist folder and start working.</p>
+
+  <p>If you are integrating Odin into an existing project, then copy <code>odin.css</code> into your project directory and link to it in the document head.</p>
+
+  <pre>
+    <code>
+      &lt;link rel="stylesheet" href="[path-to-css]/odin.css"&gt;
+    </code>
+  </pre>
 
   <h3><a name="viewport_sizes">Viewport sizes</a></h3>
 
