@@ -7,14 +7,14 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: #48f;
+  background-color: #5be;
   padding: 1.2rem;
 }
 
 .positioned-demo-content {
   text-align: center;
   padding: 1.2rem;
-  background-color: #aaa;
+  background-color: #ccc;
 }
 
 code {
@@ -23,4 +23,20 @@ code {
 
 .highlight {
   color: #c00;
+}
+
+.button {
+  border: 1px solid #777;
+  background-color: #ccc;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+a:link.button, a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover.button, a:active.button {
+  background-color: #999;
 }
