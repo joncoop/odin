@@ -8,4 +8,4 @@ You will also notice that many components associated with other frameworks such 
 
 So why is it called Odin? The framework is based on 12 columns, so I looked at the Wikipedia article for <a href="https://en.wikipedia.org/wiki/12_(number)">12 (number)</a> and saw the entry for <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>. He seemed like a pretty cool guy to name a framework after. Plus he had a pretty epic beard. So here we are.
 
-View the documentation to [get started](http://joncoop.github.io/odin/)
+View the documentation to [get started](http://joncoop.github.io/odin/).
