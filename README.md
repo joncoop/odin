@@ -6,6 +6,6 @@ The grid is based entirely on flexbox and there are no browser prefixes or CSS '
 
 You will also notice that many components associated with other frameworks such as carousels, cards, collapsible menus, navigation elements, form styling, etc. are not included. Perhaps at some point, more CSS modules will be added to implement extra features. Or maybe not. If extra functionality is needed, there are plenty of third-party CSS/JS options out there that should be pretty easy to integrate into this framework.
 
-So why is it called Odin? The framework is based on 12 columns, so I looked at the Wikipedia article for <a href="https://en.wikipedia.org/wiki/12_(number)">12 (number)</a> and saw the entry for <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>. According to Wikipedia, "The chief Norse god, Odin, had 12 sons." He also has a pretty epic beard. Seems like a good enough thing to name a framework after, so here we are.
+So why is it called Odin? The framework is based on 12 columns, so I looked at the Wikipedia article for <a href="https://en.wikipedia.org/wiki/12_(number)">12 (number)</a> and saw the entry for <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>. He seemed like a pretty cool guy to name a framework after. Plus he had a pretty epic beard. So here we are.
 
 View the documentation to [get started](http://joncoop.github.io/odin/)
