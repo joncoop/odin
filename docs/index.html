@@ -36,15 +36,43 @@
   <ol>
     <li><a href="#get_started">Get started</a></li>
     <li><a href="#the_grid">The grid</a></li>
+    <li><a href="#viewport_sizes">Viewport sizes</a></li>
     <li><a href="#containers">Containers</a></li>
     <li><a href="#responsive_features">Responsive features</a></li>
     <li><a href="#positioning_helper_classes">Positioning helper classes</a></li>
-    <li><a href="#other_helper_classes">Other Helper Classes</a></li>
+    <li><a href="#other_helper_classes">Other helper classes</a></li>
   </ol>
 
   <h3><a name="get_started">Get started</a></h3>
 
   A description of included files and base html template given here.
+
+  <h3><a name="viewport_sizes">Viewport sizes</a></h3>
+
+  <p>The grid framework is fully-responsive and based upon the viewport sizes shown in the table below. Additional helper classes may also target specific viewports. Responsive classes can easily be identified as they are generally suffixed by <code class="highlight">-xs</code>, <code class="highlight">-sm</code>, <code class="highlight">-md</code>, and <code class="highlight">-lg</code>.</p>
+
+  <table border="1">
+    <tr>
+      <th>Viewport size</th>
+      <th>Default width</th>
+    </tr>
+    <tr>
+      <td>Extra small</td>
+      <td>less than 479px</td>
+    </tr>
+    <tr>
+      <td>Small</td>
+      <td>480 to 719px</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>720px to 959px</td>
+    </tr>
+    <tr>
+      <td>Large</td>
+      <td>960px and up</td>
+    </tr>
+  </table>
 
   <h3><a name="the_grid">The grid</a></h3>
 
@@ -103,49 +131,49 @@
   <pre>
     <code>
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-12"&gt;col-sm-12&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-12</span>"&gt;Column 1&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-6"&gt;col-sm-6&lt;/div&gt;
-        &lt;div class="col-sm-6"&gt;col-sm-6&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-6</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-6</span>"&gt;Column 2&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-4"&gt;col-sm-4&lt;/div&gt;
-        &lt;div class="col-sm-4"&gt;col-sm-4&lt;/div&gt;
-        &lt;div class="col-sm-4"&gt;col-sm-4&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-4</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-4</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-4</span>"&gt;Column 3&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
-        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
-        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
-        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-3</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-3</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-3</span>"&gt;Column 3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-3</span>"&gt;Column 4&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 4&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 5&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 6&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
-        &lt;div class="col-sm-1"&gt;col-sm-1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 4&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 5&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 6&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 7&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 8&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 9&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 10&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 11&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-1</span>"&gt;Column 12&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
@@ -173,52 +201,28 @@
   <pre>
     <code>
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
-        &lt;div class="col-sm-6"&gt;col-sm-6&lt;/div&gt;
-        &lt;div class="col-sm-3"&gt;col-sm-3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-3</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-6</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-3</span>"&gt;Column 3&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-5"&gt;col-sm-5&lt;/div&gt;
-        &lt;div class="col-sm-7"&gt;col-sm-7&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-5</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-7</span>"&gt;Column 2&lt;/div&gt;
       &lt;/div&gt;
 
       &lt;div class="row"&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
-        &lt;div class="col-sm-2"&gt;col-sm-2&lt;/div&gt;
-        &lt;div class="col-sm-8"&gt;col-sm-8&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-2</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-sm-8</span>"&gt;Column 3&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
 
   <h4>Responsive columns</h4>
 
-  <p>description goes here. breakpoints.</p>
-
-  <table border="1">
-    <tr>
-      <th>device size</th>
-      <th>viewport width</th>
-    </tr>
-    <tr>
-      <td>xs</td>
-      <td>0 to 479px</td>
-    </tr>
-    <tr>
-      <td>sm</td>
-      <td>480 to 719px</td>
-    </tr>
-    <tr>
-      <td>md</td>
-      <td>720px to 959px</td>
-    </tr>
-    <tr>
-      <td>lg</td>
-      <td>960px and up</td>
-    </tr>
-  </table>
-
   <p>In this example, the columns will be full width on small devices but will each span one-third of the container on medium devices and larger.</p>
+
   <div class="row">
     <div class="col-xs-12 col-sm-4"><div class="demo-content">col-xs-12 col-sm-4</div></div>
     <div class="col-xs-12 col-sm-4"><div class="demo-content">col-xs-12 col-sm-4</div></div>
@@ -228,9 +232,9 @@
   <pre>
     <code>
       &lt;div class="row"&gt;
-        &lt;div class="col-xs-12 col-sm-4"&gt;1&lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-4"&gt;2&lt;/div&gt;
-        &lt;div class="col-xs-12 col-sm-4"&gt;3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-xs-12 col-sm-4</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-xs-12 col-sm-4</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-xs-12 col-sm-4</span>"&gt;Column 3&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
@@ -246,10 +250,10 @@
   <pre>
     <code>
       &lt;div class="row"&gt;
-        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
-        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
-        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
-        &lt;div class="col-xs-12 col-md-6 col-lg-3"&gt;1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-xs-12 col-md-6 col-lg-3</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-xs-12 col-md-6 col-lg-3</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-xs-12 col-md-6 col-lg-3</span>"&gt;Column 3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-xs-12 col-md-6 col-lg-3</span>"&gt;Column 4&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
@@ -259,10 +263,10 @@
   <pre>
     <code>
       &lt;div class="row"&gt;
-        &lt;div class="col-md-6 col-lg-3"&gt;1&lt;/div&gt;
-        &lt;div class="col-md-6 col-lg-3"&gt;2&lt;/div&gt;
-        &lt;div class="col-md-6 col-lg-3"&gt;3&lt;/div&gt;
-        &lt;div class="col-md-6 col-lg-3"&gt;4&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-md-6 col-lg-3</span>"&gt;Column 1&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-md-6 col-lg-3</span>"&gt;Column 2&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-md-6 col-lg-3</span>"&gt;Column 3&lt;/div&gt;
+        &lt;div class="<span class="highlight">col-md-6 col-lg-3</span>"&gt;Column 4&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
@@ -271,17 +275,17 @@
   <p>Sometimes it may make sense for rows to be displayed in reverse order from markup. (Perhaps the order read by a screen reader should differ from the physical page layout.) In this case, a <code class="highlight">reverse</code> class can be applied to rows.</p>
 
   <div class="row reverse">
-    <div class="col-md-4"><div class="demo-content">This is column 1</div></div>
-    <div class="col-md-4"><div class="demo-content">This is column 2</div></div>
-    <div class="col-md-4"><div class="demo-content">This is column 3</div></div>
+    <div class="col-md-4"><div class="demo-content">Column 1</div></div>
+    <div class="col-md-4"><div class="demo-content">Column 2</div></div>
+    <div class="col-md-4"><div class="demo-content">Column 3</div></div>
   </div>
 
   <pre>
     <code>
       &lt;div class="row <span class="highlight">reverse</span>"&gt;
-        &lt;div class="col-md-4"&gt;This is column 1&lt;/div&gt;
-        &lt;div class="col-md-4"&gt;This is column 2&lt;/div&gt;
-        &lt;div class="col-md-4"&gt;This is column 3&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;Column 1&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;Column 2&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;Column 3&lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
@@ -335,11 +339,11 @@
 
   <h3><a name="containers">Containers</a></h3>
 
-  <p>centered, fluid-width containers. small container probably useless. should this go at the end? perhaps with helper classes?</p>
+  <p>If desired, content can be wrapped in fluid, centered containers. The containers will expand to the max-width specified in the table below.</p>
 
   <table border="1">
     <tr>
-      <th>class name</th>
+      <th>Class name</th>
       <th>max-width</th>
     </tr>
     <tr>
@@ -359,6 +363,28 @@
       <td>1200px</td>
     </tr>
   </table>
+
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="demo-content">This row is wrapped in a large container.</div>
+      </div>
+      <div class="col-sm-6">
+        <div class="demo-content">A little bit of padding keeps containers from touching the edge of the viewport on small devices.</div>
+      </div>
+    </div>
+  </div>
+
+  <pre>
+    <code>
+      &lt;div class="<span class="highlight">container-lg</span>"&gt;
+        &lt;div class="row"&gt;
+          ...
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+  </pre>
+
 
   <h3><a name="responsive_features">Responsive features</a></h3>
 
