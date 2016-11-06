@@ -1,7 +1,8 @@
 /*** sectioning elements ***/
 
 body {
-
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -9,9 +10,7 @@ header {
 }
 
 main {
-    /* I wouldn't recommend applying any styles to this
-       section as the 'main' element is not supported
-       in all browsers yet. */
+
 }
 
 footer {
@@ -97,7 +96,7 @@ td {
 /*** image styles ***/
 
 img  {
-	
+
 }
 
 
