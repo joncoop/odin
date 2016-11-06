@@ -45,10 +45,10 @@
 
   <ol>
     <li><a href="#get_started">Get started</a></li>
+    <li><a href="#viewport_sizes">Responsive features</a></li>
     <li><a href="#the_grid">The grid</a></li>
-    <li><a href="#viewport_sizes">Viewport sizes</a></li>
     <li><a href="#containers">Containers</a></li>
-    <li><a href="#responsive_features">Responsive features</a></li>
+    <li><a href="#more_responsive_classes">More responsive classes</a></li>
     <li><a href="#positioning_helper_classes">Positioning helper classes</a></li>
     <li><a href="#other_helper_classes">Other helper classes</a></li>
   </ol>
@@ -78,7 +78,7 @@
     </code>
   </pre>
 
-  <h3><a name="viewport_sizes">Viewport sizes</a></h3>
+  <h3><a name="viewport_sizes">Responsive features</a></h3>
 
   <p>The grid framework is fully-responsive and based upon the viewport sizes shown in the table below. Additional helper classes may also target specific viewports. Responsive classes can easily be identified as they are generally suffixed by <code class="highlight">-xs</code>, <code class="highlight">-sm</code>, <code class="highlight">-md</code>, and <code class="highlight">-lg</code>.</p>
 
@@ -104,6 +104,15 @@
       <td>960px and up</td>
     </tr>
   </table>
+
+  <p>The elements <code>img</code>, <code>iframe</code>, and <code>video</code> are given a max-width of 100% by default so that they will not overflow their containers. It is not necessary to apply any extra classes to make these elements responsive. You can observe responsive images in action by resizing the browser window as you look at the example below.</p>
+
+  <div class="row">
+    <div class="col-md-4"><img src="https://dummyimage.com/600x350/bbb/fff" alt=""></div>
+    <div class="col-md-4"><img src="https://dummyimage.com/600x350/bbb/fff" alt=""></div>
+    <div class="col-md-4"><img src="https://dummyimage.com/600x350/bbb/fff" alt=""></div>
+  </div>
+
 
   <h3><a name="the_grid">The grid</a></h3>
 
@@ -420,22 +429,16 @@
         &lt;div class="row"&gt;
           ...
         &lt;/div&gt;
+        
+        &lt;div class="row"&gt;
+          ...
+        &lt;/div&gt;
       &lt;/div&gt;
     </code>
   </pre>
 
 
-  <h3><a name="responsive_features">Responsive features</a></h3>
-
-  <h4>Responsive images</h4>
-
-  <p>The elements img, iframe, and video are given a max-width of 100% by default so that they will not overflow their containers. It is not necessary to apply any extra classes to make these elements responsive. You can observe responsive images in action by resizing the browser window as you look at the example below.</p>
-
-  <div class="row">
-    <div class="col-md-4"><img src="https://dummyimage.com/600x350/bbb/fff" alt=""></div>
-    <div class="col-md-4"><img src="https://dummyimage.com/600x350/bbb/fff" alt=""></div>
-    <div class="col-md-4"><img src="https://dummyimage.com/600x350/bbb/fff" alt=""></div>
-  </div>
+  <h3><a name="more_responsive_classes">More responsive classes</a></h3>
 
   <h4>Hide/show content</h4>
 
