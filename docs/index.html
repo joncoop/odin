@@ -560,7 +560,20 @@
 
   <h3><a name="other_helper_classes">Other Helper Classes</a><h3>
 
-  <h4>Quick floats</h4>
+  <h4>Text Alignment</h4>
+
+  <p>Four classes are provided for quick alignment of text: <code class="highlight">text-left</code>, <code class="highlight">text-right</code>, <code class="highlight">text-center</code>, and <code class="highlight">text-justify</code>.</p>
+
+  <pre>
+    <code>
+      &lt;p class="<span class="highlight">text-left</span>">This text is left-aligned.&lt;/p&gt;
+      &lt;p class="<span class="highlight">text-right</span>">This text is right-aligned.&lt;/p&gt;
+      &lt;p class="<span class="highlight">text-center</span>">This text is centered.&lt;/p&gt;
+      &lt;p class="<span class="highlight">text-justified</span>">This text is justified.&lt;/p&gt;
+    </code>
+  </pre>
+
+  <h4>Floats</h4>
 
   <p>Classes left and right can be applied to images (and other elements) to quicly float them. A clear class is also provided to prevent content from filling in space next to floated elements. In the example below, an empty div is used to clear the first floated image.</p>
 
@@ -577,14 +590,15 @@
   <pre>
     <code>
       &lt;img class="<span class="highlight">left</span>" src="example_image.jpg" alt=""&gt;
-      &lt;p>Lorem ipsum...&lt;/p&gt;
+      &lt;p&gt;Lorem ipsum...&lt;/p&gt;
 
       &lt;div class="<span class="highlight">clear</span>">&lt;/div&gt;
 
       &lt;img class="<span class="highlight">right</span>" src="example_image.jpg" alt=""&gt;
-      &lt;p>Lorem ipsum...&lt;/p&gt;
+      &lt;p&gt;Lorem ipsum...&lt;/p&gt;
     </code>
   </pre>
+
 </div>
 
 

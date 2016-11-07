@@ -313,9 +313,26 @@ video {
 }
 
 .center {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 
 /* apply .show-gridlines to body when creating initial grid or when debugging */
 .show-gridlines .row > * {
