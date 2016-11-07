@@ -30,13 +30,13 @@
 
   <img class="right" src="img/odin.jpg" alt="Picture of Odin">
 
-  <p>Odin is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create complex, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work.</p>
+  <p>Odin is intended to be a simple, easy-to-understand, and bloat-free framework used to quickly create complex, fully-responsive layouts and to develop a feel for how more full-featured frameworks are used. Because of this frameworks simplicity, markup should generally require a minimum of classes and thus maintain readability. This framework is meant to be educational as much as it is useful. Go ahead and look at the source. Hopefully, the simplified code will give some insight as to how many of the major frameworks (Bootstrap, Skeleton, Materialize, Pure, and so on) work.</p>
 
   <p>The grid is based entirely on flexbox and there are no browser prefixes or CSS 'hacks' used. Also, no effort has been made to ensure backwards-compatiblity with older browsers. Still, it will probably work fine with the latest versions of any major browser. (So if compatability with IE9 or earlier is important, then this might not be the framework for you.)</p>
 
   <p>You will also notice that many components associated with other frameworks such as carousels, cards, collapsible menus, navigation elements, form styling, etc. are not included. Perhaps at some point, more CSS modules will be added to implement extra features. Or maybe not. If extra functionality is needed, there are plenty of third-party CSS/JS options out there that should be pretty easy to integrate into this framework.</p>
 
-  <p>So why is it called Odin? The framework is based on 12 columns, so I looked at the Wikipedia article for <a href="https://en.wikipedia.org/wiki/12_(number)">12 (number)</a> and saw the entry for <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>. He seemed like a pretty cool guy to name a framework after. Plus he had a pretty epic beard. So here we are.</p>
+  <p>So why is it called Odin? The framework is based on 12 columns, so I looked at the Wikipedia article for <a href="https://en.wikipedia.org/wiki/12_(number)">12</a> and saw the entry for <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>. He seems like a pretty cool guy to name a framework after. Plus he has a pretty epic beard. So here we are.</p>
 
   <a class="button" href="https://github.com/joncoop/grid-6/archive/master.zip"><i class="fa fa-download" aria-hidden="true"></i> Download now</a>
   <a class="button" href="https://github.com/joncoop/grid-6"><i class="fa fa-github" aria-hidden="true"></i> View on GitHub</a>
@@ -89,11 +89,11 @@
     </tr>
     <tr>
       <td>Extra small</td>
-      <td>less than 479px</td>
+      <td>up to 479px</td>
     </tr>
     <tr>
       <td>Small</td>
-      <td>480 to 719px</td>
+      <td>480px to 719px</td>
     </tr>
     <tr>
       <td>Medium</td>
@@ -442,7 +442,7 @@
 
   <h4>Hide/show content</h4>
 
-  <p>The following helper classes are provided to hide/show content based on the size of the viewport: <code class="highlight">hide-xs</code>, <code class="highlight">hide-sm</code>, <code class="highlight">hide-md</code>, <code class="highlight">hide-lg</code>, <code class="highlight">show-xs-only</code>, <code class="highlight">show-sm-only</code>, <code class="highlight">show-md-only</code>, and <code class="highlight">show-lg-only</code> They can be applied to any element. Usage should be fairly obvious. Resize the browser window as you view the sentences below to see a demonstration.</p>
+  <p>The following helper classes are provided to hide/show content based on the size of the viewport: <code class="highlight">hide-xs</code>, <code class="highlight">hide-sm</code>, <code class="highlight">hide-md</code>, <code class="highlight">hide-lg</code>, <code class="highlight">show-xs-only</code>, <code class="highlight">show-sm-only</code>, <code class="highlight">show-md-only</code>, and <code class="highlight">show-lg-only</code>. They can be applied to any element. Usage should be fairly obvious. Resize the browser window as you view the sentences below to see a demonstration.</p>
 
   <p class="hide-xs">This sentence is not visible on extra-small viewports.</p>
   <p class="hide-sm">This sentence is not visible on small viewports.</p>
@@ -456,6 +456,14 @@
   <pre>
     <code>
       &lt;p class="<span class="highlight">hide-xs</span>"&gt;This sentence is not visible on extra-small viewports.&lt;/p&gt;
+      &lt;p class="<span class="highlight">hide-sm</span>"&gt;This sentence is not visible on small viewports.&lt;/p&gt;
+      &lt;p class="<span class="highlight">hide-md</span>"&gt;This sentence is not visible on medium viewports.&lt;/p&gt;
+      &lt;p class="<span class="highlight">hide-lg</span>"&gt;This sentence is not visible on large viewports.&lt;/p&gt;
+      &lt;p class="<span class="highlight">show-xs-only</span>"&gt;This sentence is only visible on extra-small viewports.&lt;/p&gt;
+      &lt;p class="<span class="highlight">show-sm-only</span>"&gt;This sentence is only visible on small viewports.&lt;/p&gt;
+      &lt;p class="<span class="highlight">show-md-only</span>"&gt;This sentence is only visible on medium viewports.&lt;/p&gt;
+      &lt;p class="<span class="highlight">show-lg-only</span>"&gt;This sentence is only visible on large viewports.&lt;/p&gt;
+
     </code>
   </pre>
 
@@ -560,7 +568,7 @@
 
   <h3><a name="other_helper_classes">Other Helper Classes</a><h3>
 
-  <h4>Text Alignment</h4>
+  <h4>Text alignment</h4>
 
   <p>Four classes are provided for quick alignment of text: <code class="highlight">text-left</code>, <code class="highlight">text-right</code>, <code class="highlight">text-center</code>, and <code class="highlight">text-justify</code>.</p>
 
@@ -575,27 +583,25 @@
 
   <h4>Floats</h4>
 
-  <p>Classes left and right can be applied to images (and other elements) to quicly float them. A clear class is also provided to prevent content from filling in space next to floated elements. In the example below, an empty div is used to clear the first floated image.</p>
 
   <img class="left" src="https://dummyimage.com/250x250/bbb/fff" alt="">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Classes <code class="highlight">left</code> and <code class="highlight">right</code> can be applied to images (and other elements) to quicly float them. A <code class="highlight">clear</code> class is also provided to prevent content from filling in space next to floated elements.</p>
 
   <div class="clear"></div>
 
   <img class="right" src="https://dummyimage.com/250x250/bbb/fff" alt="">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+  <p>In this example, an empty div is used to clear the first floated image. This really isn't a great practice. Perhaps the <code>clear</code> class is better applied to sectioning elements.</p>
   <div class="clear"></div>
 
   <pre>
     <code>
       &lt;img class="<span class="highlight">left</span>" src="example_image.jpg" alt=""&gt;
-      &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+      &lt;p&gt;Classes left and right...&lt;/p&gt;
 
       &lt;div class="<span class="highlight">clear</span>">&lt;/div&gt;
 
       &lt;img class="<span class="highlight">right</span>" src="example_image.jpg" alt=""&gt;
-      &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+      &lt;p&gt;In this example...&lt;/p&gt;
     </code>
   </pre>
 
