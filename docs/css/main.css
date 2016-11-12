@@ -82,8 +82,7 @@ li {
 }
 
 table {
-  border: none;
-  border-spacing: 0.6rem;
+
 }
 
 tr {
@@ -91,13 +90,11 @@ tr {
 }
 
 th {
-  border-bottom: 2px solid #555;
-  color: #555;
-  padding: 0.1rem 0.4rem;
+
 }
 
 td {
-  padding: 0.1rem 0.4rem;
+
 }
 
 

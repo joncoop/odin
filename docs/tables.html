@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- page title -->
+  <title>Odin: A CSS Framework</title>
+
+  <!-- favicons -->
+  <link rel="icon" href="img/valknut.png">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/odin-0.5.0.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+<div class="container-xl">
+
+  <h1>Odin: A CSS Framework</h1>
+
+  <ol>
+    <li><a href="index.html">Overview</a></li>
+    <li><a href="start.html">Get started</a></li>
+    <li><a href="grid.html">The grid</a></li>
+    <li><a href="containers.html">Containers</a></li>
+    <li><a href="positioning.html">Positioning helper classes</a></li>
+    <li><a href="responsive.html">Responsive helper classes</a></li>
+    <li><a href="text.html">Text</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="tables.html">Tables</a></li>
+  </ol>
+
+  <h2>Tables</h2>
+
+  <h3>Default table</h3>
+
+  <p>Tables receive no default styling in Odin, however a class table-basic is provided to give some styling to tables. Here's an example.</p>
+
+  <table class="table-basic">
+    <caption>Table title</caption>
+
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        <th>Header 4</th>
+        <th>Header 5</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Row 1, Col 1</td>
+        <td>Row 1, Col 2</td>
+        <td>Row 1, Col 3</td>
+        <td>Row 1, Col 4</td>
+        <td>Row 1, Col 5</td>
+      </tr>
+      <tr>
+        <td>Row 2, Col 1</td>
+        <td>Row 2, Col 2</td>
+        <td>Row 2, Col 3</td>
+        <td>Row 2, Col 4</td>
+        <td>Row 2, Col 5</td>
+      </tr>
+      <tr>
+        <td>Row 3, Col 1</td>
+        <td>Row 3, Col 2</td>
+        <td>Row 3, Col 3</td>
+        <td>Row 3, Col 4</td>
+        <td>Row 3, Col 5</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Here is some additional information</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <pre>
+    <code>
+      example code goes here
+    </code>
+  </pre>
+
+  <h3>Responsive Tables</h3>
+
+  <p>Using the class <code class="highlight">table-stack</code> will reflow the table so that each row is displayed using stacked columns. This will usually eliminate the need for sideways scrolling on small devices. The aria-label attribute is used to replace the function of the now hidden table head. </p>
+
+  <p>The following additional classes are provided so that tables stack on specified viewport and below: <code class="highlight">table-stack-xs</code>, <code class="highlight">table-stack-sm</code>, <code class="highlight">table-stack-md</code>, <code class="highlight">table-stack-lg</code>.</p>
+
+  <p>Here's an example of a table that will stack on small and extra-small viewports. Resize the browser window to see the effect.</p>
+
+  <table class="table-basic table-stack-sm">
+    <caption>Table title</caption>
+
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        <th>Header 4</th>
+        <th>Header 5</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td aria-label="Name">Row 1, Col 1</td>
+        <td aria-label="Position">Row 1, Col 2</td>
+        <td aria-label="Email">Row 1, Col 3</td>
+        <td aria-label="Phone">Row 1, Col 4</td>
+        <td aria-label="Phone">Row 1, Col 5</td>
+      </tr>
+      <tr>
+        <td aria-label="Name">Row 2, Col 1</td>
+        <td aria-label="Position">Row 2, Col 2</td>
+        <td aria-label="Email">Row 2, Col 3</td>
+        <td aria-label="Phone">Row 2, Col 4</td>
+        <td aria-label="Phone">Row 2, Col 5</td>
+      </tr>
+      <tr>
+        <td aria-label="Name">Row 3, Col 1</td>
+        <td aria-label="Position">Row 3, Col 2</td>
+        <td aria-label="Email">Row 3, Col 3</td>
+        <td aria-label="Phone">Row 3, Col 4</td>
+        <td aria-label="Phone">Row 3, Col 5</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Here is some additional information</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <pre>
+    <code>
+      example code goes here
+    </code>
+  </pre>
+
+  <h3>Row shading</h3>
+
+  <p>The following classes are provided to automatically shade alternating rows of a table: <code class="highlight">shade-even-rows</code> and <code class="highlight">shade-even-rows</code>. Here's an example of a table with odd rows shaded. Be sure to enclose rows to be shaded in <code>tbody</code> elements. Otherwise, rows in <code>thead</code> and/or <code>tfoot</code> may be unwantedly shaded.</p>
+
+  <table class="table-basic table-stack-sm shade-odd-rows">
+    <caption>Table title</caption>
+
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        <th>Header 4</th>
+        <th>Header 5</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td aria-label="Name">Row 1, Col 1</td>
+        <td aria-label="Position">Row 1, Col 2</td>
+        <td aria-label="Email">Row 1, Col 3</td>
+        <td aria-label="Phone">Row 1, Col 4</td>
+        <td aria-label="Phone">Row 1, Col 5</td>
+      </tr>
+      <tr>
+        <td aria-label="Name">Row 2, Col 1</td>
+        <td aria-label="Position">Row 2, Col 2</td>
+        <td aria-label="Email">Row 2, Col 3</td>
+        <td aria-label="Phone">Row 2, Col 4</td>
+        <td aria-label="Phone">Row 2, Col 5</td>
+      </tr>
+      <tr>
+        <td aria-label="Name">Row 3, Col 1</td>
+        <td aria-label="Position">Row 3, Col 2</td>
+        <td aria-label="Email">Row 3, Col 3</td>
+        <td aria-label="Phone">Row 3, Col 4</td>
+        <td aria-label="Phone">Row 3, Col 5</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Here is some additional information</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <pre>
+    <code>
+      example code goes here
+    </code>
+  </pre>
+
+  &nbsp;
+</div>
+
+<!-- JavaScript -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+</body>
+</html>

@@ -21,20 +21,20 @@ html {
   padding: 0 0.7rem;
 }
 
-.container-xl {
-  max-width: 1200px;
-}
-
-.container-lg {
-  max-width: 960px;
+.container-sm {
+  max-width: 480px;
 }
 
 .container-md {
   max-width: 720px;
 }
 
-.container-sm {
-  max-width: 480px;
+.container-lg {
+  max-width: 960px;
+}
+
+.container-xl {
+  max-width: 1200px;
 }
 
 
@@ -340,6 +340,213 @@ img.rounded {
 
 img.circle {
   border-radius: 50%;
+}
+
+/* table styles */
+table.table-basic {
+  border-collapse: collapse;
+}
+
+table.table-basic caption {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+table.table-basic thead {
+
+}
+
+table.table-basic tbody {
+
+}
+
+table.table-basic tfoot {
+  color: #555;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+table.table-basic tr {
+
+}
+
+table.table-basic td,
+table.table-basic th {
+  padding: 0.4rem 0.8rem;
+}
+
+table.table-basic th {
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
+table.table-basic td {
+
+}
+
+/* responsive table based on
+ * http://allthingssmitty.com/2016/10/03/responsive-table-layout/
+ */
+ table.table-stack,
+ table.table-stack-lg {
+   width: 100%;
+ }
+
+ table.table-stack,
+ table.table-stack-lg {
+   border: none;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute !important;
+   width: 1px;
+ }
+
+ table.table-stack,
+ table.table-stack-lg {
+   border: 1px solid #bbb;
+   display: block;
+   margin-bottom: 0.4rem;
+   padding: 0.4rem;
+ }
+
+ table.table-stack,
+ table.table-stack-lg {
+   display: block;
+   text-align: right;
+ }
+
+ table.table-stack,
+ table.table-stack-lg {
+   content: attr(aria-label);
+   float: left;
+   font-weight: bold;
+   color: #555;
+ }
+}
+
+@media screen and (max-width: 479px) {
+  table.table-stack-xs {
+    width: 100%;
+  }
+
+  table.table-stack-xs thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+  }
+
+  table.table-stack-xs tr {
+    border: 1px solid #bbb;
+    display: block;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem;
+  }
+
+  table.table-stack-xs td {
+    display: block;
+    text-align: right;
+  }
+
+  table.table-stack-xs td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+    color: #555;
+  }
+}
+
+/* responsive table based on
+ * http://allthingssmitty.com/2016/10/03/responsive-table-layout/
+ */
+ @media screen and (max-width: 719px) {
+   table.table-stack-sm {
+     width: 100%;
+   }
+
+   table.table-stack-sm thead {
+     border: none;
+     clip: rect(0 0 0 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute !important;
+     width: 1px;
+   }
+
+   table.table-stack-sm tr {
+     border: 1px solid #bbb;
+     display: block;
+     margin-bottom: 0.4rem;
+     padding: 0.4rem;
+   }
+
+   table.table-stack-sm td {
+     display: block;
+     text-align: right;
+   }
+
+   table.table-stack-sm td:before {
+     content: attr(aria-label);
+     float: left;
+     font-weight: bold;
+     color: #555;
+   }
+ }
+
+@media screen and (max-width: 959px) {
+   table.table-stack-md {
+     width: 100%;
+   }
+
+   table.table-stack-md thead {
+     border: none;
+     clip: rect(0 0 0 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute !important;
+     width: 1px;
+   }
+
+   table.table-stack-md tr {
+     border: 1px solid #bbb;
+     display: block;
+     margin-bottom: 0.4rem;
+     padding: 0.4rem;
+   }
+
+   table.table-stack-md td {
+     display: block;
+     text-align: right;
+   }
+
+   table.table-stack-md td:before {
+     content: attr(aria-label);
+     float: left;
+     font-weight: bold;
+     color: #555;
+   }
+ }
+
+table.shade-even-rows tbody tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+table.shade-odd-rows tbody  tr:nth-child(odd) {
+  background-color: #ddd;
 }
 
 
