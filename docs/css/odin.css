@@ -333,6 +333,15 @@ video {
   text-align: justify;
 }
 
+/* image styles */
+img.rounded {
+  border-radius: 0.6rem;
+}
+
+img.circle {
+  border-radius: 50%;
+}
+
 
 /* apply .show-gridlines to body when creating initial grid or when debugging */
 .show-gridlines .row > * {
