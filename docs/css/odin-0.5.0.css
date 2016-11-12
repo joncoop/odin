@@ -21,20 +21,20 @@ html {
   padding: 0 0.7rem;
 }
 
-.container-xl {
-  max-width: 1200px;
-}
-
-.container-lg {
-  max-width: 960px;
+.container-sm {
+  max-width: 480px;
 }
 
 .container-md {
   max-width: 720px;
 }
 
-.container-sm {
-  max-width: 480px;
+.container-lg {
+  max-width: 960px;
+}
+
+.container-xl {
+  max-width: 1200px;
 }
 
 
@@ -340,6 +340,43 @@ img.rounded {
 
 img.circle {
   border-radius: 50%;
+}
+
+/* table styles */
+table {
+
+}
+
+thead {
+
+}
+
+tbody {
+
+}
+
+tfoot {
+
+}
+
+tr {
+
+}
+
+tr:nth-child(even) {
+
+}
+
+tr:nth-child(odd) {
+
+}
+
+th {
+
+}
+
+td {
+
 }
 
 
