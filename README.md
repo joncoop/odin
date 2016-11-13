@@ -23,6 +23,7 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 
 ### for v1.1
 - Create row-10 class and corresponding col classes to have rows based on 10ths.
+- Add containers that snap to widths according to viewport
 
 ### more ideas (not to include in css, just write instructions)
 - Icon fonts

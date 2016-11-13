@@ -345,10 +345,10 @@ img.circle {
 /* table styles */
 table.table-basic {
   border-collapse: collapse;
+  color: #333;
 }
 
 table.table-basic caption {
-  color: #333;
   font-size: 1.4rem;
   font-weight: bold;
   padding: 0.4rem;
