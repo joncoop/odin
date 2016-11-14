@@ -15,11 +15,12 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 ## To do
 
 ### for v1.0
-- 0.6.0 Add default form styling
-- 0.7.0 Add responsive navigation elements
-- 0.8.0 Add 'sticky' features for header and footer elements
-- 0.9.0 General code cleanup, Integrate Normalize in odin.css, Document the CSS really nicely
-- Release unminimized in src folder, minimized in dist
+- 0.6.0 Add form styling
+- 0.7.0 Add button styling and instructions for using icon fonts
+- 0.8.0 Add responsive navigation elements
+- 0.9.0 Add 'sticky' features for header and footer elements
+- 0.9.1 General code cleanup, clean up color palette, document the CSS really nicely
+- 1.0.0 Release unminimized in src folder, minimized in dist
 
 ### for v1.1
 - Create row-10 class and corresponding col classes to have rows based on 10ths.

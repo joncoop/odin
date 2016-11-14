@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- page title -->
+  <title>Odin: A CSS Framework</title>
+
+  <!-- favicons -->
+  <link rel="icon" href="img/valknut.png">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/odin-0.6.0.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+<div class="container-xl">
+
+  <h1>Odin: A CSS Framework</h1>
+
+  <ol>
+    <li><a href="index.html">Overview</a></li>
+    <li><a href="start.html">Get started</a></li>
+    <li><a href="grid.html">The grid</a></li>
+    <li><a href="containers.html">Containers</a></li>
+    <li><a href="positioning.html">Positioning helper classes</a></li>
+    <li><a href="responsive.html">Responsive helper classes</a></li>
+    <li><a href="text.html">Text</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a href="forms.html">Forms</a></li>
+  </ol>
+
+  <h2>Forms</h2>
+
+  <h3>Default form</h3>
+
+  <p>Forms receive no default styling in Odin, so any custom CSS you write will not conflict with default styling.</p>
+
+  <h3>Basic form</h3>
+
+  <p>If you do want some basic styling added without writing custom CSS, a class <code class="highlight">form-basic</code> is provided to give some styling to forms. Here's an example.</p>
+
+  <form class="form-basic">
+    <fieldset>
+      <legend>Input types</legend>
+
+      <label for="name">Text:</label><input id="name" type="text" name="name" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>HTML5 types</legend>
+
+      <label for="email">Email:</label><input id="email" type="email" name="name">
+      <label for="phone">Phone:</label><input id="phone" type="tel" name="phone">
+      <label for="website">Website:</label><input id="website" type="url" name="website" disabled>
+      <label for="search">Search:</label><input id="search" type="search" name="name">
+      <label for="number">Number:</label><input id="number" type="number" name="name">
+      <label for="range">Range:</label><input id="range" type="range" name="name">
+      <label for="date">Date:</label><input id="name" type="date" name="name">
+      <label for="time">Time:</label><input id="time" type="time" name="time">
+      <label for="name">Datetime (local):</label><input id="name" type="datetime-local" name="name">
+      <label for="name">Week:</label><input id="name" type="week" name="name">
+      <label for="name">Month:</label><input id="name" type="month" name="name">
+      <label for="name">Color:</label><input id="name" type="color" name="name" value="#003bff">
+    </fieldset>
+
+    <fieldset>
+      <legend>Radio buttons</legend>
+
+      <label for="visa"><input id="visa" type="radio" name="card_type">Visa</label>
+      <label for="master_card"><input id="master_card" type="radio" name="card_type">Master Card</label>
+      <label for="amex"><input id="amex" type="radio" name="card_type">American Express</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Checkboxes</legend>
+
+      <label for="terms"><input id="terms" type="checkbox" name="terms">I agree to the terms and conditions.</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dropdown menus</legend>
+
+      <label for="state">State:</label>
+      <select id="state">
+        <option value="">Select one...</option>
+        <option value="">Alabama</option>
+        <option value="">Alaska</option>
+        <option value="">Arizona</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Textarea</legend>
+
+      <label for="comments">Message:</label><textarea id="comments" name="comments"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>File input</legend>
+
+      <label for="file">File:</label><input id="file" type="file" name="file">
+    </fieldset>
+
+    <fieldset>
+      <legend>Buttons</legend>
+
+      <button type="submit">Button</button>
+    </fieldset>
+
+  </form>
+
+  <pre>
+    <code>
+      code goes here
+    </code>
+  </pre>
+
+  <h3>Stacked form</h3>
+
+  <p>Using the class <code class="highlight">form-stack</code> will reflow the form so that input elements (with the exception of checkbox and radio) are displayed below their labels. An optional class <code class="highlight">form-wide</code> has also been applied so that inputs occupy 100% of their containing column's width.</p>
+
+  <div class="container-md">
+    <form class="form-basic form-stack form-wide">
+      <label for="name2">Name:</label><input id="name2" type="text" name="name">
+      <label for="email2">Email:</label><input id="email2" type="text" name="email">
+      <label for="comments2">Comments:</label><textarea id="comments2"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <pre>
+    <code>
+      code goes here
+    </code>
+  </pre>
+
+  <h3>Responsive Forms</h3>
+
+  <h4>Aligned form</h4>
+
+  <p>In this example, a grid is used to create an aligned form. On smaller screens, the columns will stack. In case you're wondering, it is perfectly fine to include a grid-based form inside a column of a larger grid.</p>
+
+  <div class="container-md">
+    <form class="form-basic form-wide">
+      <div class="row gutter-none">
+        <div class="col-md-2">
+          <label for="name3">Name:</label>
+        </div>
+        <div class="col-md-10">
+          <input id="name3" type="text" name="name">
+        </div>
+      </div>
+
+      <div class="row gutter-none">
+        <div class="col-md-2">
+          <label for="email3">Email:</label>
+        </div>
+        <div class="col-md-10">
+          <input id="email3" type="email" name="email">
+        </div>
+      </div>
+
+      <div class="row gutter-none">
+        <div class="col-md-2">
+          <label for="comments3">Comments:</label>
+        </div>
+        <div class="col-md-10">
+          <textarea id="comments3" name="comments"></textarea>
+        </div>
+      </div>
+      <div class="row gutter-none">
+        <div class="col-md-2">
+          <!-- nothing here -->
+        </div>
+        <div class="col-md-10">
+          <button type="button">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <pre>
+    <code>
+      code goes here
+    </code>
+  </pre>
+
+  <h4>Multi-column form</h4>
+
+  <p>Here's an example of a more complicated form layout using a grid. You can create your own custom classes to enhance the form even more.</p>
+
+  <div class="container-md">
+    <form class="form-basic form-stack form-wide">
+      <fieldset>
+        <legend>Ship To</legend>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="first_name">First name:</label><input id="first_name" type="text" name="first_name">
+          </div>
+          <div class="col-md-6">
+            <label for="last_name">Last name:</label><input id="last_name" type="text" name="last_name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <label for="address">Address:</label><input id="address" type="text" name="address">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <label for="city">City:</label><input id="city" type="text" name="city">
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <label for="state4">State:</label>
+            <select id="state4">
+              <option value="">Select one...</option>
+              <option value="">Alabama</option>
+              <option value="">Alaska</option>
+              <option value="">Arizona</option>
+            </select>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <label for="zip4">Zip Code:</label><input id="zip4" type="text" name="zip">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Info</legend>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="email4">Email:</label><input id="email4" type="text" name="email">
+          </div>
+          <div class="col-md-6">
+            <label for="phone4">Phone:</label><input id="phone4" type="text" name="phone">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Details</legend>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="card_num4">Credit Card Number:</label><input id="card_num4" type="text" name="card_num">
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <label for="state4">Exp Month:</label>
+            <select id="state4">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <label for="state4">Exp Year:</label>
+            <select id="state4">
+              <option value="">2016</option>
+              <option value="">2017</option>
+              <option value="">2018</option>
+            </select>
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <label for="cvn4">CVN:</label><input id="cvn4" type="text" name="cvn">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <button>Place Order</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <pre>
+    <code>
+      code goes here
+    </code>
+  </pre>
+
+</div>
+
+
+<!-- include any javascript below this line -->
+
+</body>
+</html>

@@ -14,7 +14,7 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/odin-0.5.0.css">
+  <link rel="stylesheet" href="css/odin-0.6.0.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -48,6 +48,8 @@
 
   <p>You will also notice that many components associated with other frameworks such as carousels, cards, collapsible menus, navigation elements, form styling, etc. are not included. Perhaps at some point, more CSS modules will be added to implement extra features. Or maybe not. If extra functionality is needed, there are plenty of third-party CSS/JS options out there that should be pretty easy to integrate into this framework.</p>
 
+  <p>Be aware that <code>border-box</code> is the default <code>box-sizing</code> for all elements. If custom styling requires <code>content-box</code>, then you'll need to override this for those elements.</p>
+
   <p>So why is it called Odin? The framework is based on 12 columns, so I looked at the Wikipedia article for <a href="https://en.wikipedia.org/wiki/12_(number)">12</a> and saw the entry for <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>. He seems like a pretty cool guy to name a framework after. Plus he has a pretty epic beard. So here we are.</p>
 
   <a class="button" href="https://github.com/joncoop/grid-6/archive/master.zip"><i class="fa fa-download" aria-hidden="true"></i> Download now</a>
@@ -56,8 +58,7 @@
 </div>
 
 
-<!-- JavaScript -->
-<script src="js/jquery-2.1.4.min.js"></script>
+<!-- include any javascript below this line -->
 
 </body>
 </html>

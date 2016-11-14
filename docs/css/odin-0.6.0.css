@@ -65,6 +65,11 @@ html {
   padding: 0;
 }
 
+/* apply .show-gridlines to body when creating initial grid or when debugging */
+.show-gridlines .row > * {
+  border: 1px solid #bbb;
+}
+
 .col-xs-1 { width: 8.333333%; }
 .col-xs-2 { width: 16.666666%; }
 .col-xs-3 { width: 25%; }
@@ -123,30 +128,30 @@ html {
   .col-lg-12 { width: 100%; }
 }
 
-.row.reverse {
+.reverse {
   flex-direction: row-reverse;
 }
 
 @media (max-width: 479px) {
-  .row.reverse-xs {
+  .reverse-xs {
     flex-direction: row-reverse;
   }
 }
 
 @media (min-width: 480px) and (max-width: 719px) {
-  .row.reverse-sm {
+  .reverse-sm {
     flex-direction: row-reverse;
   }
 }
 
 @media (min-width: 720px) and (max-width: 959px) {
-  .row.reverse-md {
+  .reverse-md {
     flex-direction: row-reverse;
   }
 }
 
 @media (min-width: 960px) {
-  .row.reverse-lg {
+  .reverse-lg {
     flex-direction: row-reverse;
   }
 }
@@ -390,13 +395,11 @@ table.table-basic td {
 /* responsive table based on
  * http://allthingssmitty.com/2016/10/03/responsive-table-layout/
  */
- table.table-stack,
- table.table-stack-lg {
+ table.table-stack {
    width: 100%;
  }
 
- table.table-stack,
- table.table-stack-lg {
+ table.table-stack thead {
    border: none;
    clip: rect(0 0 0 0);
    height: 1px;
@@ -407,22 +410,19 @@ table.table-basic td {
    width: 1px;
  }
 
- table.table-stack,
- table.table-stack-lg {
+ table.table-stack tr {
    border: 1px solid #bbb;
    display: block;
    margin-bottom: 0.4rem;
    padding: 0.4rem;
  }
 
- table.table-stack,
- table.table-stack-lg {
+ table.table-stack td {
    display: block;
    text-align: right;
  }
 
- table.table-stack,
- table.table-stack-lg {
+ table.table-stack td:before {
    content: attr(aria-label);
    float: left;
    font-weight: bold;
@@ -550,7 +550,119 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 }
 
 
-/* apply .show-gridlines to body when creating initial grid or when debugging */
-.show-gridlines .row > * {
-  border: 1px solid #bbb;
+/* form styles */
+
+.form-basic input,
+.form-basic select,
+.form-basic textarea {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  display: inline-block;
+  margin: 0.2rem 0.4rem 0.6rem 0;
+  padding: 0.2rem;
+  vertical-align: middle;
+}
+
+.form-basic input[type="checkbox"],
+.form-basic input[type="radio"] {
+  background-color: transparent;
+  margin: 0.4rem;
+  padding: 0;
+}
+
+.form-basic textarea {
+  min-height: 6.0rem;
+  resize: vertical;
+  vertical-align: top;
+}
+
+.form-basic input:focus,
+.form-basic select:focus,
+.form-basic textarea:focus {
+  border: 1px solid #3af;
+  outline: 0;
+}
+
+.form-basic input[type="radio"]:focus,
+.form-basic input[type="checkbox"]:focus {
+  outline: 1px solid #3af;
+}
+
+.form-basic input[disabled],
+.form-basic select[disabled],
+.form-basic textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eee;
+  color: #999;
+}
+
+.form-basic input[readonly],
+.form-basic select[readonly],
+.form-basic textarea[readonly] {
+  color: #777;
+}
+
+.form-basic input:focus:invalid,
+.form-basic textarea:focus:invalid,
+.form-basic select:focus:invalid {
+  border-color: #a00;
+  color: #a00;
+}
+
+.form-basic input[type="file"]:focus:invalid:focus,
+.form-basic input[type="radio"]:focus:invalid:focus,
+.form-basic input[type="checkbox"]:focus:invalid:focus {
+    outline-color: #a00;
+}
+
+.form-basic label {
+  margin: 0.2rem 0.4rem 0 0;
+}
+
+.form-basic fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0.4rem 0;
+}
+
+.form-basic legend {
+  border-bottom: 1px solid #aaa;
+  color: #555;
+  display: block;
+  font-weight: bold;
+  padding: 0.4em 0;
+  margin-bottom: 0.4em;
+  width: 100%;
+}
+
+.form-wide input,
+.form-wide select,
+.form-wide textarea,
+.form-wide label {
+  display: block;
+  width: 100%;
+}
+
+.form-wide input[type="checkbox"],
+.form-wide input[type="radio"] {
+  width: auto;
+}
+
+.form-stack input,
+.form-stack select,
+.form-stack textarea,
+.form-stack label {
+  display: block;
+}
+
+.form-stack input[type="checkbox"],
+.form-stack input[type="radio"] {
+  display: inline-block;
+}
+
+.form-stack input,
+.form-stack select,
+.form-stack textarea {
+  margin-bottom: 0.8rem;
 }
