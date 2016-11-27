@@ -1,4 +1,4 @@
-#Odin: A CSS Framework
+# Odin: A CSS Framework
 
 ## About
 
@@ -16,10 +16,12 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 ## To do
 
 ### for v1.0
-- 0.7.0 Add button styling
-- 0.8.0 Add responsive navigation elements
-- 0.9.0 Add 'sticky' features for header and footer elements
-- 0.9.1 General code cleanup, clean up color palette, styling tweaks, document the CSS really nicely
+- 0.7.0 Add responsive navigation elements
+- 0.8.0 Add 'sticky' features for header and footer elements
+- 0.9.0 Add button styling
+- 0.9.1 Use some flex magic to avoid using padding for gutters (hopefully)
+- 0.9.2 General code cleanup, clean up color palette, minor styling tweaks
+- 0.9.3 Document the CSS really nicely
 - 1.0.0 Release unminimized in src folder, minimized in dist
 
 ### for v1.1
@@ -30,7 +32,6 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 - Icon fonts
 - Image carousels (owl-carousel)
 - Add default code styling, syntax highlighting
-- Figure out how to not use padding for gutters (possibly include in 1.0 release)
 
 ### for fun
 - Make the docs much prettier
