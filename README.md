@@ -11,11 +11,11 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 - 0.3.0 - Added ability to change gutter sizes. Added classes to float and center images. Added text alignment classes. img, iframes, video are responsive by default now. (2016-11-06)
 - 0.4.0 - Added rounded and circle image classes. (2016-11-12)
 - 0.5.0 - Add basic table styling, responsive table classes, and even/odd row shading helper classes (2016-11-12)
+- 0.6.0 Add form styling (2017-11-27)
 
 ## To do
 
 ### for v1.0
-- 0.6.0 Add form styling
 - 0.7.0 Add button styling
 - 0.8.0 Add responsive navigation elements
 - 0.9.0 Add 'sticky' features for header and footer elements

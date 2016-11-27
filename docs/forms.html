@@ -41,106 +41,221 @@
 
   <h2>Forms</h2>
 
-  <h3>Default form</h3>
+  <h3>Default form styling</h3>
 
   <p>Forms receive no default styling in Odin, so any custom CSS you write will not conflict with default styling.</p>
 
-  <h3>Basic form</h3>
+  <h3>Basic form styling</h3>
 
-  <p>If you do want some basic styling added without writing custom CSS, a class <code class="highlight">form-basic</code> is provided to give some styling to forms. Here's an example.</p>
+  <p>If you do want some basic styling added without writing custom CSS, a class <code class="highlight">form-basic</code> is provided to give some styling to forms.</p>
 
-  <form class="form-basic">
-    <fieldset>
-      <legend>Input types</legend>
+  <p>Inputs are given a light gray border until they receive focus. The following input types are supported: <code>text</code>, <code>tel</code>, <code>url</code>, <code>search</code>, <code>number</code>, <code>range</code>, <code>date</code>, <code>time</code>, <code>datetime-local</code>, <code>week</code>, <code>month</code>, <code>color</code>, <code>file</code>, <code>radio</code>, and <code>checkbox</code>. In addition, <code>textarea</code>s and <code>select</code> elements receive similar styling.</p>
 
-      <label for="name">Text:</label><input id="name" type="text" name="name" required>
-    </fieldset>
+  <p>Both <code>button</code> and <code>input</code> elements are given the same styling. For each, <code>type="button"</code> and <code>type="submit"</code> will be styled the same.</p>
 
-    <fieldset>
-      <legend>HTML5 types</legend>
-
-      <label for="email">Email:</label><input id="email" type="email" name="name">
-      <label for="phone">Phone:</label><input id="phone" type="tel" name="phone">
-      <label for="website">Website:</label><input id="website" type="url" name="website" disabled>
-      <label for="search">Search:</label><input id="search" type="search" name="name">
-      <label for="number">Number:</label><input id="number" type="number" name="name">
-      <label for="range">Range:</label><input id="range" type="range" name="name">
-      <label for="date">Date:</label><input id="name" type="date" name="name">
-      <label for="time">Time:</label><input id="time" type="time" name="time">
-      <label for="name">Datetime (local):</label><input id="name" type="datetime-local" name="name">
-      <label for="name">Week:</label><input id="name" type="week" name="name">
-      <label for="name">Month:</label><input id="name" type="month" name="name">
-      <label for="name">Color:</label><input id="name" type="color" name="name" value="#003bff">
-    </fieldset>
-
-    <fieldset>
-      <legend>Radio buttons</legend>
-
-      <label for="visa"><input id="visa" type="radio" name="card_type">Visa</label>
-      <label for="master_card"><input id="master_card" type="radio" name="card_type">Master Card</label>
-      <label for="amex"><input id="amex" type="radio" name="card_type">American Express</label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Checkboxes</legend>
-
-      <label for="terms"><input id="terms" type="checkbox" name="terms">I agree to the terms and conditions.</label>
-    </fieldset>
-
-    <fieldset>
-      <legend>Dropdown menus</legend>
-
-      <label for="state">State:</label>
-      <select id="state">
-        <option value="">Select one...</option>
-        <option value="">Alabama</option>
-        <option value="">Alaska</option>
-        <option value="">Arizona</option>
-      </select>
-    </fieldset>
-
-    <fieldset>
-      <legend>Textarea</legend>
-
-      <label for="comments">Message:</label><textarea id="comments" name="comments"></textarea>
-    </fieldset>
-
-    <fieldset>
-      <legend>File input</legend>
-
-      <label for="file">File:</label><input id="file" type="file" name="file">
-    </fieldset>
-
-    <fieldset>
-      <legend>Buttons</legend>
-
-      <button type="submit">Button</button>
-    </fieldset>
-
-  </form>
-
-  <pre>
-    <code>
-      code goes here
-    </code>
-  </pre>
-
-  <h3>Stacked form</h3>
-
-  <p>Using the class <code class="highlight">form-stack</code> will reflow the form so that input elements (with the exception of checkbox and radio) are displayed below their labels. An optional class <code class="highlight">form-wide</code> has also been applied so that inputs occupy 100% of their containing column's width.</p>
+  <p>The border is removed on the <code>fieldset</code> element. Instead, the <code>legend</code> element has a bottom border applied. Fieldsets and legends are used to group the form elements demonstrated below.</p>
 
   <div class="container-md">
-    <form class="form-basic form-stack form-wide">
-      <label for="name2">Name:</label><input id="name2" type="text" name="name">
-      <label for="email2">Email:</label><input id="email2" type="text" name="email">
-      <label for="comments2">Comments:</label><textarea id="comments2"></textarea>
-      <button type="submit">Submit</button>
+    <form class="form-basic">
+      <fieldset>
+        <legend>Some form fields</legend>
+          <label for="some_text">Enter some text:</label>
+          <input id="some_text" type="text" name="some_text">
+          <br>
+
+          <label for="one">
+          <input id="one" type="radio" name="choice">Choice 1</label>
+
+          <label for="two">
+          <input id="two" type="radio" name="choice">Choice 2</label>
+
+          <label for="three">
+          <input id="three" type="radio" name="choice">Choice 3</label>
+          <br>
+
+          <label for="check_it">
+          <input id="check_it" type="checkbox" name="check_it">Check this box.</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>More form fields</legend>
+          <label for="another_choice">Another choice:</label>
+          <select id="another_choice">
+            <option value="">Select one...</option>
+            <option value="one">Choice 1</option>
+            <option value="two">Choice 2</option>
+            <option value="three">Choice 3</option>
+          </select>
+          <br>
+
+          <label for="more_text">Enter more text:</label>
+          <textarea id="more_text" name="more_text"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Buttons</legend>
+        <button type="button">A Button!</button>
+        <input type="button" value="Another button!">
+      </fieldset>
     </form>
   </div>
 
   <pre>
     <code>
-      code goes here
+      &lt;form class="<span class="highlight">form-basic</span>"&gt;
+        &lt;fieldset&gt;
+          &lt;legend&gt;Some form fields&lt;/legend&gt;
+
+          &lt;label for="some_text"&gt;Enter some text:&lt;/label&gt;
+          &lt;input id="some_text" type="text" name="some_text"&gt;
+          &lt;br&gt;
+
+          &lt;label for="one"&gt;
+            &lt;input id="one" type="radio" name="choice"&gt;Choice 1
+          &lt;/label&gt;
+
+          &lt;label for="two"&gt;
+            &lt;input id="two" type="radio" name="choice"&gt;Choice 2
+          &lt;/label&gt;
+
+          &lt;label for="three"&gt;
+            &lt;input id="three" type="radio" name="choice"&gt;Choice 3
+          &lt;/label&gt;
+          &lt;br&gt;
+
+          &lt;label for="check_it"&gt;
+            &lt;input id="check_it" type="checkbox" name="check_it"&gt;Check this box.
+          &lt;/label&gt;
+        &lt;/fieldset&gt;
+
+        &lt;fieldset&gt;
+          &lt;legend&gt;More form fields&lt;/legend&gt;
+
+          &lt;label for="another_choice"&gt;Another choice:&lt;/label&gt;
+          &lt;select id="another_choice"&gt;
+            &lt;option value=""&gt;Select one...&lt;/option&gt;
+            &lt;option value="one"&gt;Choice 1&lt;/option&gt;
+            &lt;option value="two"&gt;Choice 2&lt;/option&gt;
+            &lt;option value="three"&gt;Choice 3&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;br&gt;
+
+          &lt;label for="more_text"&gt;Enter more text:&lt;/label&gt;
+          &lt;textarea id="more_text" name="more_text"&gt;&lt;/textarea&gt;
+        &lt;/fieldset&gt;
+
+        &lt;fieldset&gt;
+          &lt;legend&gt;Buttons&lt;/legend&gt;
+
+          &lt;button type="button"&gt;A Button!&lt;/button&gt;
+          &lt;input type="button" value="Another button!"&gt;
+        &lt;/fieldset&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <h3>Disabled form elements</h3>
+
+  <p>Elements given a <code>disabled</code> attribute are grayed out and the cursor changes on mouse over.</p>
+
+  <div class="container-md">
+    <form class="form-basic">
+      <label for="some_text2">You can't enter text here:</label>
+      <input id="some_text2" type="text" name="some_text2" disabled>
+      <br>
+
+      <label for="cant_check_this">
+        <input id="cant_check_this" type="checkbox" name="cant_check_this" disabled>You cant check this box.
+      </label>
+    </form>
+  </div>
+
+  <pre>
+    <code>
+      &lt;label for="some_text2"&gt;You can't enter text here:&lt;/label&gt;
+      &lt;input id="some_text2" type="text" name="some_text2" disabled&gt;
+      &lt;br&gt;
+
+      &lt;label for="cant_check_this"&gt;
+        &lt;input id="cant_check_this" type="checkbox" name="cant_check_this" disabled&gt;You cant check this box.
+      &lt;/label&gt;
+    </code>
+  </pre>
+
+
+  <h3>Form validation</h3>
+
+  <p>Special automatically validating type such as email and url and elements marked as <code>required</code> or given a <code>pattern</code> attribute will be given a red border when invalid. Use the HTML5 pattern attribute to validate fields such as phone numbers that do not have built-in validation. A <code class="highlight">form-hint</code> class is provided style special instructions.</p>
+
+  <div class="container-md">
+    <form class="form-basic">
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name" required>
+      <span class="form-hint">Required</span>
+      <br>
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="name">
+      <span class="form-hint">Enter a valid email address</span>
+      <br>
+
+      <label for="phone">Phone:</label>
+      <input id="phone" type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+      <span class="form-hint">123-456-7890</span>
+    </form>
+  </div>
+
+  <pre>
+    <code>
+      &lt;label for="name"&gt;Name:&lt;/label&gt;
+      &lt;input id="name" type="text" name="name" required&gt;
+      &lt;span class="<span class="highlight">form-hint</span>"&gt;Required&lt;/span&gt;
+      &lt;br&gt;
+
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input id="email" type="email" name="name"&gt;
+      &lt;span class="<span class="highlight">form-hint</span>"&gt;Enter a valid email address&lt;/span&gt;
+      &lt;br&gt;
+
+      &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+      &lt;input id="phone" type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"&gt;
+      &lt;span class="<span class="highlight">form-hint</span>"&gt;123-456-7890&lt;/span&gt;
+    </code>
+  </pre>
+
+  <h3>Stacked form</h3>
+
+  <p>Using the class <code class="highlight">form-stack</code> will reflow the form so that input elements (with the exception of checkbox and radio) are displayed below their labels. An optional class <code class="highlight">form-wide</code> has also been applied so that inputs occupy 100% of their containing element's width.</p>
+
+  <div class="container-md">
+    <form class="form-basic form-stack form-wide">
+      <label for="name2">Name:</label>
+      <input id="name2" type="text" name="name">
+
+      <label for="email2">Email:</label>
+      <input id="email2" type="text" name="email">
+
+      <label for="comments2">Comments:</label>
+      <textarea id="comments2"></textarea>
+
+      <button type="button">Submit</button>
+    </form>
+  </div>
+
+  <pre>
+    <code>
+      &lt;form class="form-basic <span class="highlight">form-stack form-wide</span>"&gt;
+        &lt;label for="name2"&gt;Name:&lt;/label&gt;
+        &lt;input id="name2" type="text" name="name"&gt;
+
+        &lt;label for="email2"&gt;Email:&lt;/label&gt;
+        &lt;input id="email2" type="text" name="email"&gt;
+
+        &lt;label for="comments2"&gt;Comments:&lt;/label&gt;
+        &lt;textarea id="comments2"&gt;&lt;/textarea&gt;
+
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+      &lt;/form&gt;
     </code>
   </pre>
 
@@ -178,6 +293,7 @@
           <textarea id="comments3" name="comments"></textarea>
         </div>
       </div>
+
       <div class="row gutter-none">
         <div class="col-md-2">
           <!-- nothing here -->
@@ -191,7 +307,43 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;form class="form-basic form-wide"&gt;
+        &lt;div class="row gutter-none"&gt;
+          &lt;div class="col-md-2"&gt;
+            &lt;label for="name3"&gt;Name:&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="col-md-10"&gt;
+            &lt;input id="name3" type="text" name="name"&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row gutter-none"&gt;
+          &lt;div class="col-md-2"&gt;
+            &lt;label for="email3"&gt;Email:&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="col-md-10"&gt;
+            &lt;input id="email3" type="email" name="email"&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row gutter-none"&gt;
+          &lt;div class="col-md-2"&gt;
+            &lt;label for="comments3"&gt;Comments:&lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class="col-md-10"&gt;
+            &lt;textarea id="comments3" name="comments"&gt;&lt;/textarea&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row gutter-none"&gt;
+          &lt;div class="col-md-2"&gt;
+            &lt;!-- nothing here --&gt;
+          &lt;/div&gt;
+          &lt;div class="col-md-10"&gt;
+            &lt;button type="button"&gt;Submit&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
     </code>
   </pre>
 
@@ -205,22 +357,26 @@
         <legend>Ship To</legend>
         <div class="row">
           <div class="col-md-6">
-            <label for="first_name">First name:</label><input id="first_name" type="text" name="first_name">
+            <label for="first_name">First name:</label>
+            <input id="first_name" type="text" name="first_name">
           </div>
           <div class="col-md-6">
-            <label for="last_name">Last name:</label><input id="last_name" type="text" name="last_name">
+            <label for="last_name">Last name:</label>
+            <input id="last_name" type="text" name="last_name">
           </div>
         </div>
 
         <div class="row">
           <div class="col-xs-12">
-            <label for="address">Address:</label><input id="address" type="text" name="address">
+            <label for="address">Address:</label>
+            <input id="address" type="text" name="address">
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-6">
-            <label for="city">City:</label><input id="city" type="text" name="city">
+            <label for="city">City:</label>
+            <input id="city" type="text" name="city">
           </div>
           <div class="col-sm-6 col-md-3">
             <label for="state4">State:</label>
@@ -232,7 +388,8 @@
             </select>
           </div>
           <div class="col-sm-6 col-md-3">
-            <label for="zip4">Zip Code:</label><input id="zip4" type="text" name="zip">
+            <label for="zip4">Zip Code:</label>
+            <input id="zip4" type="text" name="zip">
           </div>
         </div>
       </fieldset>
@@ -241,10 +398,12 @@
         <legend>Contact Info</legend>
         <div class="row">
           <div class="col-md-6">
-            <label for="email4">Email:</label><input id="email4" type="text" name="email">
+            <label for="email4">Email:</label>
+            <input id="email4" type="text" name="email">
           </div>
           <div class="col-md-6">
-            <label for="phone4">Phone:</label><input id="phone4" type="text" name="phone">
+            <label for="phone4">Phone:</label>
+            <input id="phone4" type="text" name="phone">
           </div>
         </div>
       </fieldset>
@@ -253,7 +412,8 @@
         <legend>Payment Details</legend>
         <div class="row">
           <div class="col-md-6">
-            <label for="card_num4">Credit Card Number:</label><input id="card_num4" type="text" name="card_num">
+            <label for="card_num4">Credit Card Number:</label>
+            <input id="card_num4" type="text" name="card_num">
           </div>
           <div class="col-sm-4 col-md-2">
             <label for="state4">Exp Month:</label>
@@ -272,14 +432,15 @@
             </select>
           </div>
           <div class="col-sm-4 col-md-2">
-            <label for="cvn4">CVN:</label><input id="cvn4" type="text" name="cvn">
+            <label for="cvn4">CVN:</label>
+            <input id="cvn4" type="text" name="cvn">
           </div>
         </div>
       </fieldset>
 
       <div class="row">
-        <div class="col-xs-12">
-          <button>Place Order</button>
+        <div class="col-xs-12 push-right">
+          <button type="button">Place Order</button>
         </div>
       </div>
     </form>
@@ -287,7 +448,98 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;form class="form-basic form-stack form-wide"&gt;
+        &lt;fieldset&gt;
+          &lt;legend&gt;Ship To&lt;/legend&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-md-6"&gt;
+              &lt;label for="first_name"&gt;First name:&lt;/label&gt;
+              &lt;input id="first_name" type="text" name="first_name"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-6"&gt;
+              &lt;label for="last_name"&gt;Last name:&lt;/label&gt;
+              &lt;input id="last_name" type="text" name="last_name"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="row"&gt;
+            &lt;div class="col-xs-12"&gt;
+              &lt;label for="address"&gt;Address:&lt;/label&gt;
+              &lt;input id="address" type="text" name="address"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="row"&gt;
+            &lt;div class="col-md-6"&gt;
+              &lt;label for="city"&gt;City:&lt;/label&gt;
+              &lt;input id="city" type="text" name="city"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-6 col-md-3"&gt;
+              &lt;label for="state4"&gt;State:&lt;/label&gt;
+              &lt;select id="state4"&gt;
+                &lt;option value=""&gt;Select one...&lt;/option&gt;
+                &lt;option value=""&gt;Alabama&lt;/option&gt;
+                &lt;option value=""&gt;Alaska&lt;/option&gt;
+                &lt;option value=""&gt;Arizona&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-6 col-md-3"&gt;
+              &lt;label for="zip4"&gt;Zip Code:&lt;/label&gt;
+              &lt;input id="zip4" type="text" name="zip"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;fieldset&gt;
+          &lt;legend&gt;Contact Info&lt;/legend&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-md-6"&gt;
+              &lt;label for="email4"&gt;Email:&lt;/label&gt;
+              &lt;input id="email4" type="text" name="email"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-6"&gt;
+              &lt;label for="phone4"&gt;Phone:&lt;/label&gt;
+              &lt;input id="phone4" type="text" name="phone"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;fieldset&gt;
+          &lt;legend&gt;Payment Details&lt;/legend&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-md-6"&gt;
+              &lt;label for="card_num4"&gt;Credit Card Number:&lt;/label&gt;
+              &lt;input id="card_num4" type="text" name="card_num"&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-4 col-md-2"&gt;
+              &lt;label for="state4"&gt;Exp Month:&lt;/label&gt;
+              &lt;select id="state4"&gt;
+                &lt;option value=""&gt;1&lt;/option&gt;
+                &lt;option value=""&gt;2&lt;/option&gt;
+                &lt;option value=""&gt;3&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-4 col-md-2"&gt;
+              &lt;label for="state4"&gt;Exp Year:&lt;/label&gt;
+              &lt;select id="state4"&gt;
+                &lt;option value=""&gt;2016&lt;/option&gt;
+                &lt;option value=""&gt;2017&lt;/option&gt;
+                &lt;option value=""&gt;2018&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm-4 col-md-2"&gt;
+              &lt;label for="cvn4"&gt;CVN:&lt;/label&gt;
+              &lt;input id="cvn4" type="text" name="cvn"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;div class="row"&gt;
+          &lt;div class="col-xs-12 push-right"&gt;
+            &lt;button type="submit"&gt;Place Order&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
     </code>
   </pre>
 

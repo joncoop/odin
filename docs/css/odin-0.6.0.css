@@ -554,12 +554,13 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 
 .form-basic input,
 .form-basic select,
-.form-basic textarea {
+.form-basic textarea,
+.form-basic button {
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   color: #333;
   display: inline-block;
-  margin: 0.2rem 0.4rem 0.6rem 0;
+  margin: 0.3rem 0;
   padding: 0.2rem;
   vertical-align: middle;
 }
@@ -567,7 +568,7 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 .form-basic input[type="checkbox"],
 .form-basic input[type="radio"] {
   background-color: transparent;
-  margin: 0.4rem;
+  margin: 0.3rem 0.3rem 0.3rem 0;
   padding: 0;
 }
 
@@ -579,28 +580,32 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 
 .form-basic input:focus,
 .form-basic select:focus,
-.form-basic textarea:focus {
-  border: 1px solid #3af;
+.form-basic textarea:focus,
+.form-basic button:focus,
+.form-basic input[type="button"]:focus,
+.form-basic input[type="submit"]:focus {
+  box-shadow: 0 0 6px #999;
   outline: 0;
 }
 
 .form-basic input[type="radio"]:focus,
 .form-basic input[type="checkbox"]:focus {
-  outline: 1px solid #3af;
+  /* neat idea to implement later: http://www.hongkiat.com/blog/css3-checkbox-radio/ */
+  outline: 1px solid #bbb;
 }
 
 .form-basic input[disabled],
 .form-basic select[disabled],
 .form-basic textarea[disabled] {
   cursor: not-allowed;
-  background-color: #eee;
-  color: #999;
+  background-color: #888;
 }
 
 .form-basic input[readonly],
 .form-basic select[readonly],
 .form-basic textarea[readonly] {
-  color: #777;
+  cursor: not-allowed;
+  background-color: #888;
 }
 
 .form-basic input:focus:invalid,
@@ -610,20 +615,27 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   color: #a00;
 }
 
-.form-basic input[type="file"]:focus:invalid:focus,
-.form-basic input[type="radio"]:focus:invalid:focus,
-.form-basic input[type="checkbox"]:focus:invalid:focus {
+.form-basic input[type="file"]:focus:invalid:focus {
     outline-color: #a00;
 }
 
+.form-basic button,
+.form-basic input[type="button"],
+.form-basic input[type="submit"] {
+  background-color: #ddd;
+  display: inline-block;
+  outline: none;
+  padding: 0.4rem;
+}
+
 .form-basic label {
-  margin: 0.2rem 0.4rem 0 0;
+  margin: 0.3rem 0.3rem 0.3rem 0;
 }
 
 .form-basic fieldset {
   border: 0;
   margin: 0;
-  padding: 0.4rem 0;
+  padding: 0;
 }
 
 .form-basic legend {
@@ -634,6 +646,12 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   padding: 0.4em 0;
   margin-bottom: 0.4em;
   width: 100%;
+}
+
+.form-basic button:active,
+.form-basic input[type="button"]:active,
+.form-basic input[type="submit"]:active {
+  background-color: #ccc;
 }
 
 .form-wide input,
@@ -665,4 +683,10 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 .form-stack select,
 .form-stack textarea {
   margin-bottom: 0.8rem;
+}
+
+.form-hint {
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
 }
