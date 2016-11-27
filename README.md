@@ -30,6 +30,7 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 - Icon fonts
 - Image carousels (owl-carousel)
 - Add default code styling, syntax highlighting
+- Figure out how to not use padding for gutters (possibly include in 1.0 release)
 
 ### for fun
 - Make the docs much prettier
