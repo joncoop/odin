@@ -738,11 +738,11 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   padding: 0 0.6rem;
 }
 
-.navbar ul li a {
+.navbar a {
   text-decoration: none;
 }
 
-.navbar ul li a:hover {
+.navbar a:hover {
   text-decoration: underline;
 }
 
