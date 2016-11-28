@@ -338,12 +338,12 @@ video {
   text-align: justify;
 }
 
-/* image styles */
-img.rounded {
+/* image styles (but can be used on other stuff) */
+.rounded {
   border-radius: 0.4rem;
 }
 
-img.circle {
+.circle {
   border-radius: 50%;
 }
 
@@ -430,7 +430,7 @@ table.table-basic td {
  }
 }
 
-@media screen and (max-width: 479px) {
+@media (max-width: 479px) {
   table.table-stack-xs {
     width: 100%;
   }
@@ -469,7 +469,7 @@ table.table-basic td {
 /* responsive table based on
  * http://allthingssmitty.com/2016/10/03/responsive-table-layout/
  */
- @media screen and (max-width: 719px) {
+ @media (max-width: 719px) {
    table.table-stack-sm {
      width: 100%;
    }
@@ -505,7 +505,7 @@ table.table-basic td {
    }
  }
 
-@media screen and (max-width: 959px) {
+@media (max-width: 959px) {
    table.table-stack-md {
      width: 100%;
    }
@@ -551,7 +551,6 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 
 
 /* form styles */
-
 .form-basic input,
 .form-basic select,
 .form-basic textarea,
@@ -695,32 +694,91 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 /* navbar styles */
 
 .navbar {
-  background-color: #BBBBBB;
+  background-color: #eee;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+
+.navbar-left {
+  justify-content: flex-start;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+}
+
+.navbar-center {
+  justify-content: center;
+}
+
+.navbar-spread ul {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: #555;
+    display: inline;
+    font-size: 1.6rem;
+    margin: 0;
+    text-align: left;
 }
 
 .navbar ul {
   display: flex;
-  flex-direction: row;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.navbar li {
-  border-right: 1px solid #777777;
+.navbar ul li {
+  display: inline-block;
+  padding: 0 0.6rem;
 }
 
-.navbar li:last-child {
-  border: none;
-}
-
-.navbar a:link, .navbar a:visited {
-  display: block;
-  padding: 5px 10px;
-  text-align: center;
+.navbar ul li a {
   text-decoration: none;
 }
 
-.navbar a:hover, .navbar a:active {
-  background-color: #777777;
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar form,
+.navbar form {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.navbar form input {
+  margin: 0;
+  width: 12rem;
+}
+
+@media (max-width:479px) {
+  .navbar-stack-xs,
+  .navbar-stack-xs ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 100%;
+  }
+
+  .navbar-stack-xs .navbar-brand,
+  .navbar-stack-xs ul li {
+    border-bottom: 1px solid #bbb;
+    padding: 0.4rem;
+    width: 100%;
+  }
+}
+
+@media (max-width:719px) {
+
+}
+
+@media (max-width:959px) {
+
 }

@@ -21,7 +21,7 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 - 0.9.0 Add button styling
 - 0.9.1 Use some flex magic to avoid using padding for gutters (hopefully)
 - 0.9.2 General code cleanup, clean up color palette, minor styling tweaks
-- 0.9.3 Document the CSS really nicely
+- 0.9.3 Document the CSS really nicely, fix page titles in docs
 - 1.0.0 Release unminimized in src folder, minimized in dist
 
 ### for v1.1
