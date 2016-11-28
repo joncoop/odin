@@ -46,14 +46,14 @@
 
   <p>blah</p>
 
-  <div class="navbar">
+  <nav class="navbar">
     <ul>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Photos</a></li>
     </ul>
-  </div>
+  </nav>
 
   <pre>
     <code>
@@ -65,14 +65,14 @@
 
   <p>blah</p>
 
-  <div class="navbar navbar-center">
+  <nav class="navbar navbar-center">
     <ul>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Photos</a></li>
     </ul>
-  </div>
+  </nav>
 
   <pre>
     <code>
@@ -84,14 +84,14 @@
 
   <p>blah. There is also a class <code>navbar-left</code>, but this isn't necessary to use as it is the default navbar behavior.</p>
 
-  <div class="navbar navbar-right">
+  <nav class="navbar navbar-right">
     <ul>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Photos</a></li>
     </ul>
-  </div>
+  </nav>
 
   <pre>
     <code>
@@ -103,14 +103,14 @@
 
   <p>blah</p>
 
-  <div class="navbar navbar-spread">
+  <nav class="navbar navbar-spread">
     <ul>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Photos</a></li>
     </ul>
-  </div>
+  </nav>
 
   <pre>
     <code>
@@ -122,8 +122,8 @@
 
   <p>blah</p>
 
-  <div class="navbar">
-    <h1 class="navbar-brand">Site Name</h1>
+  <nav class="navbar">
+    <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
 
     <ul>
       <li><a href="#">About</a></li>
@@ -131,7 +131,7 @@
       <li><a href="#">Blog</a></li>
       <li><a href="#">Photos</a></li>
     </ul>
-  </div>
+  </nav>
 
   <pre>
     <code>
@@ -141,24 +141,25 @@
 
   <h3>Navbar with brand plus search</h3>
 
-  <p>This might need to get discarded. Or perhaps I should make a nifty search box with a magnifying glass inside the text input.</p>
+  <p>This might need to get discarded. Or perhaps I should make a nifty search box with a magnifying glass inside the text input. Also, need to think of a class to get the inline CSS out of this. Now that I look at this, I don't like how buttons and inputs aren't the same height either.</p>
 
-  <div class="navbar">
-    <h1 class="navbar-brand">Site Name</h1>
+  <nav class="navbar">
+    <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
 
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Photos</a></li>
-      <li>
-        <form class="form-basic">
-          <input type="search">
-          <button type="button">Search</button>
-        </form>
-      </li>
-    </ul>
-  </div>
+    <div style="display: flex; justify-content: flex-end; align-items: center;">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Photos</a></li>
+      </ul>
+
+      <form class="form-basic">
+        <input type="search">
+        <button type="button">Search</button>
+      </form>
+    </div>
+  </nav>
 
   <pre>
     <code>
@@ -170,8 +171,8 @@
 
   <p>Need some JS to toggle (make two menus + a nifty css transition), should there be icon font bars?, toggle on all sizes? Options to slide out down, left, and right.</p>
 
-  <div class="navbar navbar-stack-xs">
-    <h1 class="navbar-brand">Site Name</h1>
+  <nav class="navbar navbar-stack-xs">
+    <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
 
     <ul>
       <li><a href="#">About</a></li>
@@ -179,7 +180,7 @@
       <li><a href="#">Blog</a></li>
       <li><a href="#">Photos</a></li>
     </ul>
-  </div>
+  </nav>
 
   <pre>
     <code>
