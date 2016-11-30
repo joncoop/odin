@@ -758,20 +758,59 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   width: 12rem;
 }
 
+.navbar-toggle {
+    display: none;
+}
+
+/* responsive stuff: http://codepen.io/celincky/pen/zdqso */
+
 @media (max-width:479px) {
-  .navbar-stack-xs,
-  .navbar-stack-xs ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    width: 100%;
+  .navbar-slideout {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      bottom: 0;
+      width: 360px;
+      background-color: #036;
+      transform: translate3d(-360px, 0, 0);
+      transition: transform 0.4s ease;
+  }
+  .active-nav .navbar-slideout {
+      transform: translate3d(0, 0, 0);
+  }
+  
+  .navbar-slideout ul {
+      list-style: none;
+      margin-top: 100px;
   }
 
-  .navbar-stack-xs .navbar-brand,
-  .navbar-stack-xs ul li {
-    border-bottom: 1px solid #bbb;
-    padding: 0.4rem;
-    width: 100%;
+  .navbar-slideout ul li a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      color: #fff;
+      padding: 10px 0;
+  }
+
+  .navbar-toggle {
+      display: block;
+      position: absolute;
+      left: 360px;
+      width: 40px;
+      height: 40px;
+      background-color: #666;
+  }
+
+  .content {
+      padding-top: 300px;
+      height: 2000px;
+      background-color: #ccf;
+      text-align: center;
+      transition: transform 0.4s ease;
+  }
+
+  .active-nav .body {
+      transform: translate3d(360px, 0, 0);
   }
 }
 
