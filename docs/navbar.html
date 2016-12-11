@@ -44,15 +44,18 @@
 
   <h3>Basic navbar</h3>
 
-  <nav>
-    navbar goes here
-  </nav>
+  <p>blah</p>
 
-  <pre>
-    <code>
-      code goes here
-    </code>
-  </pre>
+  <nav class="navbar">
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <pre>
     <code>
@@ -64,8 +67,15 @@
 
   <p>blah</p>
 
-  <nav>
-    navbar goes here
+  <nav class="navbar center-horizontal">
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <pre>
@@ -76,10 +86,17 @@
 
   <h3>Navbar with links pushed to the right</h3>
 
-  <p>blah. There is also a class <code>navbar-left</code>, but this isn't necessary to use as it is the default navbar behavior.</p>
+  <p>blah</p>
 
-  <nav>
-    navbar goes here
+  <nav class="navbar push-right">
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <pre>
@@ -92,8 +109,15 @@
 
   <p>blah</p>
 
-  <nav>
-    navbar goes here
+  <nav class="navbar navbar-wide">
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <pre>
@@ -106,41 +130,63 @@
 
   <p>blah</p>
 
-  <nav>
-    navbar goes here
-  </nav>
-
-  <pre>
-    <code>
-      code goes here
-    </code>
-  </pre>
-
-  <h3>Navbar with brand plus search</h3>
-
-  <p>This might need to get discarded. Or perhaps I should make a nifty search box with a magnifying glass inside the text input. Also, need to think of a class to get the inline CSS out of this. Now that I look at this, I don't like how buttons and inputs aren't the same height either.</p>
-
-  <nav>
-    navbar goes here
-  </nav>
-
-  <pre>
-    <code>
-      code goes here
-    </code>
-  </pre>
-
-  <h3>A responsive navbar</h3>
-
-  <p>Need some JS to toggle (make two menus + a nifty css transition), should there be icon font bars?, toggle on all sizes? Options to slide out down, left, and right.</p>
-
   <nav class="navbar">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
-    <button class="slideout-toggle" aria-label="Toggle navigation">&#9776;</button>
 
-    <div class="navbar-menu navbar-slideout">
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <pre>
+    <code>
+      code goes here
+    </code>
+  </pre>
+
+  <h3>A slideout navbar</h3>
+
+  <p>blah</p>
+
+  <nav class="navbar navbar-slideout">
+    <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+
+    <div class="navbar-menu">
       <h1 class="slideout-brand"><a href="#">Site Name</a></h1>
-      <button class="slideout-dismiss" aria-label="Dismiss navigation">&times;</button>
+      <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <pre>
+    <code>
+      code goes here
+    </code>
+  </pre>
+
+  <h3>A responsive slideout navbar</h3>
+
+  <p>Same markup, just -xs, -sm, -md, -lg, -xl (-xl )same as navbar-slideout)</p>
+
+  <nav class="navbar navbar-slideout-md">
+    <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+
+    <div class="navbar-menu">
+      <h1 class="slideout-brand"><a href="#">Site Name</a></h1>
+      <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
       <ul>
         <li><a href="#">Home</a></li>
@@ -169,12 +215,12 @@
 
 <script>
 $(document).ready(function(){
-  $(".slideout-toggle").click(function(){
-    $(".navbar-slideout").toggleClass("slideout-shown");
+  $(".menu-toggle").click(function(){
+    $(".navbar-menu").toggleClass("menu-shown");
   });
 
-  $("a, .slideout-dismiss").click(function(){
-    $(".navbar-slideout").removeClass("slideout-shown");
+  $("a, .menu-dismiss").click(function(){
+    $(".navbar-menu").removeClass("menu-shown");
   });
 });
 </script>
