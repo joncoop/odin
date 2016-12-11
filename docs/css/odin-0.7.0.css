@@ -733,6 +733,45 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   display: block;
 }
 
+.navbar-slideout {
+  background-color: #ddd;
+}
+
+.slideout-brand {
+  background-color: #777;
+  font-size: 1.6rem;
+  margin: 0 0 0.4rem 0;
+  padding: 0.4rem;
+  text-align: left;
+}
+
+.slideout-brand a {
+  color: #eee;
+}
+
+.slideout-brand a:hover {
+
+}
+
+.slideout-toggle {
+  background-color: transparent;
+  border: none;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+}
+
+.slideout-dismiss {
+  background-color: transparent;
+  border: none;
+  color: #eee;
+  font-size: 24px;
+  margin: 0.2rem;
+  right: 0;
+  padding: 0.2rem;
+  position: absolute;
+  top: 0;
+}
+
 .slideout-brand,
 .slideout-dismiss,
 .slideout-toggle {
@@ -749,13 +788,14 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
     justify-content: flex-start;
   }
 
-  .navbar-menu {
-    display: none;
+  .navbar-slideout ,
+  .slideout-toggle,
+  .slideout-dismiss,
+  .slideout-brand {
+    display: block;
   }
 
   .navbar-slideout {
-    background-color: #ddd;
-    display: block;
     height: 100%;
     left: -280px;
     overflow: scroll;
@@ -763,41 +803,6 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
     top:0;
     transition: 0.4s;
     width: 280px;
-  }
-
-  .slideout-toggle {
-    background-color: transparent;
-    border: none;
-    display: block;
-    margin: 0 0.2rem;
-    padding: 0.2rem;
-    vertical-align: middle;
-  }
-
-  .slideout-dismiss {
-    background-color: transparent;
-    border: none;
-    color: #eee;
-    display: block;
-    font-size: 24px;
-    margin: 0.2rem;
-    right: 0;
-    padding: 0.2rem;
-    position: absolute;
-    top: 0;
-  }
-
-  .slideout-brand {
-    background-color: #777;
-    display: block;
-    font-size: 1.6rem;
-    margin: 0 0 0.4rem 0;
-    padding: 0.4rem;
-    text-align: left;
-  }
-
-  .slideout-brand a {
-    color: #eee;
   }
 
   .navbar-slideout ul {
