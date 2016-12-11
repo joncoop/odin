@@ -135,9 +135,8 @@
   <p>Need some JS to toggle (make two menus + a nifty css transition), should there be icon font bars?, toggle on all sizes? Options to slide out down, left, and right.</p>
 
   <nav class="navbar">
-    <button class="slideout-toggle" aria-label="Toggle navigation">&#9776;</button>
-
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
+    <button class="slideout-toggle" aria-label="Toggle navigation">&#9776;</button>
 
     <div class="navbar-menu navbar-slideout">
       <h1 class="slideout-brand"><a href="#">Site Name</a></h1>
@@ -175,7 +174,8 @@ $(document).ready(function(){
   });
 
   $("a, .slideout-dismiss").click(function(){
-     $(".navbar-slideout").removeClass("slideout-shown");
+    $(".navbar-slideout").removeClass("slideout-shown");
+    $(".navbar-slideout").removeClass("navbar-slideout");
   });
 });
 </script>

@@ -709,14 +709,16 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 }
 
 .navbar li {
-  padding: 0 0.4rem;
+  padding: 0.4rem;
 }
 
-.navbar a {
+.navbar a:link,
+.navbar a:visited {
   text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a:active {
   text-decoration: underline;
 }
 
@@ -725,16 +727,19 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   margin: 0;
 }
 
-.navbar-brand a{
+.navbar-brand a:link,
+.navbar-brand a:visited {
   color: #444;
 }
 
-.navbar-menu {
-  display: block;
+.navbar-brand a:hover,
+.navbar-brand a:active {
+
 }
 
+.navbar-menu,
 .navbar-slideout {
-  background-color: #ddd;
+  display: block;
 }
 
 .slideout-brand {
@@ -745,11 +750,13 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   text-align: left;
 }
 
-.slideout-brand a {
+.slideout-brand a:link,
+.slideout-brand a:visited {
   color: #eee;
 }
 
-.slideout-brand a:hover {
+.slideout-brand a:hover,
+.slideout-brand a:active {
 
 }
 
@@ -780,15 +787,6 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 
 @media (max-width:479px) {
 
-}
-
-@media (max-width:719px) {
-
-  .navbar {
-    justify-content: flex-start;
-  }
-
-  .navbar-slideout ,
   .slideout-toggle,
   .slideout-dismiss,
   .slideout-brand {
@@ -796,6 +794,7 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   }
 
   .navbar-slideout {
+    background-color: #ddd;
     height: 100%;
     left: -280px;
     overflow: scroll;
@@ -809,19 +808,14 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
     flex-direction: column;
   }
 
-  .navbar-slideout li {
-    font-size: 18px;
-    padding: 0.4rem;
-  }
-
-  .navbar-slideout li a {
-    color: #555;
-  }
-
   .slideout-shown {
     left: 0;
     transition: 0.4s;
   }
+}
+
+@media (max-width:719px) {
+
 }
 
 @media (max-width:959px) {
