@@ -694,48 +694,22 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
 /* navbar styles */
 
 .navbar {
-  background-color: #eee;
   align-items: center;
+  background-color: #ccc;
   display: flex;
   justify-content: space-between;
-  padding: 0.6rem;
-}
-
-.navbar-left {
-  justify-content: flex-start;
-}
-
-.navbar-right {
-  justify-content: flex-end;
-}
-
-.navbar-center {
-  justify-content: center;
-}
-
-.navbar-spread ul {
-    justify-content: space-around;
-    width: 100%;
-}
-
-.navbar-brand {
-    color: #555;
-    display: inline;
-    font-size: 1.6rem;
-    margin: 0;
-    text-align: left;
+  padding: 0.4rem;
 }
 
 .navbar ul {
   display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-.navbar ul li {
-  display: inline-block;
-  padding: 0 0.6rem;
+.navbar li {
+  padding: 0 0.4rem;
 }
 
 .navbar a {
@@ -746,76 +720,93 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   text-decoration: underline;
 }
 
-.navbar form,
-.navbar form {
+.navbar-brand {
+  font-size: 1.6rem;
   margin: 0;
-  padding: 0;
-  vertical-align: middle;
 }
 
-.navbar form input {
-  margin: 0;
-  width: 12rem;
+.navbar-brand a{
+  color: #444;
 }
 
-.navbar-toggle {
-    display: none;
+.navbar-menu {
+  display: block;
 }
 
-/* responsive stuff: http://codepen.io/celincky/pen/zdqso */
-
-@media (max-width:479px) {
-  .navbar-slideout {
-      position: fixed;
-      z-index: 1000;
-      top: 0;
-      bottom: 0;
-      width: 360px;
-      background-color: #036;
-      transform: translate3d(-360px, 0, 0);
-      transition: transform 0.4s ease;
-  }
-  .active-nav .navbar-slideout {
-      transform: translate3d(0, 0, 0);
-  }
-  
-  .navbar-slideout ul {
-      list-style: none;
-      margin-top: 100px;
-  }
-
-  .navbar-slideout ul li a {
-      text-decoration: none;
-      display: block;
-      text-align: center;
-      color: #fff;
-      padding: 10px 0;
-  }
-
-  .navbar-toggle {
-      display: block;
-      position: absolute;
-      left: 360px;
-      width: 40px;
-      height: 40px;
-      background-color: #666;
-  }
-
-  .content {
-      padding-top: 300px;
-      height: 2000px;
-      background-color: #ccf;
-      text-align: center;
-      transition: transform 0.4s ease;
-  }
-
-  .active-nav .body {
-      transform: translate3d(360px, 0, 0);
-  }
+.slideout,
+.slideout-toggle {
+  display: none;
 }
 
 @media (max-width:719px) {
 
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .slideout {
+    background-color: #ddd;
+    display: block;
+    height: 100%;
+    left: -280px;
+    position: fixed;
+    top:0;
+    transition: 0.4s;
+    width: 280px;
+  }
+
+  .slideout-toggle {
+    display: block;
+    margin-right: 0.4rem;
+    padding: 0.2rem;
+  }
+
+  .slideout-dismiss {
+    color: #eee;
+    font-size: 20px;
+    right: 0;
+    padding: 0.4rem;
+    position: absolute;
+    top: 0;
+  }
+
+  .slideout-menu {
+
+  }
+
+  .slideout-brand {
+    background-color: #777;
+    font-size: 1.6rem;
+    margin: 0 0 0.4rem 0;
+    padding: 0.4rem;
+    text-align: left;
+  }
+
+  .slideout-brand a {
+    color: #eee;
+  }
+
+  .slideout-menu ul {
+    flex-direction: column;
+  }
+
+  .slideout-menu li {
+    font-size: 18px;
+    padding: 0.4rem;
+  }
+
+  .slideout-menu li a {
+    color: #555;
+  }
+
+  .slideout-shown {
+    left: 0;
+    transition: 0.4s;
+  }
 }
 
 @media (max-width:959px) {
