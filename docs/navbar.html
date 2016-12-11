@@ -135,32 +135,20 @@
   <p>Need some JS to toggle (make two menus + a nifty css transition), should there be icon font bars?, toggle on all sizes? Options to slide out down, left, and right.</p>
 
   <nav class="navbar">
-    <span class="slideout-toggle">&#9776;</span>
+    <button class="slideout-toggle" aria-label="Toggle navigation">&#9776;</button>
 
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
 
-    <div class="navbar-menu">
+    <div class="navbar-menu navbar-slideout">
+      <h1 class="slideout-brand"><a href="#">Site Name</a></h1>
+      <button class="slideout-dismiss" aria-label="Dismiss navigation">&times;</button>
+
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </div>
-
-    <div class="slideout">
-      <div class="slideout-dismiss">&#x274C;</div><!-- why is the X red on android? -->
-
-      <div class="slideout-menu">
-        <h1 class="slideout-brand"><a href="#">Site Name</a></h1>
-
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
     </div>
   </nav>
 
@@ -183,11 +171,11 @@
 <script>
 $(document).ready(function(){
   $(".slideout-toggle").click(function(){
-    $(".slideout").toggleClass("slideout-shown");
+    $(".navbar-slideout").toggleClass("slideout-shown");
   });
 
   $("a, .slideout-dismiss").click(function(){
-     $(".slideout").removeClass("slideout-shown");
+     $(".navbar-slideout").removeClass("slideout-shown");
   });
 });
 </script>

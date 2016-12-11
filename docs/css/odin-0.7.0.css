@@ -733,9 +733,14 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   display: block;
 }
 
-.slideout,
+.slideout-brand,
+.slideout-dismiss,
 .slideout-toggle {
   display: none;
+}
+
+@media (max-width:479px) {
+
 }
 
 @media (max-width:719px) {
@@ -748,11 +753,12 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
     display: none;
   }
 
-  .slideout {
+  .navbar-slideout {
     background-color: #ddd;
     display: block;
     height: 100%;
     left: -280px;
+    overflow: scroll;
     position: fixed;
     top:0;
     transition: 0.4s;
@@ -760,26 +766,30 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   }
 
   .slideout-toggle {
+    background-color: transparent;
+    border: none;
     display: block;
-    margin-right: 0.4rem;
+    margin: 0 0.2rem;
     padding: 0.2rem;
+    vertical-align: middle;
   }
 
   .slideout-dismiss {
+    background-color: transparent;
+    border: none;
     color: #eee;
-    font-size: 20px;
+    display: block;
+    font-size: 24px;
+    margin: 0.2rem;
     right: 0;
-    padding: 0.4rem;
+    padding: 0.2rem;
     position: absolute;
     top: 0;
   }
 
-  .slideout-menu {
-
-  }
-
   .slideout-brand {
     background-color: #777;
+    display: block;
     font-size: 1.6rem;
     margin: 0 0 0.4rem 0;
     padding: 0.4rem;
@@ -790,16 +800,16 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
     color: #eee;
   }
 
-  .slideout-menu ul {
+  .navbar-slideout ul {
     flex-direction: column;
   }
 
-  .slideout-menu li {
+  .navbar-slideout li {
     font-size: 18px;
     padding: 0.4rem;
   }
 
-  .slideout-menu li a {
+  .navbar-slideout li a {
     color: #555;
   }
 
