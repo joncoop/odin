@@ -654,13 +654,13 @@ table.shade-odd-rows tbody  tr:nth-child(odd) {
   text-align: left;
 }
 
-.slideout-brand a:link,
-.slideout-brand a:visited {
+a:link.slideout-brand ,
+a:visited.slideout-brand  {
   color: #eee;
 }
 
-.slideout-brand a:hover,
-.slideout-brand a:active {
+a:hover.slideout-brand ,
+a:active.slideout-brand {
 
 }
 

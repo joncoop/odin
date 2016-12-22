@@ -44,7 +44,7 @@
 
   <h3>Basic navbar</h3>
 
-  <p>blah</p>
+  <p>Create a basic navbar by appling a <code class="highlight">navbar</code> class to a <code>nav</code> element. Then wrap links in a <code>div</code> with the class <code class="highlight">navbar-menu</code>.</p>
 
   <nav class="navbar">
     <div class="navbar-menu">
@@ -59,13 +59,22 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;nav class="<span class="highlight">navbar</span>"&gt;
+        &lt;div class="<span class="highlight">navbar-menu</span>"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
     </code>
   </pre>
 
   <h3>Navbar with centered links</h3>
 
-  <p>blah</p>
+  <p>Positioning classes can also be applied to navbars. Here, the class <code class="highlight">center-horizontal</code> has been applied to the <code>nav</code> element.</p>
 
   <nav class="navbar center-horizontal">
     <div class="navbar-menu">
@@ -80,13 +89,22 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;nav class="navbar <span class="highlight">center-horizontal</span>"&gt;
+        &lt;div class="navbar-menu"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
     </code>
   </pre>
 
   <h3>Navbar with links pushed to the right</h3>
 
-  <p>blah</p>
+  <p>In this example, the class <code class="highlight">push-right</code> is be used to right-justify links.</p>
 
   <nav class="navbar push-right">
     <div class="navbar-menu">
@@ -101,17 +119,27 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;nav class="navbar <span class="highlight">push-right</span>"&gt;
+        &lt;div class="navbar-menu"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
     </code>
   </pre>
 
+  <!---
   <h3>Navbar with equally spaced links</h3>
 
-  <p>blah</p>
+  <p>Right now, it is not possible to create equally spaced links.</p>
 
-  <nav class="navbar navbar-wide">
+  <nav class="navbar">
     <div class="navbar-menu">
-      <ul>
+      <ul style="justify-content: space-around">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Blog</a></li>
@@ -125,10 +153,11 @@
       code goes here
     </code>
   </pre>
+  -->
 
   <h3>Navbar with brand</h3>
 
-  <p>blah</p>
+  <p>Optionally, you can include an element with the class <code class="highlight">navbar-brand</code> to include the name of your site in the navbar.</p>
 
   <nav class="navbar">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
@@ -145,20 +174,31 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;nav class="navbar"&gt;
+        &lt;h1 class="<span class="highlight">navbar-brand</span>"&gt;&lt;a href="#"&gt;Site Name&lt;/a&gt;&lt;/h1&gt;
+
+        &lt;div class="navbar-menu"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
     </code>
   </pre>
 
   <h3>A slideout navbar</h3>
 
-  <p>blah</p>
+  <p>The navbar can be changed to a slideout menu by adding a navbar-slideout class and including a menu-toggle button. A menu-dismiss button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. The slideout-brand element is optional. In this example, HTML character entities are used for the toggle and dismiss icons. Images or svg elements could be used as well.</p>
 
   <nav class="navbar navbar-slideout">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
     <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
     <div class="navbar-menu">
-      <h1 class="slideout-brand"><a href="#">Site Name</a></h1>
+      <a class="slideout-brand" href="#">Site Name</a>
       <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
       <ul>
@@ -172,20 +212,35 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;nav class="navbar <span class="highlight">navbar-slideout</span>"&gt;
+        &lt;h1 class="navbar-brand"&gt;&lt;a href="#"&gt;Site Name&lt;/a&gt;&lt;/h1&gt;
+        &lt;button class="<span class="highlight">menu-toggle</span>" aria-label="Toggle navigation"&gt;&amp;#9776;&lt;/button&gt;
+
+        &lt;div class="navbar-menu"&gt;
+          &lt;a class="<span class="highlight">slideout-brand</span>" href="#"&gt;Site Name&lt;/a&gt;
+          &lt;button class="<span class="highlight">menu-dismiss</span>" aria-label="Dismiss navigation"&gt;&amp;times;&lt;/button&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
     </code>
   </pre>
 
   <h3>A responsive slideout navbar</h3>
 
-  <p>Same markup, just -xs, -sm, -md, -lg, -xl (-xl )same as navbar-slideout)</p>
+  <p>To make the slideout responsive, use the same markup as above but add one of the following suffixes to the navbar-slideout class: -xs, -sm, -md, -lg. The navbar will be displayed as a slideout on the specified viewport size and smaller. On larger viewports, the navbar will be displayed normally. Resize your browser window to see how this works.</p>
 
   <nav class="navbar navbar-slideout-md">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
     <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
     <div class="navbar-menu">
-      <h1 class="slideout-brand"><a href="#">Site Name</a></h1>
+      <a class="slideout-brand" href="#">Site Name</a>
       <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
       <ul>
@@ -199,7 +254,22 @@
 
   <pre>
     <code>
-      code goes here
+      &lt;nav class="navbar <span class="highlight">navbar-slideout-md</span>"&gt;
+        &lt;h1 class="navbar-brand"&gt;&lt;a href="#"&gt;Site Name&lt;/a&gt;&lt;/h1&gt;
+        &lt;button class="menu-toggle" aria-label="Toggle navigation"&gt;&amp;#9776;&lt;/button&gt;
+
+        &lt;div class="navbar-menu"&gt;
+          &lt;a class="slideout-brand" href="#"&gt;Site Name&lt;/a&gt;
+          &lt;button class="menu-dismiss" aria-label="Dismiss navigation"&gt;&amp;times;&lt;/button&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
     </code>
   </pre>
 
