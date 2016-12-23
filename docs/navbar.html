@@ -191,7 +191,7 @@
 
   <h3>A slideout navbar</h3>
 
-  <p>The navbar can be changed to a slideout menu by adding a <code class="highlight">navbar-slideout</code> class and including a <code class="highlight">menu-toggle</code> button. A <code class="highlight">menu-dismiss</code> button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. Adding an element with a <code class="highlight">slideout-brand</code> class is optional. In this example, HTML character entities are used for the toggle and dismiss icons, but <code>img</code> or <code>svg elements</code> could be used as well.</p>
+  <p>The navbar can be changed to a slideout menu by adding a <code class="highlight">navbar-slideout</code> class and including a <code class="highlight">menu-toggle</code> button. A <code class="highlight">menu-dismiss</code> button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. Adding an element with a <code class="highlight">slideout-brand</code> class is optional. In this example, HTML character entities are used for the toggle and dismiss icons, but <code>img</code> or <code>svg</code> elements could be used as well.</p>
 
   <nav class="navbar navbar-slideout">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
@@ -231,9 +231,23 @@
     </code>
   </pre>
 
+  <p>In addition to the markup above, slideout menus require JQuery and the <code class="highlight">odin.js</code> file. Include the following lines at the end of the  <code>body</code> element for each page using the slideout navigation:</p>
+
+  <pre>
+    <code>
+      &lt;script src="https://code.jquery.com/jquery-2.2.4.js"&gt;&lt;/script&gt;
+      &lt;script src="path/to/odin-X.Y.Z.js"&gt;&lt;/script&gt;
+    </code>
+  </pre>
+
+  <p>Be sure to that the path and version numbers are correct for your site's file structure. Also, be sure that JQuery is loaded before the <code>odin.js</code> file. In this example, JQuery is being loaded from a CDN. If you want your slideout menu to work offline, you'll need to download your own copy of JQuery instead.</p>
+
+
   <h3>A responsive slideout navbar</h3>
 
   <p>To make the slideout responsive, use the same markup as above but with one of the following suffixed navbar-slideout classes: <code class="highlight">navbar-slideout-xs</code>, <code class="highlight">navbar-slideout-sm</code>, <code class="highlight">navbar-slideout-md</code>, <code class="highlight">navbar-slideout-lg</code>. The navbar will be displayed as a slideout on the specified viewport size and smaller. On larger viewports, the navbar will be displayed normally. Resize your browser window to see how this works on the example below.</p>
+
+  <p>This also requires JQuery and <code>odin.js</code> See the example above for instructions.</p>
 
   <nav class="navbar navbar-slideout-md">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
@@ -285,18 +299,7 @@
 
 <!-- include any javascript below this line -->
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-
-<script>
-$(document).ready(function(){
-  $(".menu-toggle").click(function(){
-    $(".navbar-menu").toggleClass("menu-shown");
-  });
-
-  $("a, .menu-dismiss").click(function(){
-    $(".navbar-menu").removeClass("menu-shown");
-  });
-});
-</script>
+<script src="js/odin-0.7.0.js"></script>
 
 
 </body>
