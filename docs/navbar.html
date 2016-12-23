@@ -191,7 +191,7 @@
 
   <h3>A slideout navbar</h3>
 
-  <p>The navbar can be changed to a slideout menu by adding a navbar-slideout class and including a menu-toggle button. A menu-dismiss button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. The slideout-brand element is optional. In this example, HTML character entities are used for the toggle and dismiss icons. Images or svg elements could be used as well.</p>
+  <p>The navbar can be changed to a slideout menu by adding a <code class="highlight">navbar-slideout</code> class and including a <code class="highlight">menu-toggle</code> button. A <code class="highlight">menu-dismiss</code> button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. Adding an element with a <code class="highlight">slideout-brand</code> class is optional. In this example, HTML character entities are used for the toggle and dismiss icons, but <code>img</code> or <code>svg elements</code> could be used as well.</p>
 
   <nav class="navbar navbar-slideout">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
@@ -233,7 +233,7 @@
 
   <h3>A responsive slideout navbar</h3>
 
-  <p>To make the slideout responsive, use the same markup as above but add one of the following suffixes to the navbar-slideout class: -xs, -sm, -md, -lg. The navbar will be displayed as a slideout on the specified viewport size and smaller. On larger viewports, the navbar will be displayed normally. Resize your browser window to see how this works.</p>
+  <p>To make the slideout responsive, use the same markup as above but with one of the following suffixed navbar-slideout classes: <code class="highlight">navbar-slideout-xs</code>, <code class="highlight">navbar-slideout-sm</code>, <code class="highlight">navbar-slideout-md</code>, <code class="highlight">navbar-slideout-lg</code>. The navbar will be displayed as a slideout on the specified viewport size and smaller. On larger viewports, the navbar will be displayed normally. Resize your browser window to see how this works on the example below.</p>
 
   <nav class="navbar navbar-slideout-md">
     <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
@@ -273,9 +273,12 @@
     </code>
   </pre>
 
+  <!--
+  This stuff belongs in a 'theme'.
   <h3>More navbar styles</h3>
 
   <p>.navbar-transparent, .navbar-light, .navbar-dark, .rounded (which is for images but works for other stuff too). Include some directions about custom styling (override navbar-brand, li a styling), put an icon in navbar brand area? Add an 'active' class to link for current page.</p>
+  -->
 
 </div>
 
