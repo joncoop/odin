@@ -1,74 +1,31 @@
-<!DOCTYPE html>
+---
+layout: default
+title: Get Started
+permalink: /start/
+---
 
-<html lang="en">
-<head>
-  <!-- metadata -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<h2>Get Started</h2>
 
-  <!-- page title -->
-  <title>Odin: A CSS Framework</title>
+<p>The repository contains a <code>dist</code> folder which has the files you need to get started. The framework is defined entirely in <code>odin.css</code>. The <code>main.css</code> file just contains a somewhat organized template for adding any custom CSS. It is not a part of the framework. <a href="https://github.com/necolas/normalize.css">Normalize</a> is useful, but not required. It is included in the repository for convenience.</p>
 
-  <!-- favicons -->
-  <link rel="icon" href="img/valknut.png">
+<pre>
+  <code>
+    dist/
+    ├── css/
+    │   ├── main.css
+    │   ├── normalize.css
+    │   └── odin.css
+    └── index.html
+  </code>
+</pre>
 
-  <!-- styles -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/odin-0.8.0.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/custom.css">
-</head>
+<p>The fastest way to get started is simply to copy the <code>dist</code> folder and start working.</p>
 
-<body>
+<p>If you are integrating Odin into an existing project, then copy <code>odin.css</code> into your project directory. Any resets such as <code>normalize.css</code> should be linked before <code>odin.css</code>. Custom stylesheets should be linked last.</p>
 
-<div class="container-xl">
+<p>Only the responsive navbar element requires odin.js and it is dependent on JQuery (not included). Hopefully, a future version will remove the JQuery dependency.</p>
 
-  <h1>Odin: A CSS Framework</h1>
-
-  <ol>
-    <li><a href="index.html">Overview</a></li>
-    <li><a href="start.html">Get started</a></li>
-    <li><a href="grid.html">The grid</a></li>
-    <li><a href="containers.html">Containers</a></li>
-    <li><a href="positioning.html">Positioning helper classes</a></li>
-    <li><a href="responsive.html">Responsive helper classes</a></li>
-    <li><a href="text.html">Text</a></li>
-    <li><a href="images.html">Images</a></li>
-    <li><a href="tables.html">Tables</a></li>
-    <li><a href="forms.html">Forms</a></li>
-    <li><a href="navbar.html">Navbar</a></li>
-  </ol>
-
-  <h2>Get Started</h2>
-
-  <p>The repository contains a <code>dist</code> folder which has the files you need to get started. The framework is defined entirely in <code>odin.css</code>. The <code>main.css</code> file just contains a somewhat organized template for adding any custom CSS. It is not a part of the framework. <a href="https://github.com/necolas/normalize.css">Normalize</a> is useful, but not required. It is included in the repository for convenience.</p>
-
-  <pre>
-    <code>
-      dist/
-      ├── css/
-      │   ├── main.css
-      │   ├── normalize.css
-      │   └── odin.css
-      └── index.html
-    </code>
-  </pre>
-
-  <p>The fastest way to get started is simply to copy the <code>dist</code> folder and start working.</p>
-
-  <p>If you are integrating Odin into an existing project, then copy <code>odin.css</code> into your project directory. Any resets such as <code>normalize.css</code> should be linked before <code>odin.css</code>. Custom stylesheets should be linked last.</p>
-
-  <p>Only the responsive navbar element requires odin.js and it is dependent on JQuery (not included). Hopefully, a future version will remove the JQuery dependency.</p>
-
-  <div class="download-buttons">
-    <a class="button" href="https://github.com/joncoop/odin/archive/master.zip"><i class="fa fa-download" aria-hidden="true"></i> Download now</a>
-    <a class="button" href="https://github.com/joncoop/odin"><i class="fa fa-github" aria-hidden="true"></i> View on GitHub</a>
-  </div>
+<div class="download-buttons">
+  <a class="button" href="https://github.com/joncoop/odin/archive/master.zip"><i class="fa fa-download" aria-hidden="true"></i> Download now</a>
+  <a class="button" href="https://github.com/joncoop/odin"><i class="fa fa-github" aria-hidden="true"></i> View on GitHub</a>
 </div>
-
-
-<!-- include any javascript below this line -->
-
-</body>
-</html>
