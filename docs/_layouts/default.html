@@ -9,6 +9,10 @@
     <div class="container-xl">
       {% include header.html %}
 
+      {% if page.title != "About" and page.title != "Download" %}
+        {% include toc.html %}
+      {% endif %}
+
       {{ content }}
 
       {% include footer.html %}
