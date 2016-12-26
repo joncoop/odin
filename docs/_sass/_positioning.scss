@@ -1,0 +1,97 @@
+/* positioning helper classes
+ * (Keep these last in CSS to avoid precedence issues.)
+ */
+
+.center-vertical,
+.center-horizontal,
+.push-left,
+.push-right {
+  display: flex;
+}
+
+.center-vertical {
+  align-items: center;
+}
+
+.center-horizontal {
+  justify-content: center;
+}
+
+.push-left {
+  justify-content: flex-start;
+}
+
+.push-right {
+  justify-content: flex-end;
+}
+
+.upper-left,
+.upper-right,
+.lower-right,
+.lower-left {
+  position: absolute;
+}
+
+.upper-left,
+.gutter-default .upper-left {
+  top: 0.6rem;
+  left: 0.6rem;
+}
+
+.gutter-double .upper-left {
+  top: 1.2rem;
+  left: 1.2rem;
+}
+
+.gutter-none .upper-left {
+  top: 0;
+  left: 0;
+}
+
+.upper-right,
+.gutter-default .upper-right {
+  top: 0.6rem;
+  right: 0.6rem;
+}
+
+.gutter-double .upper-right {
+  top: 1.2rem;
+  right: 1.2rem;
+}
+
+.gutter-none .upper-right {
+  top: 0;
+  right: 0;
+}
+
+.lower-right,
+.gutter-default .lower-right {
+  bottom: 0.6rem;
+  right: 0.6rem;
+}
+
+.gutter-double .lower-right {
+  bottom: 1.2rem;
+  right: 1.2rem;
+}
+
+.gutter-none .lower-right {
+  bottom: 0;
+  right: 0;
+}
+
+.lower-left,
+.gutter-default .lower-left {
+  bottom: 0.6rem;
+  left: 0.6rem;
+}
+
+.gutter-double .lower-left {
+  bottom: 1.2rem;
+  left: 1.2rem;
+}
+
+.gutter-none .lower-left {
+  bottom: 0;
+  left: 0;
+}

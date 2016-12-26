@@ -1,0 +1,25 @@
+/* container styles */
+
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  margin: 0 auto;
+  padding: 0 0.7rem;
+}
+
+.container-sm {
+  max-width: 480px;
+}
+
+.container-md {
+  max-width: 720px;
+}
+
+.container-lg {
+  max-width: 960px;
+}
+
+.container-xl {
+  max-width: 1200px;
+}

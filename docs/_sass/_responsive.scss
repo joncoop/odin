@@ -1,0 +1,44 @@
+/* responsive features */
+img,
+iframe,
+video {
+  max-width: 100%;
+}
+
+/* responsive helper classes */
+
+@media (max-width: 479px) {
+  .hide-xs,
+  .show-sm-only,
+  .show-md-only,
+  .show-lg-only {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 719px) {
+  .hide-sm,
+  .show-xs-only,
+  .show-md-only,
+  .show-lg-only {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .hide-md,
+  .show-xs-only,
+  .show-sm-only,
+  .show-lg-only {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .hide-lg,
+  .show-xs-only,
+  .show-sm-only,
+  .show-md-only {
+    display: none;
+  }
+}

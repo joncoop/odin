@@ -1,0 +1,12 @@
+/* resets */
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+
+    /* technique from https://css-tricks.com/box-sizing/ */
+}
