@@ -9,17 +9,17 @@
 }
 
 .container-sm {
-  max-width: 480px;
+  max-width: $sm-min-width;
 }
 
 .container-md {
-  max-width: 720px;
+  max-width: $md-min-width;
 }
 
 .container-lg {
-  max-width: 960px;
+  max-width: $lg-min-width;
 }
 
 .container-xl {
-  max-width: 1200px;
+  max-width: $xl-min-width;
 }

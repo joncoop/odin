@@ -5,7 +5,7 @@
 
 
 
-// Our variables
+// Typography
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -14,39 +14,41 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+
+// Colors
+$brand-color:      #2a7ae2;
+$accent-color:     #ABC;
+
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$black:            #000;
+$white:            #FFF;
 
-// Width of the content area
-$content-width:    800px;
+$gray-base:        #678;
+$gray-light:       lighten($gray-base, 20%);
+$gray-very-light:  lighten($gray-base, 40%);
+$gray-dark:        darken($gray-base, 20%);
+$gray-very-dark:   darken($gray-base, 40%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// Responsive breakpoints
+$sm-min-width:    480px;
+$md-min-width:    720px;
+$lg-min-width:    960px;
+$xl-min-width:    1200px;
 
 
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
+// The rest of the variables are calculated based on values above.
+//  You shouldn't need to edit below this line.
+$xs-max-width:    $sm-min-width - 1;
+$sm-max-width:    $md-min-width - 1;
+$md-max-width:    $lg-min-width - 1;
+$lg-max-width:    $xl-min-width - 1;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+  "normalize",
   "resets",
   "containers",
   "grid",

@@ -3,9 +3,9 @@
 .form-basic select,
 .form-basic textarea,
 .form-basic button {
-  background-color: #fff;
-  border: 1px solid #bbb;
-  color: #333;
+  background-color: $white;
+  border: 1px solid $gray-very-light;
+  color: $gray-very-dark;
   display: inline-block;
   margin: 0.3rem 0;
   padding: 0.2rem;
@@ -31,28 +31,28 @@
 .form-basic button:focus,
 .form-basic input[type="button"]:focus,
 .form-basic input[type="submit"]:focus {
-  box-shadow: 0 0 6px #999;
+  box-shadow: 0 0 6px $gray-base;
   outline: 0;
 }
 
 .form-basic input[type="radio"]:focus,
 .form-basic input[type="checkbox"]:focus {
   /* neat idea to implement later: http://www.hongkiat.com/blog/css3-checkbox-radio/ */
-  outline: 1px solid #bbb;
+  outline: 1px solid $gray-light;
 }
 
 .form-basic input[disabled],
 .form-basic select[disabled],
 .form-basic textarea[disabled] {
   cursor: not-allowed;
-  background-color: #888;
+  background-color: $gray-very-light;
 }
 
 .form-basic input[readonly],
 .form-basic select[readonly],
 .form-basic textarea[readonly] {
   cursor: not-allowed;
-  background-color: #888;
+  background-color: $gray-very-light;
 }
 
 .form-basic input:focus:invalid,
@@ -69,7 +69,7 @@
 .form-basic button,
 .form-basic input[type="button"],
 .form-basic input[type="submit"] {
-  background-color: #ddd;
+  background-color: $gray-very-light;
   display: inline-block;
   outline: none;
   padding: 0.4rem;
@@ -86,8 +86,8 @@
 }
 
 .form-basic legend {
-  border-bottom: 1px solid #aaa;
-  color: #555;
+  border-bottom: 1px solid $gray-light;
+  color: $gray-dark;
   display: block;
   font-weight: bold;
   padding: 0.4em 0;
@@ -98,7 +98,7 @@
 .form-basic button:active,
 .form-basic input[type="button"]:active,
 .form-basic input[type="submit"]:active {
-  background-color: #ccc;
+  background-color: $gray-very-light;
 }
 
 .form-wide input,
@@ -133,7 +133,7 @@
 }
 
 .form-hint {
-  color: #999;
+  color: $gray-base;
   font-size: 0.9rem;
   font-style: italic;
 }

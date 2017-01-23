@@ -2,7 +2,7 @@
 
 .navbar {
   align-items: center;
-  background-color: #ccc;
+  background-color: $gray-light;
   display: flex;
   justify-content: space-between;
   padding: 0.4rem;
@@ -36,7 +36,7 @@
 
 .navbar-brand a:link,
 .navbar-brand a:visited {
-  color: #444;
+  color: $gray-dark;
 }
 
 .navbar-brand a:hover,
@@ -49,7 +49,7 @@
 }
 
 .slideout-brand {
-  background-color: #777;
+  background-color: $gray-base;
   display: block;
   font-size: 1.6rem;
   margin: 0 0 0.4rem 0;
@@ -59,7 +59,7 @@
 
 a:link.slideout-brand ,
 a:visited.slideout-brand  {
-  color: #eee;
+  color: $gray-very-light;
 }
 
 a:hover.slideout-brand ,
@@ -78,7 +78,7 @@ a:active.slideout-brand {
 .menu-dismiss {
   background-color: transparent;
   border: none;
-  color: #eee;
+  color: $gray-light;
   display: block;
   font-size: 24px;
   margin: 0.2rem;
@@ -94,7 +94,7 @@ a:active.slideout-brand {
 .navbar-slideout-md .navbar-menu,
 .navbar-slideout-lg .navbar-menu,
 .navbar-slideout-xl .navbar-menu {
-  background-color: #ddd;
+  background-color: $gray-very-light;
   display: block;
   height: 100%;
   left: -280px;
@@ -124,7 +124,7 @@ a:active.slideout-brand {
   transition: 0.4s;
 }
 
-@media (min-width: 480px) {
+@media (min-width: $sm-min-width) {
   .navbar-slideout-sm .navbar-menu {
     background-color: transparent;
     height: auto;
@@ -144,7 +144,7 @@ a:active.slideout-brand {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: $md-min-width) {
   .navbar-slideout-md .navbar-menu {
     background-color: transparent;
     height: auto;
@@ -164,7 +164,7 @@ a:active.slideout-brand {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $lg-min-width) {
   .navbar-slideout-lg .navbar-menu {
     background-color: transparent;
     height: auto;
