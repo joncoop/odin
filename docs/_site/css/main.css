@@ -1,9 +1,7 @@
 /*** sectioning elements ***/
 
 body {
-  color: #111;
-  font-size: 1.2rem;
-  margin-bottom: 2.0rem;
+
 }
 
 header {
@@ -15,9 +13,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #777;
-  padding: 0.4rem;
-  text-align: center;
+
 }
 
 nav {
@@ -33,27 +29,22 @@ aside {
 }
 
 
-/**** content styles ***/
+/*** content styles ***/
 
 h1 {
-  color: #555;
-  font-size: 3.6rem;
-  text-align: center;
+
 }
 
 h2 {
-  color: #555;
-  font-size: 2.4rem;
+
 }
 
 h3 {
-  color: #555;
-  font-size: 1.6rem;
+
 }
 
 h4 {
-  color: #555;
-  font-size: 1.3rem;
+
 }
 
 h5 {

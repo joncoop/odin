@@ -7,6 +7,44 @@ html, body {
 
 *, *:before, *:after {
     box-sizing: inherit;
-
     /* technique from https://css-tricks.com/box-sizing/ */
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main,
+time,
+mark {
+  display: block;
+}
+
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+pre,
+code {
+  font-family: monospace;
+  font-size: 1.0rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  border-style: none;
 }
