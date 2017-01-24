@@ -2,7 +2,7 @@
 
 .navbar {
   align-items: center;
-  background-color: $gray-light;
+  background-color: $gray-very-light;
   display: flex;
   justify-content: space-between;
   padding: 0.4rem;
@@ -49,7 +49,7 @@
 }
 
 .slideout-brand {
-  background-color: $gray-base;
+  background-color: $gray-light;
   display: block;
   font-size: 1.6rem;
   margin: 0 0 0.4rem 0;
@@ -59,7 +59,7 @@
 
 a:link.slideout-brand ,
 a:visited.slideout-brand  {
-  color: $gray-very-light;
+  color: $gray-dark;
 }
 
 a:hover.slideout-brand ,
@@ -78,7 +78,7 @@ a:active.slideout-brand {
 .menu-dismiss {
   background-color: transparent;
   border: none;
-  color: $gray-light;
+  color: $gray-dark;
   display: block;
   font-size: 24px;
   margin: 0.2rem;
