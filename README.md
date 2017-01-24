@@ -20,12 +20,10 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 ### for v1.0
 - 0.8.0 Add more typography styling, work on the "vertical rhythm"
 - 0.9.0 Add button styling
-- 0.9.1 Use some flex magic to avoid using padding for gutters (hopefully)
-- 0.9.2 Fix Firefox navbar quirks
-- 0.9.3 Remove JQuery dependency
-- 0.9.4 General code cleanup, clean up color palette, minor styling tweaks
-- 0.9.5 Document the CSS really nicely
-- 1.0.0 Release unminimized in src folder, minimized in dist
+- 0.9.1 Fix Firefox navbar quirks
+- 0.9.2 Remove JQuery dependency
+- 0.9.3 General code cleanup, clean up color palette, minor styling tweaks
+- 1.0.0 Document the CSS really nicely and release
 
 ### for 1.0+
 - 1.1.0 Add containers that snap to widths according to viewport
