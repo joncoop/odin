@@ -4,9 +4,9 @@ title: Navbar
 permalink: /navbar/
 ---
 
-<h2>Navbar</h2>
+<h1>Navbar</h1>
 
-<h3>Basic navbar</h3>
+<h2>Basic navbar</h2>
 
 <p>Create a basic navbar by appling a <code class="highlight">navbar</code> class to a <code>nav</code> element. Then wrap links in a <code>div</code> with the class <code class="highlight">navbar-menu</code>.</p>
 
@@ -36,7 +36,7 @@ permalink: /navbar/
   </code>
 </pre>
 
-<h3>Navbar with centered links</h3>
+<h2>Navbar with centered links</h2>
 
 <p>Positioning classes can also be applied to navbars. Here, the class <code class="highlight">center-horizontal</code> has been applied to the <code>nav</code> element.</p>
 
@@ -66,7 +66,7 @@ permalink: /navbar/
   </code>
 </pre>
 
-<h3>Navbar with links pushed to the right</h3>
+<h2>Navbar with links pushed to the right</h2>
 
 <p>In this example, the class <code class="highlight">push-right</code> is be used to right-justify links.</p>
 
@@ -97,7 +97,7 @@ permalink: /navbar/
 </pre>
 
 <!---
-<h3>Navbar with equally spaced links</h3>
+<h2>Navbar with equally spaced links</h2>
 
 <p>Right now, it is not possible to create equally spaced links.</p>
 
@@ -119,12 +119,12 @@ permalink: /navbar/
 </pre>
 -->
 
-<h3>Navbar with brand</h3>
+<h2>Navbar with brand</h2>
 
 <p>Optionally, you can include an element with the class <code class="highlight">navbar-brand</code> to include the name of your site in the navbar.</p>
 
 <nav class="navbar">
-  <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
+  <a class="navbar-brand" href="#">Site Name</a>
 
   <div class="navbar-menu">
     <ul>
@@ -139,7 +139,7 @@ permalink: /navbar/
 <pre>
   <code>
     &lt;nav class="navbar"&gt;
-      &lt;h1 class="<span class="highlight">navbar-brand</span>"&gt;&lt;a href="#"&gt;Site Name&lt;/a&gt;&lt;/h1&gt;
+      &lt;a class="navbar-brand" href="#"&gt;Site Name&lt;/a&gt;
 
       &lt;div class="navbar-menu"&gt;
         &lt;ul&gt;
@@ -153,16 +153,15 @@ permalink: /navbar/
   </code>
 </pre>
 
-<h3>A slideout navbar</h3>
+<h2>A slideout navbar</h2>
 
 <p>The navbar can be changed to a slideout menu by adding a <code class="highlight">navbar-slideout</code> class and including a <code class="highlight">menu-toggle</code> button. A <code class="highlight">menu-dismiss</code> button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. Adding an element with a <code class="highlight">slideout-brand</code> class is optional. In this example, HTML character entities are used for the toggle and dismiss icons, but <code>img</code> or <code>svg</code> elements could be used as well.</p>
 
 <nav class="navbar navbar-slideout">
-  <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
+  <a class="navbar-brand" href="#">Site Name</a>
   <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
   <div class="navbar-menu">
-    <a class="slideout-brand" href="#">Site Name</a>
     <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
     <ul>
@@ -177,11 +176,10 @@ permalink: /navbar/
 <pre>
   <code>
     &lt;nav class="navbar <span class="highlight">navbar-slideout</span>"&gt;
-      &lt;h1 class="navbar-brand"&gt;&lt;a href="#"&gt;Site Name&lt;/a&gt;&lt;/h1&gt;
+      &lt;a class="navbar-brand" href="#"&gt;Site Name&lt;/a&gt;
       &lt;button class="<span class="highlight">menu-toggle</span>" aria-label="Toggle navigation"&gt;&amp;#9776;&lt;/button&gt;
 
       &lt;div class="navbar-menu"&gt;
-        &lt;a class="<span class="highlight">slideout-brand</span>" href="#"&gt;Site Name&lt;/a&gt;
         &lt;button class="<span class="highlight">menu-dismiss</span>" aria-label="Dismiss navigation"&gt;&amp;times;&lt;/button&gt;
 
         &lt;ul&gt;
@@ -207,18 +205,17 @@ permalink: /navbar/
 <p>Be sure to that the path and version numbers are correct for your site's file structure. Also, be sure that JQuery is loaded before the <code>odin.js</code> file. In this example, JQuery is being loaded from a CDN. If you want your slideout menu to work offline, you'll need to download your own copy of JQuery instead.</p>
 
 
-<h3>A responsive slideout navbar</h3>
+<h2>A responsive slideout navbar</h2>
 
 <p>To make the slideout responsive, use the same markup as above but with one of the following suffixed navbar-slideout classes: <code class="highlight">navbar-slideout-xs</code>, <code class="highlight">navbar-slideout-sm</code>, <code class="highlight">navbar-slideout-md</code>, <code class="highlight">navbar-slideout-lg</code>. The navbar will be displayed as a slideout on the specified viewport size and smaller. On larger viewports, the navbar will be displayed normally. Resize your browser window to see how this works on the example below.</p>
 
-<p>This also requires JQuery and <code>odin.js</code> See the example above for instructions.</p>
+<p>This also requires JQuery and <code>odin.js</code>. See the example above for instructions.</p>
 
 <nav class="navbar navbar-slideout-md">
-  <h1 class="navbar-brand"><a href="#">Site Name</a></h1>
+  <a class="navbar-brand" href="#">Site Name</a>
   <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
   <div class="navbar-menu">
-    <a class="slideout-brand" href="#">Site Name</a>
     <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
     <ul>
@@ -233,11 +230,10 @@ permalink: /navbar/
 <pre>
   <code>
     &lt;nav class="navbar <span class="highlight">navbar-slideout-md</span>"&gt;
-      &lt;h1 class="navbar-brand"&gt;&lt;a href="#"&gt;Site Name&lt;/a&gt;&lt;/h1&gt;
+      &lt;a class="navbar-brand" href="#"&gt;Site Name&lt;/a&gt;
       &lt;button class="menu-toggle" aria-label="Toggle navigation"&gt;&amp;#9776;&lt;/button&gt;
 
       &lt;div class="navbar-menu"&gt;
-        &lt;a class="slideout-brand" href="#"&gt;Site Name&lt;/a&gt;
         &lt;button class="menu-dismiss" aria-label="Dismiss navigation"&gt;&amp;times;&lt;/button&gt;
 
         &lt;ul&gt;
@@ -253,7 +249,7 @@ permalink: /navbar/
 
 <!--
 This stuff belongs in a 'theme'.
-<h3>More navbar styles</h3>
+<h2>More navbar styles</h2>
 
 <p>.navbar-transparent, .navbar-light, .navbar-dark, .rounded (which is for images but works for other stuff too). Include some directions about custom styling (override navbar-brand, li a styling), put an icon in navbar brand area? Add an 'active' class to link for current page.</p>
 -->

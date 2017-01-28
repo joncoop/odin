@@ -48,3 +48,16 @@ a:link.button, a:visited.button {
 a:hover.button, a:active.button {
   background-color: #999;
 }
+
+table h1,
+table h2,
+table h3,
+table h4,
+table h5,
+table h6 {
+  margin: 0;
+}
+
+.toc {
+  margin: 1rem;
+}

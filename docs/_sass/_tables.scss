@@ -5,8 +5,9 @@ table.table-basic {
 }
 
 table.table-basic caption {
+  color: $gray-very-dark;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: $semi-bold;
   padding: 0.4rem;
   text-align: center;
 }
@@ -20,8 +21,8 @@ table.table-basic tbody {
 }
 
 table.table-basic tfoot {
-  color: $gray-very-dark;
-  font-size: 0.8em;
+  color: $gray-dark;
+  font-size: $small-text;
   font-style: italic;
 }
 
@@ -37,6 +38,8 @@ table.table-basic th {
 table.table-basic th {
   border-bottom: 1px solid $gray-base;
   border-top: 1px solid $gray-base;
+  color: $gray-dark;
+  font-weight: $semi-bold;
 }
 
 table.table-basic td {
@@ -76,7 +79,7 @@ table.table-stack td {
 table.table-stack td:before {
  content: attr(aria-label);
  float: left;
- font-weight: bold;
+ font-weight: $semi-bold;
  color: $gray-dark;
 }
 
@@ -112,7 +115,7 @@ table.table-stack td:before {
   table.table-stack-xs td:before {
     content: attr(aria-label);
     float: left;
-    font-weight: bold;
+    font-weight: $semi-bold;
     color: $gray-dark;
   }
 }
@@ -149,7 +152,7 @@ table.table-stack td:before {
   table.table-stack-sm td:before {
     content: attr(aria-label);
     float: left;
-    font-weight: bold;
+    font-weight: $semi-bold;
     color: $gray-dark;
   }
 }
@@ -185,7 +188,7 @@ table.table-stack td:before {
    table.table-stack-md td:before {
      content: attr(aria-label);
      float: left;
-     font-weight: bold;
+     font-weight: $semi-bold;
      color: $gray-dark;
    }
  }

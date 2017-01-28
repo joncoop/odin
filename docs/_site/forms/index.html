@@ -17,9 +17,9 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="/css/odin-0.8.0.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
 </head>
 
 
@@ -29,11 +29,10 @@
       <header>
 
   <nav class="navbar navbar-slideout-sm">
-    <h1 class="navbar-brand"><a href="/">Odin</a></h1>
+    <a class="navbar-brand" href="/">Odin</a>
     <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
     <div class="navbar-menu">
-      <a class="slideout-brand" href="#">Site Name</a>
       <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
       <ul>
@@ -48,29 +47,31 @@
 
 
       
-        <ol>
-  <li><a href="/grid/">The grid</a></li>
-  <li><a href="/containers/">Containers</a></li>
-  <li><a href="/navbar/">Navbar</a> - <span class="highlight">New in v0.7.0!</span></li>
-  <li><a href="/positioning/">Positioning helper classes</a></li>
-  <li><a href="/responsive/">Responsive helper classes</a></li>
-  <li><a href="/typography/">Typography</a> - <span class="highlight">Coming soon!</span></li>
-  <li><a href="/text/">Text utilities</a></li>
-  <li><a href="/images/">Images</a></li>
-  <li><a href="/tables/">Tables</a></li>
-  <li><a href="/forms/">Forms</a></li>
-  <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
-</ol>
+        <div class="toc">
+  <ol>
+    <li><a href="/grid/">The grid</a></li>
+    <li><a href="/containers/">Containers</a></li>
+    <li><a href="/navbar/">Navbar</a></li>
+    <li><a href="/positioning/">Positioning helper classes</a></li>
+    <li><a href="/responsive/">Responsive helper classes</a></li>
+    <li><a href="/typography/">Typography</a>  - <span class="highlight">New in v0.8.0!</span></li>
+    <li><a href="/text/">Text utilities</a></li>
+    <li><a href="/images/">Images</a></li>
+    <li><a href="/tables/">Tables</a></li>
+    <li><a href="/forms/">Forms</a></li>
+    <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
+  </ol>
+</div>
 
       
 
-      <h2>Forms</h2>
+      <h1>Forms</h1>
 
-<h3>Default form styling</h3>
+<h2>Default form styling</h2>
 
 <p>Forms receive no default styling in Odin, so any custom CSS you write will not conflict with default styling.</p>
 
-<h3>Basic form styling</h3>
+<h2>Basic form styling</h2>
 
 <p>If you do want some basic styling added without writing custom CSS, a class <code class="highlight">form-basic</code> is provided to give some styling to forms.</p>
 
@@ -179,7 +180,7 @@
   </code>
 </pre>
 
-<h3>Disabled form elements</h3>
+<h2>Disabled form elements</h2>
 
 <p>Elements given a <code>disabled</code> attribute are grayed out and the cursor changes on mouse over.</p>
 
@@ -208,7 +209,7 @@
 </pre>
 
 
-<h3>Form validation</h3>
+<h2>Form validation</h2>
 
 <p>Special automatically validating type such as email and url and elements marked as <code>required</code> or given a <code>pattern</code> attribute will be given a red border when invalid. Use the HTML5 pattern attribute to validate fields such as phone numbers that do not have built-in validation. A <code class="highlight">form-hint</code> class is provided style special instructions.</p>
 
@@ -248,7 +249,7 @@
   </code>
 </pre>
 
-<h3>Stacked form</h3>
+<h2>Stacked form</h2>
 
 <p>Using the class <code class="highlight">form-stack</code> will reflow the form so that input elements (with the exception of checkbox and radio) are displayed below their labels. An optional class <code class="highlight">form-wide</code> has also been applied so that inputs occupy 100% of their containing element's width.</p>
 
@@ -284,7 +285,7 @@
   </code>
 </pre>
 
-<h3>Responsive Forms</h3>
+<h2>Responsive Forms</h2>
 
 <h4>Aligned form</h4>
 

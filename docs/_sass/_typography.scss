@@ -15,31 +15,120 @@ h4,
 h5,
 h6 {
     color: $gray-dark;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: .75rem;
+    font-weight: $semi-bold;
+    margin-top: 0rem;
 }
 
 h1 {
-  font-size: 3.157rem;
+  font-size: 4.0rem;
+  line-height: 4.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 2.369rem;
+  font-size: 2.555rem;
+  line-height: 3.25rem;
+  margin-bottom: 1.75rem;
 }
 
 h3 {
-  font-size: 1.777rem;
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h4 {
-  font-size: 1.333rem;
+  font-size: 1.555rem;
+  line-height: 2.0rem;
+  margin-bottom: 1.0rem;
 }
 
 h5 {
-  font-size: 1.0rem;
+  font-size: 1.333rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: 1.111rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+/* More custom styling */
+ol,
+ul {
+  margin-left: $spacing-unit / 1.333;
+  padding-left: $spacing-unit;
+}
+
+blockquote {
+  border-left: $spacing-unit / 4 solid $gray-very-light;
+  font-size: 1.333rem;
+  line-height: 1.75rem;
+  margin-left: $spacing-unit;
+  padding-left: $spacing-unit / 2 ;
+}
+
+blockquote p:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+blockquote cite {
+  color: $gray-base;
+  display: block;
+  font-style: italic;
+  content:be
+}
+
+blockquote cite::before {
+    content: "– ";
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+pre,
+code {
+  font-family: monospace;
+  font-size: 1.0rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+.light {
+  color: $gray-base;
 }

@@ -17,9 +17,9 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="/css/odin-0.8.0.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
 </head>
 
 
@@ -29,11 +29,10 @@
       <header>
 
   <nav class="navbar navbar-slideout-sm">
-    <h1 class="navbar-brand"><a href="/">Odin</a></h1>
+    <a class="navbar-brand" href="/">Odin</a>
     <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
     <div class="navbar-menu">
-      <a class="slideout-brand" href="#">Site Name</a>
       <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
       <ul>
@@ -48,33 +47,34 @@
 
 
       
-        <ol>
-  <li><a href="/grid/">The grid</a></li>
-  <li><a href="/containers/">Containers</a></li>
-  <li><a href="/navbar/">Navbar</a> - <span class="highlight">New in v0.7.0!</span></li>
-  <li><a href="/positioning/">Positioning helper classes</a></li>
-  <li><a href="/responsive/">Responsive helper classes</a></li>
-  <li><a href="/typography/">Typography</a> - <span class="highlight">Coming soon!</span></li>
-  <li><a href="/text/">Text utilities</a></li>
-  <li><a href="/images/">Images</a></li>
-  <li><a href="/tables/">Tables</a></li>
-  <li><a href="/forms/">Forms</a></li>
-  <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
-</ol>
+        <div class="toc">
+  <ol>
+    <li><a href="/grid/">The grid</a></li>
+    <li><a href="/containers/">Containers</a></li>
+    <li><a href="/navbar/">Navbar</a></li>
+    <li><a href="/positioning/">Positioning helper classes</a></li>
+    <li><a href="/responsive/">Responsive helper classes</a></li>
+    <li><a href="/typography/">Typography</a>  - <span class="highlight">New in v0.8.0!</span></li>
+    <li><a href="/text/">Text utilities</a></li>
+    <li><a href="/images/">Images</a></li>
+    <li><a href="/tables/">Tables</a></li>
+    <li><a href="/forms/">Forms</a></li>
+    <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
+  </ol>
+</div>
 
       
 
-      <h2>The Grid</h2>
+      <h1>The Grid</h1>
 
-<h3><a name="viewport_sizes">Viewport Sizes</a></h3>
+<h2><a name="viewport_sizes">Viewport Sizes</a></h2>
 
 <p>The grid framework is fully-responsive and based upon the viewport sizes shown in the table below. Additional helper classes may also target specific viewports. Responsive classes can easily be identified as they are generally suffixed by <code class="highlight">-xs</code>, <code class="highlight">-sm</code>, <code class="highlight">-md</code>, and <code class="highlight">-lg</code>.</p>
 
 <table class="table-basic">
-  <caption>Viewport Sizes</caption>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Viewport size</th>
       <th>Default width</th>
     </tr>
   </thead>
@@ -99,11 +99,11 @@
 </table>
 
 
-<h3><a name="the_grid">The grid</a></h3>
+<h2><a name="the_grid">The grid</a></h2>
 
 <p>This framework uses a 12-column grid system. Grids are built in rows. Rows contain columns with classes that define the number (out of 12) columns that each should span. A 'mobile-first' implementation is used. This means that the column column classes will be applied to the specified viewport and larger.</p>
 
-<h4>Equal width columns</h4>
+<h3>Equal width columns</h3>
 
 <p>It is possible to have rows with 1, 2, 3, 4, 6, or 12 equal width columns. In this example, a column layout is defined for small viewports and larger. On extra-small viewports (typically phones in portrait orientation), the columns will simply stack.</p>
 
@@ -203,7 +203,7 @@
   </code>
 </pre>
 
-<h4>Mixed width columns</h4>
+<h3>Mixed width columns</h3>
 <p>It's totally fine to mix column widths. Just make sure that the sum of the column widths is 12 for each row.</p>
 
 <div class="row">
@@ -244,7 +244,7 @@
   </code>
 </pre>
 
-<h4>Responsive columns</h4>
+<h3>Responsive columns</h3>
 
 <p>Column spans can vary based on viewport width. In this example, the columns will be full width on extra-small viewports but will each span one-third of the container on medium viewports and larger.</p>
 
@@ -296,7 +296,7 @@
   </code>
 </pre>
 
-<h4>Reverse the order of columns</h4>
+<h3>Reverse the order of columns</h3>
 <p>Sometimes it may make sense for rows to be displayed in reverse order from markup. (Perhaps the order read by a screen reader should differ from the physical page layout.) In this case, a <code class="highlight">reverse</code> class can be applied to rows.</p>
 
 <div class="row reverse">
@@ -317,7 +317,7 @@
 
 <p>There are also responsive reverse classes that can be applied to specific viewport sizes: <code class="highlight">reverse-xs</code>, <code class="highlight">reverse-sm</code>, <code class="highlight">reverse-md</code>, and <code class="highlight">reverse-lg</code>.</p>
 
-<h4>Changing the gutter between columns</h4>
+<h3>Changing the gutter between columns</h3>
 
 <p>There are three options for gutter size: <code class="highlight">gutter-default</code>, <code class="highlight">gutter-double</code>, and <code class="highlight">gutter-none</code>.</p>
 
@@ -363,7 +363,7 @@
   </code>
 </pre>
 
-<h4>Helpful gridlines</h4>
+<h3>Helpful gridlines</h3>
 <p>Because rows and columns have no visible styling, sometimes it can be a little confusing trying to get the grid correct. To help with this, I've created a helper class <code class="highlight">show-gridlines</code> which can be applied to the <code>body</code> (or any element that contains rows). This class isn't meant to be applied to the final project, but it can be helpful when creating the initial layout or when debugging if something goes wrong.</p>
 
 <p>Here's an example section with gridlines shown. You can see how the gridlines make it easy to identify errors.</p>

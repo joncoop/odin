@@ -4,6 +4,7 @@
   align-items: center;
   background-color: $gray-very-light;
   display: flex;
+  height: 3.0rem;
   justify-content: space-between;
   padding: 0.4rem;
 }
@@ -30,13 +31,15 @@
 }
 
 .navbar-brand {
-  font-size: 1.6rem;
+  color: $gray-very-dark;
+  font-size: 2.0rem;
+  font-weight: 500;
   margin: 0;
 }
 
 .navbar-brand a:link,
 .navbar-brand a:visited {
-  color: $gray-dark;
+
 }
 
 .navbar-brand a:hover,
@@ -46,25 +49,6 @@
 
 .navbar-menu {
   display: flex;
-}
-
-.slideout-brand {
-  background-color: $gray-light;
-  display: block;
-  font-size: 1.6rem;
-  margin: 0 0 0.4rem 0;
-  padding: 0.4rem;
-  text-align: left;
-}
-
-a:link.slideout-brand ,
-a:visited.slideout-brand  {
-  color: $gray-dark;
-}
-
-a:hover.slideout-brand ,
-a:active.slideout-brand {
-
 }
 
 .menu-toggle {
@@ -98,6 +82,7 @@ a:active.slideout-brand {
   display: block;
   height: 100%;
   left: -280px;
+  opacity: 0.96;
   overflow: auto;
   position: fixed;
   top:0;
@@ -137,7 +122,6 @@ a:active.slideout-brand {
     flex-direction: row;
   }
 
-  .navbar-slideout-sm .slideout-brand,
   .navbar-slideout-sm .menu-dismiss,
   .navbar-slideout-sm .menu-toggle {
     display: none;
@@ -157,7 +141,6 @@ a:active.slideout-brand {
     flex-direction: row;
   }
 
-  .navbar-slideout-md .slideout-brand,
   .navbar-slideout-md .menu-dismiss,
   .navbar-slideout-md .menu-toggle {
     display: none;
@@ -177,7 +160,6 @@ a:active.slideout-brand {
     flex-direction: row;
   }
 
-  .navbar-slideout-lg .slideout-brand,
   .navbar-slideout-lg .menu-dismiss,
   .navbar-slideout-lg .menu-toggle {
     display: none;

@@ -17,9 +17,9 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="/css/odin-0.8.0.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
 </head>
 
 
@@ -29,11 +29,10 @@
       <header>
 
   <nav class="navbar navbar-slideout-sm">
-    <h1 class="navbar-brand"><a href="/">Odin</a></h1>
+    <a class="navbar-brand" href="/">Odin</a>
     <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
     <div class="navbar-menu">
-      <a class="slideout-brand" href="#">Site Name</a>
       <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
       <ul>
@@ -48,25 +47,135 @@
 
 
       
-        <ol>
-  <li><a href="/grid/">The grid</a></li>
-  <li><a href="/containers/">Containers</a></li>
-  <li><a href="/navbar/">Navbar</a> - <span class="highlight">New in v0.7.0!</span></li>
-  <li><a href="/positioning/">Positioning helper classes</a></li>
-  <li><a href="/responsive/">Responsive helper classes</a></li>
-  <li><a href="/typography/">Typography</a> - <span class="highlight">Coming soon!</span></li>
-  <li><a href="/text/">Text utilities</a></li>
-  <li><a href="/images/">Images</a></li>
-  <li><a href="/tables/">Tables</a></li>
-  <li><a href="/forms/">Forms</a></li>
-  <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
-</ol>
+        <div class="toc">
+  <ol>
+    <li><a href="/grid/">The grid</a></li>
+    <li><a href="/containers/">Containers</a></li>
+    <li><a href="/navbar/">Navbar</a></li>
+    <li><a href="/positioning/">Positioning helper classes</a></li>
+    <li><a href="/responsive/">Responsive helper classes</a></li>
+    <li><a href="/typography/">Typography</a>  - <span class="highlight">New in v0.8.0!</span></li>
+    <li><a href="/text/">Text utilities</a></li>
+    <li><a href="/images/">Images</a></li>
+    <li><a href="/tables/">Tables</a></li>
+    <li><a href="/forms/">Forms</a></li>
+    <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
+  </ol>
+</div>
 
       
 
-      <h2>Typography</h2>
+      <h1>Typography</h1>
 
-Coming soon.
+<h2>Defaults and overriding</h2>
+<p>The examples below demonstrate Odin's default styling of various HTML elements. It is not recommended that you change styling in the <code>odin.css</code> file itself. Rather, it is recommended you do so in a stylesheet that loads after <code>odin.css</code>. This way, you can upgrade to future releases of Odin without worrying about losing custom styling.</p>
+
+<h2>Text</h2>
+<p>Oden uses a base font size of <code>18px</code> and a <code>sans-serif</code> font stack. The default text color is almost black (<code>#111</code>). This applies to paragraphs, list items, table data, and pretty much everything else other than headings.</p>
+
+<h2>Headings</h2>
+
+<p>All 6 heading levels are available. Here is an example of the default styling for each.</p>
+
+<table class="table-basic">
+  <tr>
+    <td><h1>Heading 1</h1></td>
+    <td><span class="light">Very dark gray, semibold, 4.0rem (72px)</span></td>
+  </tr>
+  <tr>
+    <td><h2>Heading 2</h2></td>
+    <td><span class="light">Very dark gray, semibold, 2.666rem (48px)</span></td>
+  </tr>
+  <tr>
+    <td><h3>Heading 3</h3></td>
+    <td><span class="light">Very dark gray, semibold, 2.0rem (36px)</span></td>
+  </tr>
+  <tr>
+    <td><h4>Heading 4</h4></td>
+    <td><span class="light">Very dark gray, semibold, 1.5rem (28px)</span></td>
+  </tr>
+  <tr>
+    <td><h5>Heading 5</h5></td>
+    <td><span class="light">Very dark gray, semibold, 1.333rem (24px)</span></td>
+  </tr>
+  <tr>
+    <td><h6>Heading 6</h6></td>
+    <td><span class="light">Very dark gray, semibold, 1.0rem (20px)</span></td>
+  </tr>
+</table>
+
+<pre>
+  <code>
+    &lt;h1&gt;Heading 1&lt;/h1&gt;
+    &lt;h2&gt;Heading 2&lt;/h2&gt;
+    &lt;h3&gt;Heading 3&lt;/h3&gt;
+    &lt;h4&gt;Heading 4&lt;/h4&gt;
+    &lt;h5&gt;Heading 5&lt;/h5&gt;
+    &lt;h6&gt;Heading 6&lt;/h6&gt;
+  </code>
+</pre>
+
+<h2>Blockquotes</h2>
+<p>Blockquotes are indented and given a very light gray border on the left side. The font size is also slightly larger than the base font size.</p>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</blockquote>
+
+<pre>
+  <code>
+    &lt;blockquote&gt;
+      &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+    &lt;/blockquote&gt;
+  </code>
+</pre>
+
+<p>Citations can be added to blockquotes by wrapping citations in the <code>&lt;cite&gt;</code> tag after the quotation.</p>
+
+<blockquote>
+  <p>Don't believe everything you read on the Internet.</p>
+  <cite>Abraham Lincoln</cite>
+</blockquote>
+
+<pre>
+  <code>
+    &lt;blockquote&gt;
+      &lt;p&gt;Don't believe everything you read on the Internet.&lt;/p&gt;
+      &lt;cite&gt;Abraham Lincoln&lt;/cite&gt;
+    &lt;/blockquote&gt;
+  </code>
+</pre>
+
+<h2>Lists</h2>
+<p>The only styling applied to lists are minor adjustments to margins and padding to keep consistent spacing with other Odin elements.</p>
+
+<ol>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ol>
+
+<ul>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ul>
+
+<pre>
+  <code>
+    &lt;ol&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+      &lt;li&gt;List item&lt;/li&gt;
+    &lt;/ul&gt;
+  </code>
+</pre>
 
 
       <footer>

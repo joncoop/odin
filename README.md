@@ -13,24 +13,24 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 - 0.5.0 - Added basic table styling, responsive table classes, and even/odd row shading helper classes (2016-11-12)
 - 0.6.0 - Added form styling (2016-11-27)
 - 0.7.0 - Added responsive navigation elements (2016-12-23)
-- 0.7.1 - Added some basic typography styling, cleaned up color palette and grid spacing, simplified resets (2017-01-23)
+- 0.7.1 - Cleaned up color palette, grid spacing, and typography, simplified resets (2017-01-23)
+- 0.8.0 - Added typography styling, navbar markup simplified, bug fixes (2017-01-28)
 
 ## To do
 
 ### for v1.0
-- 0.8.0 Add more typography styling, work on the "vertical rhythm"
-- 0.9.0 Add button styling
-- 0.9.1 Fix Firefox navbar quirks
-- 0.9.2 Rewrite hide utilities to include size-and-up and size-and-down
-- 0.9.3 Remove JQuery dependency
-- 0.9.4 General code cleanup, clean up color palette, minor styling tweaks
-- 0.9.5 Document the CSS really nicely
-- 1.0.0 Bug fixes and release
+- 0.9.0 - Add button styling
+- 0.9.1 - Fix Firefox navbar quirks
+- 0.9.2 - Rewrite hide utilities to include size-and-up and size-and-down
+- 0.9.3 - Remove JQuery dependency
+- 0.9.4 - General code cleanup, clean up color palette, minor styling tweaks
+- 0.9.5 - Document the CSS really nicely
+- 1.0.0 - Bug fixes and release
 
 ### for 1.0+
-- 1.1.0 Add containers that snap to widths according to viewport
-- 1.2.0 Add 'sticky' features for header and footer elements
-- 1.3.0 Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)
+- 1.1.0 - Add containers that snap to widths according to viewport
+- 1.2.0 - Add 'sticky' features for header and footer elements
+- 1.3.0 - Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)
 
 ## more ideas (not to include in css/js, just write instructions)
 - Icon fonts
