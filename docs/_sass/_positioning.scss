@@ -34,13 +34,13 @@
 
 .upper-left,
 .gutter-default .upper-left {
-  top: 0.6rem;
-  left: 0.6rem;
+  top: $spacing-unit / 2;
+  left: $spacing-unit / 2;
 }
 
 .gutter-double .upper-left {
-  top: 1.2rem;
-  left: 1.2rem;
+  top: $spacing-unit;
+  left: $spacing-unit;
 }
 
 .gutter-none .upper-left {
@@ -50,13 +50,13 @@
 
 .upper-right,
 .gutter-default .upper-right {
-  top: 0.6rem;
-  right: 0.6rem;
+  top: $spacing-unit / 2;
+  right: $spacing-unit / 2;
 }
 
 .gutter-double .upper-right {
-  top: 1.2rem;
-  right: 1.2rem;
+  top: $spacing-unit;
+  right: $spacing-unit;
 }
 
 .gutter-none .upper-right {
@@ -66,13 +66,13 @@
 
 .lower-right,
 .gutter-default .lower-right {
-  bottom: 0.6rem;
-  right: 0.6rem;
+  bottom: $spacing-unit / 2;
+  right: $spacing-unit / 2;
 }
 
 .gutter-double .lower-right {
-  bottom: 1.2rem;
-  right: 1.2rem;
+  bottom: $spacing-unit;
+  right: $spacing-unit;
 }
 
 .gutter-none .lower-right {
@@ -82,37 +82,16 @@
 
 .lower-left,
 .gutter-default .lower-left {
-  bottom: 0.6rem;
-  left: 0.6rem;
+  bottom: $spacing-unit / 2;
+  left: $spacing-unit / 2;
 }
 
 .gutter-double .lower-left {
-  bottom: 1.2rem;
-  left: 1.2rem;
+  bottom: $spacing-unit;
+  left: $spacing-unit;
 }
 
 .gutter-none .lower-left {
   bottom: 0;
   left: 0;
-}
-
-.right {
-  float: right;
-  margin-left: 1.2rem;
-  margin-bottom: 1.2rem;
-}
-
-.left {
-  float: left;
-  margin-right: 1.2rem;
-  margin-bottom: 1.2rem;
-}
-
-.clear {
-  clear: both;
-}
-
-.center {
-  display: block;
-  margin: 0 auto;
 }
