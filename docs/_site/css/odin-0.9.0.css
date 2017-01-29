@@ -26,9 +26,7 @@ nav,
 section,
 figcaption,
 figure,
-main,
-time,
-mark {
+main {
   display: block; }
 
 img {
@@ -145,11 +143,11 @@ code {
 small {
   font-size: 80%; }
 
+mark {
+  background-color: #ff8; }
+
 .light {
   color: #678; }
-
-.highlight {
-  background-color: #ff8; }
 
 .important {
   color: #b00; }

@@ -133,12 +133,12 @@ small {
   font-size: 80%;
 }
 
-.light {
-  color: $gray-base;
+mark {
+  background-color: $highlight-color;
 }
 
-.highlight {
-  background-color: $highlight-color;
+.light {
+  color: $gray-base;
 }
 
 .important {
