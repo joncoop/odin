@@ -12,13 +12,13 @@ permalink: /forms/
 
 <h2>Basic form styling</h2>
 
-<p>If you do want some basic styling added without writing custom CSS, a class <code class="highlight">form-basic</code> is provided to give some styling to forms.</p>
+<p>If you do want some basic styling added without writing custom CSS, a class <code class="important">form-basic</code> is provided to give some styling to forms.</p>
 
 <p>Inputs are given a light gray border until they receive focus. The following input types are supported: <code>text</code>, <code>tel</code>, <code>url</code>, <code>search</code>, <code>number</code>, <code>range</code>, <code>date</code>, <code>time</code>, <code>datetime-local</code>, <code>week</code>, <code>month</code>, <code>color</code>, <code>file</code>, <code>radio</code>, and <code>checkbox</code>. In addition, <code>textarea</code>s and <code>select</code> elements receive similar styling.</p>
 
-<p>Both <code>button</code> and <code>input</code> elements are given the same styling. For each, <code>type="button"</code> and <code>type="submit"</code> will be styled the same.</p>
-
 <p>The border is removed on the <code>fieldset</code> element. Instead, the <code>legend</code> element has a bottom border applied. Fieldsets and legends are used to group the form elements demonstrated below.</p>
+
+<p>Buttons can be created using either <code>button</code> or <code>input</code> elements. While buttons in a <code>form-basic</code> do not receive any default styling, <a href="{{ site.github.url }}/buttons/">Odin button classes</a> can be used. In the example below, the <code class="important">button-primary</code> and <code class="important">button-secondary</code> classes were used to style the form buttons.</p>
 
 <div class="container-md">
   <form class="form-basic">
@@ -59,15 +59,15 @@ permalink: /forms/
 
     <fieldset>
       <legend>Buttons</legend>
-      <button type="button">A Button!</button>
-      <input type="button" value="Another button!">
+      <button class="button-primary" type="button">Primary button</button>
+      <input class="button-secondary" type="button" value="Secondary button">
     </fieldset>
   </form>
 </div>
 
 <pre>
   <code>
-    &lt;form class="<span class="highlight">form-basic</span>"&gt;
+    &lt;form class="<span class="important">form-basic</span>"&gt;
       &lt;fieldset&gt;
         &lt;legend&gt;Some form fields&lt;/legend&gt;
 
@@ -112,8 +112,8 @@ permalink: /forms/
       &lt;fieldset&gt;
         &lt;legend&gt;Buttons&lt;/legend&gt;
 
-        &lt;button type="button"&gt;A Button!&lt;/button&gt;
-        &lt;input type="button" value="Another button!"&gt;
+        &lt;button class="<span class="important">button-primary</span>" type="button"&gt;A Button!&lt;/button&gt;
+        &lt;input class="<span class="important">button-secondary</span>" type="button" value="Another button!"&gt;
       &lt;/fieldset&gt;
     &lt;/form&gt;
   </code>
@@ -150,7 +150,7 @@ permalink: /forms/
 
 <h2>Form validation</h2>
 
-<p>Special automatically validating type such as email and url and elements marked as <code>required</code> or given a <code>pattern</code> attribute will be given a red border when invalid. Use the HTML5 pattern attribute to validate fields such as phone numbers that do not have built-in validation. A <code class="highlight">form-hint</code> class is provided style special instructions.</p>
+<p>Special automatically validating type such as email and url and elements marked as <code>required</code> or given a <code>pattern</code> attribute will be given a red border when invalid. Use the HTML5 pattern attribute to validate fields such as phone numbers that do not have built-in validation. A <code class="important">form-hint</code> class is provided style special instructions.</p>
 
 <div class="container-md">
   <form class="form-basic">
@@ -174,23 +174,23 @@ permalink: /forms/
   <code>
     &lt;label for="name"&gt;Name:&lt;/label&gt;
     &lt;input id="name" type="text" name="name" required&gt;
-    &lt;span class="<span class="highlight">form-hint</span>"&gt;Required&lt;/span&gt;
+    &lt;span class="<span class="important">form-hint</span>"&gt;Required&lt;/span&gt;
     &lt;br&gt;
 
     &lt;label for="email"&gt;Email:&lt;/label&gt;
     &lt;input id="email" type="email" name="name"&gt;
-    &lt;span class="<span class="highlight">form-hint</span>"&gt;Enter a valid email address&lt;/span&gt;
+    &lt;span class="<span class="important">form-hint</span>"&gt;Enter a valid email address&lt;/span&gt;
     &lt;br&gt;
 
     &lt;label for="phone"&gt;Phone:&lt;/label&gt;
     &lt;input id="phone" type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"&gt;
-    &lt;span class="<span class="highlight">form-hint</span>"&gt;123-456-7890&lt;/span&gt;
+    &lt;span class="<span class="important">form-hint</span>"&gt;123-456-7890&lt;/span&gt;
   </code>
 </pre>
 
 <h2>Stacked form</h2>
 
-<p>Using the class <code class="highlight">form-stack</code> will reflow the form so that input elements (with the exception of checkbox and radio) are displayed below their labels. An optional class <code class="highlight">form-wide</code> has also been applied so that inputs occupy 100% of their containing element's width.</p>
+<p>Using the class <code class="important">form-stack</code> will reflow the form so that input elements (with the exception of checkbox and radio) are displayed below their labels. An optional class <code class="important">form-wide</code> has also been applied so that inputs occupy 100% of their containing element's width.</p>
 
 <div class="container-md">
   <form class="form-basic form-stack form-wide">
@@ -209,7 +209,7 @@ permalink: /forms/
 
 <pre>
   <code>
-    &lt;form class="form-basic <span class="highlight">form-stack form-wide</span>"&gt;
+    &lt;form class="form-basic <span class="important">form-stack form-wide</span>"&gt;
       &lt;label for="name2"&gt;Name:&lt;/label&gt;
       &lt;input id="name2" type="text" name="name"&gt;
 

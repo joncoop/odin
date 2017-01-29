@@ -65,9 +65,11 @@ ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0rem;
 }
 
+/*
 a, b, i, strong, em, small, code {
   line-height: 0;
 }
+*/
 
 sub, sup {
   line-height: 0;
@@ -106,6 +108,7 @@ blockquote p:last-of-type {
 blockquote cite {
   color: $gray-base;
   display: block;
+  font-size: 1.0rem;
   font-style: italic;
   content:be
 }
@@ -121,6 +124,7 @@ strong {
 
 pre,
 code {
+  color: $gray-base;
   font-family: monospace;
   font-size: 1.0rem;
 }
@@ -131,4 +135,12 @@ small {
 
 .light {
   color: $gray-base;
+}
+
+.highlight {
+  background-color: $highlight-color;
+}
+
+.important {
+  color: $important-color;
 }

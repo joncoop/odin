@@ -29,6 +29,9 @@ table.table-basic tfoot {
 table.table-basic tr {
 
 }
+table.table-basic tbody tr {
+    border-bottom: 1px solid $gray-very-light;
+}
 
 table.table-basic td,
 table.table-basic th {
@@ -64,7 +67,7 @@ table.table-stack thead {
  width: 1px;
 }
 
-table.table-stack tr {
+table.table-stack tbody tr {
  border: 1px solid $gray-light;
  display: block;
  margin-bottom: 0.4rem;
@@ -83,6 +86,10 @@ table.table-stack td:before {
  color: $gray-dark;
 }
 
+table.table-stack tfoot td {
+ display: block;
+ text-align: left;
+}
 
 @media (max-width: $xs-max-width) {
   table.table-stack-xs {
@@ -100,7 +107,7 @@ table.table-stack td:before {
     width: 1px;
   }
 
-  table.table-stack-xs tr {
+  table.table-stack-xs tbody tr {
     border: 1px solid $gray-light;
     display: block;
     margin-bottom: 0.4rem;
@@ -117,6 +124,11 @@ table.table-stack td:before {
     float: left;
     font-weight: $semi-bold;
     color: $gray-dark;
+  }
+
+  table.table-stack-xs tfoot td {
+   display: block;
+   text-align: left;
   }
 }
 
@@ -137,7 +149,7 @@ table.table-stack td:before {
     width: 1px;
   }
 
-  table.table-stack-sm tr {
+  table.table-stack-sm tbody tr {
     border: 1px solid $gray-light;
     display: block;
     margin-bottom: 0.4rem;
@@ -154,6 +166,11 @@ table.table-stack td:before {
     float: left;
     font-weight: $semi-bold;
     color: $gray-dark;
+  }
+
+  table.table-stack-sm tfoot td {
+   display: block;
+   text-align: left;
   }
 }
 
@@ -173,7 +190,7 @@ table.table-stack td:before {
      width: 1px;
    }
 
-   table.table-stack-md tr {
+   table.table-stack-md tbody tr {
      border: 1px solid $gray-light;
      display: block;
      margin-bottom: 0.4rem;
@@ -191,7 +208,12 @@ table.table-stack td:before {
      font-weight: $semi-bold;
      color: $gray-dark;
    }
- }
+
+   table.table-stack-md tfoot td {
+    display: block;
+    text-align: left;
+   }
+}
 
 table.shade-even-rows tbody tr:nth-child(even) {
   background-color: $gray-very-light;

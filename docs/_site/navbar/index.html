@@ -16,7 +16,7 @@
   <link rel="icon" href="/img/valknut.png">
 
   <!-- styles -->
-  <link rel="stylesheet" href="/css/odin-0.8.0.css">
+  <link rel="stylesheet" href="/css/odin-0.9.0.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -54,12 +54,11 @@
     <li><a href="/navbar/">Navbar</a></li>
     <li><a href="/positioning/">Positioning helper classes</a></li>
     <li><a href="/responsive/">Responsive helper classes</a></li>
-    <li><a href="/typography/">Typography</a>  - <span class="highlight">New in v0.8.0!</span></li>
-    <li><a href="/text/">Text utilities</a></li>
+    <li><a href="/typography/">Typography</a>  - <span class="highlight">New!</span></li>
     <li><a href="/images/">Images</a></li>
     <li><a href="/tables/">Tables</a></li>
+    <li><a href="/buttons/">Buttons</a> - <span class="highlight">New!</span></li>
     <li><a href="/forms/">Forms</a></li>
-    <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
   </ol>
 </div>
 
@@ -69,7 +68,7 @@
 
 <h2>Basic navbar</h2>
 
-<p>Create a basic navbar by appling a <code class="highlight">navbar</code> class to a <code>nav</code> element. Then wrap links in a <code>div</code> with the class <code class="highlight">navbar-menu</code>.</p>
+<p>Create a basic navbar by appling a <code class="important">navbar</code> class to a <code>nav</code> element. Then wrap links in a <code>div</code> with the class <code class="important">navbar-menu</code>.</p>
 
 <nav class="navbar">
   <div class="navbar-menu">
@@ -84,8 +83,8 @@
 
 <pre>
   <code>
-    &lt;nav class="<span class="highlight">navbar</span>"&gt;
-      &lt;div class="<span class="highlight">navbar-menu</span>"&gt;
+    &lt;nav class="<span class="important">navbar</span>"&gt;
+      &lt;div class="<span class="important">navbar-menu</span>"&gt;
         &lt;ul&gt;
           &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
@@ -99,7 +98,7 @@
 
 <h2>Navbar with centered links</h2>
 
-<p>Positioning classes can also be applied to navbars. Here, the class <code class="highlight">center-horizontal</code> has been applied to the <code>nav</code> element.</p>
+<p>Positioning classes can also be applied to navbars. Here, the class <code class="important">center-horizontal</code> has been applied to the <code>nav</code> element.</p>
 
 <nav class="navbar center-horizontal">
   <div class="navbar-menu">
@@ -114,7 +113,7 @@
 
 <pre>
   <code>
-    &lt;nav class="navbar <span class="highlight">center-horizontal</span>"&gt;
+    &lt;nav class="navbar <span class="important">center-horizontal</span>"&gt;
       &lt;div class="navbar-menu"&gt;
         &lt;ul&gt;
           &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -129,7 +128,7 @@
 
 <h2>Navbar with links pushed to the right</h2>
 
-<p>In this example, the class <code class="highlight">push-right</code> is be used to right-justify links.</p>
+<p>In this example, the class <code class="important">push-right</code> is be used to right-justify links.</p>
 
 <nav class="navbar push-right">
   <div class="navbar-menu">
@@ -144,7 +143,7 @@
 
 <pre>
   <code>
-    &lt;nav class="navbar <span class="highlight">push-right</span>"&gt;
+    &lt;nav class="navbar <span class="important">push-right</span>"&gt;
       &lt;div class="navbar-menu"&gt;
         &lt;ul&gt;
           &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -182,7 +181,7 @@
 
 <h2>Navbar with brand</h2>
 
-<p>Optionally, you can include an element with the class <code class="highlight">navbar-brand</code> to include the name of your site in the navbar.</p>
+<p>Optionally, you can include an element with the class <code class="important">navbar-brand</code> to include the name of your site in the navbar.</p>
 
 <nav class="navbar">
   <a class="navbar-brand" href="#">Site Name</a>
@@ -216,7 +215,7 @@
 
 <h2>A slideout navbar</h2>
 
-<p>The navbar can be changed to a slideout menu by adding a <code class="highlight">navbar-slideout</code> class and including a <code class="highlight">menu-toggle</code> button. A <code class="highlight">menu-dismiss</code> button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. Adding an element with a <code class="highlight">slideout-brand</code> class is optional. In this example, HTML character entities are used for the toggle and dismiss icons, but <code>img</code> or <code>svg</code> elements could be used as well.</p>
+<p>The navbar can be changed to a slideout menu by adding a <code class="important">navbar-slideout</code> class and including a <code class="important">menu-toggle</code> button. A <code class="important">menu-dismiss</code> button should also be included in the navbar-menu in case the toggle is covered when the slideout menu is visible. Adding an element with a <code class="important">slideout-brand</code> class is optional. In this example, HTML character entities are used for the toggle and dismiss icons, but <code>img</code> or <code>svg</code> elements could be used as well.</p>
 
 <nav class="navbar navbar-slideout">
   <a class="navbar-brand" href="#">Site Name</a>
@@ -236,12 +235,12 @@
 
 <pre>
   <code>
-    &lt;nav class="navbar <span class="highlight">navbar-slideout</span>"&gt;
+    &lt;nav class="navbar <span class="important">navbar-slideout</span>"&gt;
       &lt;a class="navbar-brand" href="#"&gt;Site Name&lt;/a&gt;
-      &lt;button class="<span class="highlight">menu-toggle</span>" aria-label="Toggle navigation"&gt;&amp;#9776;&lt;/button&gt;
+      &lt;button class="<span class="important">menu-toggle</span>" aria-label="Toggle navigation"&gt;&amp;#9776;&lt;/button&gt;
 
       &lt;div class="navbar-menu"&gt;
-        &lt;button class="<span class="highlight">menu-dismiss</span>" aria-label="Dismiss navigation"&gt;&amp;times;&lt;/button&gt;
+        &lt;button class="<span class="important">menu-dismiss</span>" aria-label="Dismiss navigation"&gt;&amp;times;&lt;/button&gt;
 
         &lt;ul&gt;
           &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -254,7 +253,7 @@
   </code>
 </pre>
 
-<p>In addition to the markup above, slideout menus require JQuery and the <code class="highlight">odin.js</code> file. Include the following lines at the end of the  <code>body</code> element for each page using the slideout navigation:</p>
+<p>In addition to the markup above, slideout menus require JQuery and the <code class="important">odin.js</code> file. Include the following lines at the end of the  <code>body</code> element for each page using the slideout navigation:</p>
 
 <pre>
   <code>
@@ -268,7 +267,7 @@
 
 <h2>A responsive slideout navbar</h2>
 
-<p>To make the slideout responsive, use the same markup as above but with one of the following suffixed navbar-slideout classes: <code class="highlight">navbar-slideout-xs</code>, <code class="highlight">navbar-slideout-sm</code>, <code class="highlight">navbar-slideout-md</code>, <code class="highlight">navbar-slideout-lg</code>. The navbar will be displayed as a slideout on the specified viewport size and smaller. On larger viewports, the navbar will be displayed normally. Resize your browser window to see how this works on the example below.</p>
+<p>To make the slideout responsive, use the same markup as above but with one of the following suffixed navbar-slideout classes: <code class="important">navbar-slideout-xs</code>, <code class="important">navbar-slideout-sm</code>, <code class="important">navbar-slideout-md</code>, <code class="important">navbar-slideout-lg</code>. The navbar will be displayed as a slideout on the specified viewport size and smaller. On larger viewports, the navbar will be displayed normally. Resize your browser window to see how this works on the example below.</p>
 
 <p>This also requires JQuery and <code>odin.js</code>. See the example above for instructions.</p>
 
@@ -290,7 +289,7 @@
 
 <pre>
   <code>
-    &lt;nav class="navbar <span class="highlight">navbar-slideout-md</span>"&gt;
+    &lt;nav class="navbar <span class="important">navbar-slideout-md</span>"&gt;
       &lt;a class="navbar-brand" href="#"&gt;Site Name&lt;/a&gt;
       &lt;button class="menu-toggle" aria-label="Toggle navigation"&gt;&amp;#9776;&lt;/button&gt;
 

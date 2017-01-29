@@ -1,13 +1,6 @@
-.icon--github {
-  height: 20px;
-}
 
 .container-xl {
- padding-bottom: 2.4rem;
-}
-
-.download-buttons {
-  margin: 2.4rem 0;
+ padding-bottom: 2.0rem;
 }
 
 .demo-content {
@@ -15,38 +8,13 @@
   height: 100%;
   text-align: center;
   background-color: #5be;
-  padding: 1.2rem;
+  padding: 0.6rem;
 }
 
 .positioned-demo-content {
   text-align: center;
-  padding: 1.2rem;
-  background-color: #ccc;
-}
-
-code {
-  color: #666;
-}
-
-.highlight {
-  color: #c00;
-}
-
-.button {
-  border: 1px solid #777;
-  background-color: #ccc;
   padding: 0.6rem;
-  text-align: center;
-}
-
-a:link.button, a:visited.button {
-  border-radius: 3px;
-  color: #333;
-  text-decoration: none;
-}
-
-a:hover.button, a:active.button {
-  background-color: #999;
+  background-color: #ccc;
 }
 
 table h1,
@@ -59,5 +27,5 @@ table h6 {
 }
 
 .toc {
-  margin: 1rem;
+  margin: 1.0rem;
 }

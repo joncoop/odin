@@ -1,10 +1,13 @@
-/* form styles */
+/* form styles
+
+  Note: form-basic button styling is in buttons.scss.
+*/
+
 .form-basic input,
 .form-basic select,
-.form-basic textarea,
-.form-basic button {
+.form-basic textarea {
   background-color: $white;
-  border: 1px solid $gray-very-light;
+  border: 1px solid $gray-light;
   color: $gray-very-dark;
   display: inline-block;
   margin: 0.3rem 0;
@@ -27,10 +30,7 @@
 
 .form-basic input:focus,
 .form-basic select:focus,
-.form-basic textarea:focus,
-.form-basic button:focus,
-.form-basic input[type="button"]:focus,
-.form-basic input[type="submit"]:focus {
+.form-basic textarea:focus {
   box-shadow: 0 0 6px $gray-base;
   outline: 0;
 }
@@ -66,15 +66,6 @@
     outline-color: #a00;
 }
 
-.form-basic button,
-.form-basic input[type="button"],
-.form-basic input[type="submit"] {
-  background-color: $gray-very-light;
-  display: inline-block;
-  outline: none;
-  padding: 0.4rem;
-}
-
 .form-basic label {
   margin: 0.3rem 0.3rem 0.3rem 0;
 }
@@ -93,12 +84,6 @@
   padding: 0.4em 0;
   margin-bottom: 0.4em;
   width: 100%;
-}
-
-.form-basic button:active,
-.form-basic input[type="button"]:active,
-.form-basic input[type="submit"]:active {
-  background-color: $gray-very-light;
 }
 
 .form-wide input,

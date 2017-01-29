@@ -16,7 +16,7 @@
   <link rel="icon" href="/img/valknut.png">
 
   <!-- styles -->
-  <link rel="stylesheet" href="/css/odin-0.8.0.css">
+  <link rel="stylesheet" href="/css/odin-0.9.0.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -54,12 +54,11 @@
     <li><a href="/navbar/">Navbar</a></li>
     <li><a href="/positioning/">Positioning helper classes</a></li>
     <li><a href="/responsive/">Responsive helper classes</a></li>
-    <li><a href="/typography/">Typography</a>  - <span class="highlight">New in v0.8.0!</span></li>
-    <li><a href="/text/">Text utilities</a></li>
+    <li><a href="/typography/">Typography</a>  - <span class="highlight">New!</span></li>
     <li><a href="/images/">Images</a></li>
     <li><a href="/tables/">Tables</a></li>
+    <li><a href="/buttons/">Buttons</a> - <span class="highlight">New!</span></li>
     <li><a href="/forms/">Forms</a></li>
-    <li><a href="/buttons/">Buttons</a> - <span class="highlight">Coming soon!</span></li>
   </ol>
 </div>
 
@@ -67,7 +66,76 @@
 
       <h1>Buttons</h1>
 
-Coming soon.
+<h2>Default button styling</h2>
+
+<p>Buttons receive no default styling in Odin, so any custom CSS you write will not conflict with default styling.</p>
+
+<h2>Contextual button styles</h2>
+
+<p>Match the visual presentation of actions to their importance to minimize the risk for potential errors and help people complete a form as quickly as possible. Primary actions are actions such as “Submit”, “Continue”, “Finish”, and “Save”. They enable form completion, the most important action on the form. Secondary actions are actions such as “Cancel”, “Go back”, or “Reset”. They are less important, alternative actions, which often have negative consequences when used accidentally. For example, hitting “Reset” erases all the data a user has entered.</p>
+
+<button class="button-primary">Primary</button>
+<button class="button-secondary">Secondary</button>
+<button class="button-info">Info</button>
+<button class="button-success">Success</button>
+<button class="button-warning">Warning</button>
+<button class="button-danger">Danger</button>
+
+<pre>
+  <code>
+    &lt;button class="<span class="important">button-primary</span>"&gt;Primary&lt;/button&gt;
+    &lt;button class="<span class="important">button-secondary</span>"&gt;Secondary&lt;/button&gt;
+    &lt;button class="<span class="important">button-info</span>"&gt;Info&lt;/button&gt;
+    &lt;button class="<span class="important">button-success</span>"&gt;Success&lt;/button&gt;
+    &lt;button class="<span class="important">button-warning</span>"&gt;Warning&lt;/button&gt;
+    &lt;button class="<span class="important">button-danger</span>"&gt;Danger&lt;/button&gt;
+  </code>
+</pre>
+
+<h2>Disabled buttons</h2>
+
+<p>Odin buttons with the attribute disabled are washed out slightly.</p>
+
+<button class="button-primary" disabled>Primary</button>
+<button class="button-secondary" disabled>Secondary</button>
+<button class="button-info" disabled>Info</button>
+<button class="button-success" disabled>Success</button>
+<button class="button-warning" disabled>Warning</button>
+<button class="button-danger" disabled>Danger</button>
+
+<pre>
+  <code>
+    &lt;button class="button-primary" <span class="important">disabled</span>&gt;Button Text&lt;/button&gt;
+  </code>
+</pre>
+
+<h2>Button sizes</h2>
+
+<p>Two utility classes, <code class="important">button-sm</code> and <code class="important">button-lg</code> allow for buttons of different sizes to be created.</p>
+
+<a class="button-primary button-sm" href="#">Small button</a>
+<a class="button-primary button-lg" href="#">Large button</a>
+
+<pre>
+  <code>
+    &lt;a class="button-primary <span class="important">button-sm</span>" href="#"&gt;Small button&lt;/a&gt;
+    &lt;a class="button-primary <span class="important">button-lg</span>" href="#"&gt;Large button&lt;/a&gt;
+  </code>
+</pre>
+
+<h2>Buttons with icons</h2>
+
+<p>Odin doesn't include icon fonts, but it will work well with existing ones. In the example below, icon fonts from <a href="http://fontawesome.io/">Font Awesome</a> are used. You'll need to make sure that any page using icon fonts loads the necessary CSS.</p>
+
+<a class="button-primary" href="#"><i class="fa fa-shopping-cart"></i> Checkout</a>
+<a class="button-basic button-info" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
+
+<pre>
+  <code>
+    &lt;a class="button-primary" href="#"&gt;&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt; Checkout&lt;/a&gt;
+    &lt;a class="button-basic button-info" href="#"&gt;Learn more &lt;i class="fa fa-chevron-right"&gt;&lt;/i>&lt;/a&gt;
+  </code>
+</pre>
 
 
       <footer>

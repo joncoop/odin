@@ -17,8 +17,9 @@ $spacing-unit:     4/3 * $base-font-size;
 
 
 // Colors
-$brand-color:      #2a7ae2;
-$accent-color:     #ABC;
+$brand-color:      #5be;
+$accent-color-1:   #abc;
+$accent-color-2:   #def;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -32,6 +33,14 @@ $gray-very-light:  lighten($gray-base, 40%);
 $gray-dark:        darken($gray-base, 20%);
 $gray-very-dark:   darken($gray-base, 40%);
 
+$info-color:       #5be;
+$success-color:    #2c5;
+$warning-color:    #d82;
+$danger-color:     #c00;
+
+$important-color:  #b00;
+$highlight-color:  #ff8;
+
 // Responsive breakpoints
 $sm-min-width:    480px;
 $md-min-width:    720px;
@@ -39,16 +48,14 @@ $lg-min-width:    960px;
 $xl-min-width:    1200px;
 
 
-// The rest of the variables are calculated based on values above.
-// You shouldn't need to edit below this line.
-$xs-max-width:    $sm-min-width - 1;
-$sm-max-width:    $md-min-width - 1;
-$md-max-width:    $lg-min-width - 1;
-$lg-max-width:    $xl-min-width - 1;
+/*
+  Import partials from `sass_dir` (defaults to `_sass`)
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
+  Be sure that variables is the first import. And for some reason, positioning
+  needs to be loaded last to avoid confilicts.
+*/
 @import
+  "variables",
   "resets",
   "typography",
   "containers",

@@ -1,1 +1,159 @@
 /* buttons */
+
+.button-primary,
+.button-secondary,
+.button-info,
+.button-success,
+.button-warning,
+.button-danger,
+input[type="button"].button-primary,
+input[type="button"].button-secondary,
+input[type="button"].button-info,
+input[type="button"].button-success,
+input[type="button"].button-danger,
+input[type="button"].button-warning,
+input[type="submit"].button-primary,
+input[type="submit"].button-secondary,
+input[type="submit"].button-info,
+input[type="submit"].button-success,
+input[type="submit"].button-danger,
+input[type="submit"].button-warning {
+  border-radius: 3px;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 1.0;
+  margin: 0.3rem 0;
+  outline: 0;
+  padding: 0.6rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.button-primary:focus,
+.button-secondary:focus,
+.button-info:focus,
+.button-success:focus,
+.button-warning:focus,
+.button-danger:focus,
+input[type="button"].button-primary:focus,
+input[type="button"].button-secondary:focus,
+input[type="button"].button-info:focus,
+input[type="button"].button-success:focus,
+input[type="button"].button-danger:focus,
+input[type="button"].button-warning:focus,
+input[type="submit"].button-primary:focus,
+input[type="submit"].button-secondary:focus,
+input[type="submit"].button-info:focus,
+input[type="submit"].button-success:focus,
+input[type="submit"].button-danger:focus,
+input[type="submit"].button-warning:focus {
+  box-shadow: 0 0 6px $gray-base;
+}
+
+.button-primary:disabled,
+.button-secondary:disabled,
+.button-info:disabled,
+.button-success:disabled,
+.button-warning:disabled,
+.button-danger:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
+  color: darken($white, 5%);
+  cursor: not-allowed;
+}
+
+
+.button-primary,
+.button-info,
+.button-success,
+.button-warning,
+.button-danger {
+  border: none;
+  color: $white;
+}
+
+.button-primary {
+  background-color: $gray-base;
+}
+
+.button-primary:hover {
+  background-color: darken($gray-base, 5%);
+}
+
+.button-primary:disabled {
+  background-color: lighten($gray-base, 20%);
+}
+
+.button-secondary {
+  background-color: $white;
+  border: 1px solid $gray-light;
+  color: $gray-dark;
+}
+
+.button-secondary:hover {
+  background-color: darken($white, 5%);
+}
+
+.button-secondary:disabled {
+  background-color: $white;
+  color: $gray-light;
+}
+
+.button-info {
+  background-color: $info-color;
+}
+
+.button-info:hover {
+  background-color: darken($info-color, 5%);
+}
+
+.button-info:disabled {
+  background-color: lighten($info-color, 20%);
+}
+
+.button-success {
+  background-color: $success-color;
+}
+
+.button-success:hover {
+  background-color: darken($success-color, 5%);
+}
+
+.button-success:disabled {
+  background-color: lighten($success-color, 20%);
+}
+
+.button-warning {
+  background-color: $warning-color;
+}
+
+.button-warning:hover {
+  background-color: darken($warning-color, 5%);
+}
+
+.button-warning:disabled {
+  background-color: lighten($warning-color, 20%);
+}
+
+.button-danger {
+  background-color: $danger-color;
+}
+
+.button-danger:hover {
+  background-color: darken($danger-color, 5%);
+}
+
+.button-danger:disabled {
+  background-color: lighten($danger-color, 20%);
+}
+
+.button-sm {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+
+.button-lg {
+  font-size: 2.0rem;
+  padding: 0.8rem;
+}

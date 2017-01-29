@@ -1,0 +1,6 @@
+// Values calculated from the main Sass file
+// Be sure this file is imported first!
+$xs-max-width:    $sm-min-width - 1;
+$sm-max-width:    $md-min-width - 1;
+$md-max-width:    $lg-min-width - 1;
+$lg-max-width:    $xl-min-width - 1;
