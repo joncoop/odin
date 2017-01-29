@@ -137,10 +137,26 @@ mark {
   background-color: $highlight-color;
 }
 
+.important {
+  color: $important-color;
+}
+
 .light {
   color: $gray-base;
 }
 
-.important {
-  color: $important-color;
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
