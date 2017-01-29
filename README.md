@@ -10,26 +10,26 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 - 0.2.0 - Added a bunch of positioning helper classes, row reverse. Added classes to show/hide based on viewport. Added class to make img, iframe, and video elements responsive. (2016-11-05)
 - 0.3.0 - Added ability to change gutter sizes. Added classes to float and center images. Added text alignment classes. img, iframes, video are responsive by default now. (2016-11-06)
 - 0.4.0 - Added rounded and circle image classes. (2016-11-12)
-- 0.5.0 - Added basic table styling, responsive table classes, and even/odd row shading helper classes (2016-11-12)
-- 0.6.0 - Added form styling (2016-11-27)
-- 0.7.0 - Added responsive navigation elements (2016-12-23)
-- 0.7.1 - Cleaned up color palette, grid spacing, and typography, simplified resets (2017-01-23)
-- 0.8.0 - Added typography styling, navbar markup simplified, bug fixes (2017-01-28)
-- 0.9.0 - Added button styling, forms use new buttons, minor color and typography tweaks (2017-01-29)
+- 0.5.0 - Added basic table styling, responsive table classes, and even/odd row shading helper classes. (2016-11-12)
+- 0.6.0 - Added form styling. (2016-11-27)
+- 0.7.0 - Added responsive navigation elements. (2016-12-23)
+- 0.7.1 - Cleaned up color palette, grid spacing, and typography, simplified resets. (2017-01-23)
+- 0.8.0 - Added typography styling, navbar markup simplified, bug fixes. (2017-01-28)
+- 0.9.0 - Added button styling, forms use new buttons, minor color and typography tweaks. (2017-01-29)
+- 0.9.1 - Responsive utilities rewritten to hide on size-and-up and size-and-down. Show classes removed.
 
 ## To do
 
 ### for v1.0
-- 0.9.1 - Fix Firefox navbar quirks
-- 0.9.2 - Rewrite hide utilities to include size-and-up and size-and-down
-- 0.9.3 - Remove JQuery dependency
-- 0.9.4 - General code cleanup, clean up color palette, minor styling tweaks
-- 0.9.5 - Document the CSS really nicely
-- 1.0.0 - Bug fixes and release
+- 0.9.2 - Fix Firefox navbar quirks.
+- 0.9.3 - Remove JQuery dependency.
+- 0.9.4 - General code cleanup, clean up color palette, minor styling tweaks.
+- 0.9.5 - Document the CSS really nicely.
+- 1.0.0 - Bug fixes and release.
 
 ### for 1.0+
-- 1.1.0 - Add containers that snap to widths according to viewport
-- 1.2.0 - Add 'sticky' features for header and footer elements
+- 1.1.0 - Add containers that snap to widths according to viewport.
+- 1.2.0 - Add 'sticky' features for header and footer elements.
 - 1.3.0 - Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)
 
 ## more ideas (not to include in css/js, just write instructions)

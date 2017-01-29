@@ -8,37 +8,37 @@ video {
 /* responsive helper classes */
 
 @media (max-width: $xs-max-width) {
-  .hide-xs,
-  .show-sm-only,
-  .show-md-only,
-  .show-lg-only {
+  .hide-xs-down {
     display: none;
   }
 }
 
-@media (min-width: $sm-min-width) and (max-width: $sm-max-width) {
-  .hide-sm,
-  .show-xs-only,
-  .show-md-only,
-  .show-lg-only {
+@media (max-width: $sm-max-width) {
+  .hide-sm-down {
     display: none;
   }
 }
 
-@media (min-width: $md-min-width) and (max-width: $md-max-width) {
-  .hide-md,
-  .show-xs-only,
-  .show-sm-only,
-  .show-lg-only {
+@media (max-width: $md-max-width) {
+  .hide-md-down {
+    display: none;
+  }
+}
+
+@media (min-width: $sm-min-width) {
+  .hide-sm-up {
+    display: none;
+  }
+}
+
+@media (min-width: $md-min-width) {
+  .hide-md-up {
     display: none;
   }
 }
 
 @media (min-width: $lg-min-width) {
-  .hide-lg,
-  .show-xs-only,
-  .show-sm-only,
-  .show-md-only {
+  .hide-lg-up {
     display: none;
   }
 }

@@ -70,30 +70,38 @@
 
 <p>The elements <code>img</code>, <code>iframe</code>, and <code>video</code> are given a max-width of 100% by default so that they will not overflow their containers. It is not necessary to apply any extra classes to make these elements responsive.</p>
 
-<h2>Hide/show content</h2>
+<h2>Hiding content</h2>
 
-<p>The following helper classes are provided to hide/show content based on the size of the viewport: <code class="important">hide-xs</code>, <code class="important">hide-sm</code>, <code class="important">hide-md</code>, <code class="important">hide-lg</code>, <code class="important">show-xs-only</code>, <code class="important">show-sm-only</code>, <code class="important">show-md-only</code>, and <code class="important">show-lg-only</code>. They can be applied to any element. Usage should be fairly obvious. Resize the browser window as you view the sentences below to see a demonstration.</p>
+<p>The following helper classes are provided to content on a given viewport size and down along with a given viewport size and up: <code class="important">hide-xs-down</code>, <code class="important">hide-sm-down</code>, <code class="important">hide-md-down</code>, <code class="important">hide-sm-up</code>, <code class="important">hide-md-up</code>, and <code class="important">hide-lg-up</code>. They can be applied to any element. Usage should be fairly obvious. Resize the browser window as you view the sentences below to see a demonstration.</p>
 
-<p class="hide-xs">This sentence is not visible on extra-small viewports.</p>
-<p class="hide-sm">This sentence is not visible on small viewports.</p>
-<p class="hide-md">This sentence is not visible on medium viewports.</p>
-<p class="hide-lg">This sentence is not visible on large viewports.</p>
-<p class="show-xs-only">This sentence is only visible on extra-small viewports.</p>
-<p class="show-sm-only">This sentence is only visible on small viewports.</p>
-<p class="show-md-only">This sentence is only visible on medium viewports.</p>
-<p class="show-lg-only">This sentence is only visible on large viewports.</p>
+<p>
+<span class="hide-xs-down">This sentence is visible on the following viewports: sm, md, lg.<br></span>
+<span class="hide-sm-down">This sentence is visible on the following viewports: md, lg.<br></span>
+<span class="hide-md-down">This sentence is visible on the following viewports: lg.<br></span>
+<span class="hide-sm-up">This sentence is visible on the following viewports: xs.<br></span>
+<span class="hide-md-up">This sentence is visible on the following viewports: xs, sm.<br></span>
+<span class="hide-lg-up">This sentence is visible on the following viewports: xs, sm, md.</span>
+</p>
 
 <pre>
   <code>
-    &lt;p class="<span class="important">hide-xs</span>"&gt;This sentence is not visible on extra-small viewports.&lt;/p&gt;
-    &lt;p class="<span class="important">hide-sm</span>"&gt;This sentence is not visible on small viewports.&lt;/p&gt;
-    &lt;p class="<span class="important">hide-md</span>"&gt;This sentence is not visible on medium viewports.&lt;/p&gt;
-    &lt;p class="<span class="important">hide-lg</span>"&gt;This sentence is not visible on large viewports.&lt;/p&gt;
-    &lt;p class="<span class="important">show-xs-only</span>"&gt;This sentence is only visible on extra-small viewports.&lt;/p&gt;
-    &lt;p class="<span class="important">show-sm-only</span>"&gt;This sentence is only visible on small viewports.&lt;/p&gt;
-    &lt;p class="<span class="important">show-md-only</span>"&gt;This sentence is only visible on medium viewports.&lt;/p&gt;
-    &lt;p class="<span class="important">show-lg-only</span>"&gt;This sentence is only visible on large viewports.&lt;/p&gt;
+    &lt;p class="<span class="important">hide-xs-down</span>"&gt;This sentence is visible on the following viewports: sm, md, lg.&lt;/p&gt;
+    &lt;p class="<span class="important">hide-sm-down</span>"&gt;This sentence is visible on the following viewports: md, lg.&lt;/p&gt;
+    &lt;p class="<span class="important">hide-md-down</span>"&gt;This sentence is visible on the following viewports: lg.&lt;/p&gt;
 
+    &lt;p class="<span class="important">hide-sm-up</span>"&gt;This sentence is visible on the following viewports: xs.&lt;/p&gt;
+    &lt;p class="<span class="important">hide-md-up</span>"&gt;This sentence is visible on the following viewports: xs, sm&lt;/p&gt;
+    &lt;p class="<span class="important">hide-lg-up</span>"&gt;This sentence is visible on the following viewports: xs, sm, md.&lt;/p&gt;
+  </code>
+</pre>
+
+<p>You can combile classes to show content on a specific range of viewports. There are no classes to hide or show content on specific viewports. You'll need to write custom classes if you want to hide or show content on a non-contiguous range of viewports.</p>
+
+<p class="hide-xs-down hide-lg-up">This sentence is only visible on the following viewports: sm, md.</p>
+
+<pre>
+  <code>
+    &lt;p class="<span class="important">hide-xs-down hide-lg-up</span>"&gt;This sentence is only visible on the following viewports: sm, md.&lt;/p&gt;
   </code>
 </pre>
 
