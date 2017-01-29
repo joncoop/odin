@@ -48,12 +48,8 @@ $lg-min-width:    960px;
 $xl-min-width:    1200px;
 
 
-/*
-  Import partials from `sass_dir` (defaults to `_sass`)
-
-  Be sure that variables is the first import. And for some reason, positioning
-  needs to be loaded last to avoid confilicts.
-*/
+// Import partials from `sass_dir` (defaults to `_sass`)
+// Be sure that variables is the first import.
 @import
   "variables",
   "resets",

@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*
-  Import partials from `sass_dir` (defaults to `_sass`)
-
-  Be sure that variables is the first import. And for some reason, positioning
-  needs to be loaded last to avoid confilicts.
-*/
 /* resets */
 html, body {
   box-sizing: border-box;
@@ -443,6 +437,23 @@ img {
 .gutter-none .lower-left {
   bottom: 0;
   left: 0; }
+
+.right {
+  float: right;
+  margin-left: 1.2rem;
+  margin-bottom: 1.2rem; }
+
+.left {
+  float: left;
+  margin-right: 1.2rem;
+  margin-bottom: 1.2rem; }
+
+.clear {
+  clear: both; }
+
+.center {
+  display: block;
+  margin: 0 auto; }
 
 /* responsive features */
 img,
