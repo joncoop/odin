@@ -7,12 +7,12 @@
   height: 3.0rem;
   justify-content: space-between;
   padding: 0.4rem;
-  position: relative;
-  z-index: 999;
 }
 
 .navbar-menu {
   display: flex;
+  position: relative;
+  z-index: 998;
 }
 
 .navbar-spread {
@@ -54,7 +54,7 @@
   color: $gray-very-dark;
   font-size: 2.0rem;
   font-weight: 500;
-  margin: 0;
+  margin: 0 auto 0 0;
 }
 
 .navbar-brand a:link,
@@ -71,7 +71,10 @@
   background-color: transparent;
   border: none;
   display: block;
-  margin: 0 0.2rem;
+
+  /* http://stackoverflow.com/questions/29930933/absolute-positioned-item-in-a-flex-container-still-gets-considered-as-item-in-ie */
+  margin: 0 0.2rem 0 auto;
+  
   padding: 0.2rem;
 }
 
@@ -86,6 +89,7 @@
   padding: 0.2rem;
   position: absolute;
   top: 0;
+  z-index: 999;
 }
 
 .navbar-slideout .navbar-menu,

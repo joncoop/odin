@@ -236,12 +236,12 @@ img {
   display: flex;
   height: 3.0rem;
   justify-content: space-between;
-  padding: 0.4rem;
-  position: relative;
-  z-index: 999; }
+  padding: 0.4rem; }
 
 .navbar-menu {
-  display: flex; }
+  display: flex;
+  position: relative;
+  z-index: 998; }
 
 .navbar-spread {
   display: block;
@@ -275,13 +275,14 @@ img {
   color: #0f1113;
   font-size: 2.0rem;
   font-weight: 500;
-  margin: 0; }
+  margin: 0 auto 0 0; }
 
 .menu-toggle {
   background-color: transparent;
   border: none;
   display: block;
-  margin: 0 0.2rem;
+  /* http://stackoverflow.com/questions/29930933/absolute-positioned-item-in-a-flex-container-still-gets-considered-as-item-in-ie */
+  margin: 0 0.2rem 0 auto;
   padding: 0.2rem; }
 
 .menu-dismiss {
@@ -294,7 +295,8 @@ img {
   right: 0;
   padding: 0.2rem;
   position: absolute;
-  top: 0; }
+  top: 0;
+  z-index: 999; }
 
 .navbar-slideout .navbar-menu,
 .navbar-slideout-xs .navbar-menu,
