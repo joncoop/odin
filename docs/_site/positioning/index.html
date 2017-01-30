@@ -25,48 +25,57 @@
 
   <body>
 
-    <div class="container-xl">
       <header>
+  <div class="container-xl">
+    <nav class="navbar navbar-slideout-sm">
+      <a class="navbar-brand" href="/">Odin</a>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
 
-  <nav class="navbar navbar-slideout-sm">
-    <a class="navbar-brand" href="/">Odin</a>
-    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="navbar-menu">
+        <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
 
-    <div class="navbar-menu">
-      <button class="menu-dismiss" aria-label="Dismiss navigation">&times;</button>
-
-      <ul>
-        <li><a href="/">About</a></li>
-        <li><a href="/download">Download</a></li>
-        <li><a href="/grid/">Docs</a></li>
-      </ul>
-    </div>
-  </nav>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/download">Download</a></li>
+          <li><a href="/grid/">Docs</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
 </header>
 
 
-      
-        <div class="toc">
-  <ol>
-    <li><a href="/grid/">Grid</a></li>
-    <li><a href="/containers/">Containers</a></li>
-    <li><a href="/navbar/">Navbar</a> - <mark>Updated!</mark></li>
-    <li><a href="/positioning/">Positioning helper classes</a></li>
-    <li><a href="/responsive/">Responsive helper classes</a> - <mark>Updated!</mark></li>
-    <li><a href="/typography/">Typography</a>  - <mark>New!</mark></li>
-    <li><a href="/images/">Images</a></li>
-    <li><a href="/tables/">Tables</a></li>
-    <li><a href="/buttons/">Buttons</a> - <mark>New!</mark></li>
-    <li><a href="/forms/">Forms</a></li>
-  </ol>
-</div>
+      <main>
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Positioning</h1>
+            </div>
+          </div>
 
-      
+          <div class="row reverse">
+            
+              <div class="col-lg-3">
+                <h2>Contents</h2>
 
-      <h1>Positioning helper classes</h1>
+<ol>
+  <li><a href="/grid/">Grid</a></li>
+  <li><a href="/containers/">Containers</a></li>
+  <li><a href="/navbar/">Navbars</a> - <mark>Updated!</mark></li>
+  <li><a href="/positioning/">Positioning</a></li>
+  <li><a href="/responsive/">Responsive</a> - <mark>Updated!</mark></li>
+  <li><a href="/typography/">Typography</a>  - <mark>New!</mark></li>
+  <li><a href="/images/">Images</a></li>
+  <li><a href="/tables/">Tables</a></li>
+  <li><a href="/buttons/">Buttons</a> - <mark>New!</mark></li>
+  <li><a href="/forms/">Forms</a></li>
+</ol>
 
-<h2>Pushing content right and left within a container</h2>
+              </div>
+
+              <div class="col-lg-9">
+                <h2>Pushing content right and left within a container</h2>
 
 <p>Notice that these positioning classes are applied to the containing columns and not to the centered content.</p>
 
@@ -189,14 +198,29 @@
   </code>
 </pre>
 
+              </div>
+            
+          </div>
+        </div>
+      </main>
+
 
       <footer>
 
-  <!-- nothing here yet -->
+  <div class="container-xl">
+    <ul class="inline">
+      <li><a href="https://github.com/joncoop/odin">GitHub</a> </li>
+      <li><a href="/">About</a></li>
+      <li><a href="/download">Download</a></li>
+      <li><a href="/grid">Docs</a></li>
+      <!--<li><a href="#">Contribute</a></li>-->
+    </ul>
 
-</footer>
-
+    <p class="light">Designed and built by <a href="https://github.com/joncoop">joncoop</a>. He hopes someone learns something cool using this.<br>
+    Currently v0.9.2. Code licensed by <a href="https://github.com/joncoop/odin/blob/master/LICENSE.md">MIT</a>, docs by <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>.
   </div>
+  
+</footer>
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>

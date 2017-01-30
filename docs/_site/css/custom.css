@@ -1,6 +1,46 @@
+header {
+  background-color: #d8dde2;
+}
 
-.container-xl {
- padding-bottom: 2.0rem;
+main {
+    padding: 1.2rem 0;
+    margin-bottom: 1.2rem;
+}
+
+footer {
+  border-top: 2px solid #d8dde2;
+  font-size: 0.95rem;
+  padding: 0.6rem 0;
+}
+
+footer a:link,
+footer a:visited {
+  color: #555;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+footer a:active,
+footer a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+ul.inline {
+  margin: 0;
+  padding: 0;
+}
+
+ul.inline li {
+  display: inline-block;
+  margin-right: 0.6rem;
+}
+
+footer p {
+  margin: 0.6rem 0 0 0;
 }
 
 .demo-content {
@@ -24,8 +64,4 @@ table h4,
 table h5,
 table h6 {
   margin: 0;
-}
-
-.toc {
-  margin: 1.0rem;
 }
