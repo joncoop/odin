@@ -16,15 +16,16 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 - 0.7.1 - Cleaned up color palette, grid spacing, and typography, simplified resets. (2017-01-23)
 - 0.8.0 - Added typography styling, navbar markup simplified, bug fixes. (2017-01-28)
 - 0.9.0 - Added button styling, forms use new buttons, minor color and typography tweaks. (2017-01-29)
-- 0.9.1 - Responsive utilities rewritten to hide on size-and-up and size-and-down. Show classes removed.
+- 0.9.1 - Responsive utilities rewritten to hide on size-and-up and size-and-down. Show classes removed. (2017-01-29)
+- 0.9.2 - Evenly spaced navbar links are working. Not super pleased with the implementation, incompatible with responsive features. (2017-01-29)
 
 ## To do
 
 ### for v1.0
-- 0.9.2 - Get evenly spaced navbar links working. Fix Firefox navbar quirks.
-- 0.9.3 - Remove JQuery dependency.
-- 0.9.4 - General code cleanup, clean up color palette, minor styling tweaks.
-- 0.9.5 - Document the CSS really nicely.
+- 0.9.3 - Fix Firefox slideout navbar quirks. Simplify navbar markup. Give evenly spaced navbar responsive features.
+- 0.9.4 - Remove JQuery dependency.
+- 0.9.5 - General code cleanup, clean up color palette, minor styling tweaks.
+- 0.9.6 - Document the CSS really nicely.
 - 1.0.0 - Bug fixes and release.
 
 ### for 1.0+

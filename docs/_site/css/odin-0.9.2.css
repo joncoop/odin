@@ -241,14 +241,14 @@ img {
 .navbar-menu {
   display: flex; }
 
-.menu-even {
+.navbar-spread {
   display: block;
   justify-content: space-around; }
 
-.menu-even .navbar-menu {
+.navbar-spread .navbar-menu {
   display: block; }
 
-.menu-even .navbar-menu ul {
+.navbar-spread .navbar-menu ul {
   display: flex;
   justify-content: space-around; }
 
