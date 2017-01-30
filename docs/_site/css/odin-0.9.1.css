@@ -238,6 +238,20 @@ img {
   justify-content: space-between;
   padding: 0.4rem; }
 
+.navbar-menu {
+  display: flex; }
+
+.menu-even {
+  display: block;
+  justify-content: space-around; }
+
+.menu-even .navbar-menu {
+  display: block; }
+
+.menu-even .navbar-menu ul {
+  display: flex;
+  justify-content: space-around; }
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -260,9 +274,6 @@ img {
   font-size: 2.0rem;
   font-weight: 500;
   margin: 0; }
-
-.navbar-menu {
-  display: flex; }
 
 .menu-toggle {
   background-color: transparent;

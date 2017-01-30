@@ -9,6 +9,24 @@
   padding: 0.4rem;
 }
 
+.navbar-menu {
+  display: flex;
+}
+
+.menu-even {
+  display: block;
+  justify-content: space-around;
+}
+
+.menu-even .navbar-menu {
+  display: block;
+}
+
+.menu-even .navbar-menu ul {
+  display: flex;
+  justify-content: space-around
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -45,10 +63,6 @@
 .navbar-brand a:hover,
 .navbar-brand a:active {
 
-}
-
-.navbar-menu {
-  display: flex;
 }
 
 .menu-toggle {

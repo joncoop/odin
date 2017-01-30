@@ -21,7 +21,7 @@ Odin is a simple, easy-to-understand, bloat-free framework that can be used to q
 ## To do
 
 ### for v1.0
-- 0.9.2 - Fix Firefox navbar quirks.
+- 0.9.2 - Get evenly spaced navbar links working. Fix Firefox navbar quirks.
 - 0.9.3 - Remove JQuery dependency.
 - 0.9.4 - General code cleanup, clean up color palette, minor styling tweaks.
 - 0.9.5 - Document the CSS really nicely.
