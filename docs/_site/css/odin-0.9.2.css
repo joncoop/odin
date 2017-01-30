@@ -925,7 +925,7 @@ input[type="submit"]:disabled {
   background-color: #b30000; }
 
 .button-danger:disabled {
-  background-color: #ff3333; }
+  background-color: #ff6666; }
 
 .button-sm {
   font-size: 0.8rem;

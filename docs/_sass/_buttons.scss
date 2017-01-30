@@ -145,7 +145,7 @@ input[type="submit"]:disabled {
 }
 
 .button-danger:disabled {
-  background-color: lighten($danger-color, 20%);
+  background-color: lighten($danger-color, 30%);
 }
 
 .button-sm {
