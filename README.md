@@ -2,7 +2,7 @@
 
 ## About
 
-Odin is a simple, easy-to-understand, bloat-free framework that can be used to quickly create complex, fully-responsive layouts. View the documentation to [get started](http://joncoop.github.io/odin/).
+Odin is a simple, easy-to-understand grid framework that can be used to quickly create complex, fully-responsive layouts. View the documentation to [get started](http://joncoop.github.io/odin/).
 
 ## History
 
