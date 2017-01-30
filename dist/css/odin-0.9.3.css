@@ -236,7 +236,9 @@ img {
   display: flex;
   height: 3.0rem;
   justify-content: space-between;
-  padding: 0.4rem; }
+  padding: 0.4rem;
+  position: relative;
+  z-index: 999; }
 
 .navbar-menu {
   display: flex; }
@@ -587,7 +589,7 @@ blockquote cite {
   content: be; }
 
 blockquote cite::before {
-  content: "– "; }
+  content: "ΓÇô "; }
 
 b,
 strong {

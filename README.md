@@ -18,20 +18,21 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - 0.9.0 - Added button styling, forms use new buttons, minor color and typography tweaks. (2017-01-29)
 - 0.9.1 - Responsive utilities rewritten to hide on size-and-up and size-and-down. Show classes removed. (2017-01-29)
 - 0.9.2 - Evenly spaced navbar links are working. Not super pleased with the implementation, still incompatible with responsive features. (2017-01-29)
+- 0.9.3 - Fixed z-index bug with slideout menus. (2017-01-30)
 
 ## To do
 
 ### for v1.0
-- 0.9.3 - Fix Firefox slideout navbar layout quirks. Possibly simplify navbar markup. Make evenly spaced navbar compatible with responsive features.
-- 0.9.4 - Remove JQuery dependency for slideout menu.
-- 0.9.5 - General code cleanup, clean up color palette, minor styling tweaks.
-- 0.9.6 - Document the CSS really nicely, add some licensing info.
-- 1.0.0 - Bug fixes and release.
+- Include .h1, .h2, ... classes for making content look like headings when not use semantically. (For example, site titles.)
+- Fix Firefox slideout navbar layout quirks. Possibly simplify navbar markup. Make evenly spaced navbar compatible with responsive features.
+- Remove JQuery dependency for slideout menu.
+- General code cleanup, clean up color palette, minor styling tweaks, bug fixes.
+- Document the CSS really nicely, add some licensing info in the comments.
 
 ### for 1.0+
-- 1.1.0 - Add containers that snap to widths according to viewport.
-- 1.2.0 - Add 'sticky' features for header and footer elements.
-- 1.3.0 - Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)
+- Add containers that snap to widths according to viewport.
+- Add 'sticky' features for header and footer elements.
+- Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)
 
 ## more ideas (not to include in css/js, just write instructions)
 - Icon fonts
