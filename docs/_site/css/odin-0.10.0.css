@@ -1451,3 +1451,58 @@ input[type="submit"]:disabled {
   font-size: 0.8rem;
   font-style: italic;
 }
+
+/* ==========================================================================
+   Callouts
+   ========================================================================== */
+/**
+ * Description
+ */
+.callout {
+  border: 1px solid #678;
+  border-radius: 0.4rem;
+  background-color: #d8dde2;
+  color: #0f1113;
+  padding: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/**
+ * Description.
+ */
+.callout-primary,
+.callout-info,
+.callout-success,
+.callout-warning,
+.callout-danger {
+  color: #FFF;
+}
+
+.callout-primary {
+  background-color: #678;
+  border-color: #505e6b;
+}
+
+.callout-info {
+  background-color: #5be;
+  border-color: #27a8e9;
+}
+
+.callout-success {
+  background-color: #2c5;
+  border-color: #1ba043;
+}
+
+.callout-warning {
+  background-color: #d82;
+  border-color: #b16d1b;
+}
+
+.callout-danger {
+  background-color: #c00;
+  border-color: #990000;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Callouts
+   ========================================================================== */
+
+/**
+ * Description
+ */
+.callout {
+ border: 1px solid $gray-base;
+ border-radius: 0.4rem;
+ background-color: $gray-very-light;
+ color: $gray-very-dark;
+ padding: 0.6rem;
+ margin-bottom: 1.5rem;
+}
+
+/**
+ * Description.
+ */
+ .callout-primary,
+ .callout-info,
+ .callout-success,
+ .callout-warning,
+ .callout-danger {
+   color: $white;
+ }
+
+.callout-primary {
+  background-color: $gray-base;
+  border-color: darken($gray-base, 10%);
+}
+
+.callout-info {
+  background-color: $info-color;
+  border-color: darken($info-color, 10%);
+}
+
+.callout-success {
+  background-color: $success-color;
+  border-color: darken($success-color, 10%);
+}
+
+.callout-warning {
+  background-color: $warning-color;
+  border-color: darken($warning-color, 10%);
+}
+
+.callout-danger {
+  background-color: $danger-color;
+  border-color: darken($danger-color, 10%);
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
