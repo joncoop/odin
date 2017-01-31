@@ -9,7 +9,6 @@
  border: 1px solid $gray-base;
  border-radius: 0.4rem;
  background-color: $gray-very-light;
- color: $gray-very-dark;
  padding: 0.6rem;
  margin-bottom: 1.5rem;
 }
@@ -22,7 +21,7 @@
  .callout-success,
  .callout-warning,
  .callout-danger {
-   color: $white;
+
  }
 
 .callout-primary {
@@ -41,8 +40,8 @@
 }
 
 .callout-warning {
-  background-color: $warning-color;
-  border-color: darken($warning-color, 10%);
+  background-color: lighten($warning-color, 25%);
+  border-color: lighten($warning-color, 15%);
 }
 
 .callout-danger {

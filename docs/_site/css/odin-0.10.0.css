@@ -869,7 +869,7 @@ blockquote cite {
 }
 
 blockquote cite::before {
-  content: "– ";
+  content: "ΓÇô ";
 }
 
 /**
@@ -1462,7 +1462,6 @@ input[type="submit"]:disabled {
   border: 1px solid #678;
   border-radius: 0.4rem;
   background-color: #d8dde2;
-  color: #0f1113;
   padding: 0.6rem;
   margin-bottom: 1.5rem;
 }
@@ -1470,14 +1469,6 @@ input[type="submit"]:disabled {
 /**
  * Description.
  */
-.callout-primary,
-.callout-info,
-.callout-success,
-.callout-warning,
-.callout-danger {
-  color: #FFF;
-}
-
 .callout-primary {
   background-color: #678;
   border-color: #505e6b;
@@ -1494,8 +1485,8 @@ input[type="submit"]:disabled {
 }
 
 .callout-warning {
-  background-color: #d82;
-  border-color: #b16d1b;
+  background-color: #eec491;
+  border-color: #e7ac64;
 }
 
 .callout-danger {
