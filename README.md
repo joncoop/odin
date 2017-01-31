@@ -25,12 +25,14 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 ## To do
 
 ### for v1.0
+- There's something that just doesn't feel right about the grid breakpoint/container sizing and naming relationship. Gotta do some math and think this through.
 - Possibly simplify navbar markup. Give evenly spaced navbar compatible with responsive features.
 - General code cleanup, clean up color palette, minor styling tweaks, bug fixes.
 - Add unstyled list class.
 
 ### for 1.0+
 - Remove JQuery dependency for slideout menu.
+- Add classes for call-outs/alerts or whatever they should be called.
 - Add containers that snap to widths according to viewport.
 - Add 'sticky' features for header and footer elements.
 - Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)
