@@ -1456,44 +1456,106 @@ input[type="submit"]:disabled {
    Callouts
    ========================================================================== */
 /**
- * Description
+ * General callout structure. This class should not be used.
  */
-.callout {
-  border: 1px solid #678;
+.callout, .callout-default, .callout-primary, .callout-info, .callout-success, .callout-warning, .callout-danger {
   border-radius: 0.4rem;
-  background-color: #d8dde2;
-  padding: 0.6rem;
+  color: #0f1113;
+  padding: 0.8rem;
   margin-bottom: 1.5rem;
 }
 
 /**
- * Description.
+ * Various callout styles.
  */
+.callout-default {
+  background-color: #FFF;
+  border: 1px solid #9eaab6;
+}
+
 .callout-primary {
-  background-color: #678;
-  border-color: #505e6b;
+  background-color: #bbc4cc;
+  border-color: #9eaab6;
 }
 
 .callout-info {
-  background-color: #5be;
-  border-color: #27a8e9;
+  background-color: #b2e0f7;
+  border-color: #83cef3;
 }
 
 .callout-success {
-  background-color: #2c5;
-  border-color: #1ba043;
+  background-color: #83eaa2;
+  border-color: #57e381;
 }
 
 .callout-warning {
-  background-color: #eec491;
   border-color: #e7ac64;
+  background-color: #eec491;
 }
 
 .callout-danger {
-  background-color: #c00;
-  border-color: #990000;
+  background-color: #ff8080;
+  border-color: #ff4d4d;
 }
 
-.callout p:last-child {
+/* All heading levels in callouts are styled the same. */
+.callout-default h1,
+.callout-default h2,
+.callout-default h3,
+.callout-default h4,
+.callout-default h5,
+.callout-default h6,
+.callout-primary h1,
+.callout-primary h2,
+.callout-primary h3,
+.callout-primary h4,
+.callout-primary h5,
+.callout-primary h6,
+.callout-success h1,
+.callout-success h2,
+.callout-success h3,
+.callout-success h4,
+.callout-success h5,
+.callout-success h6,
+.callout-info h1,
+.callout-info h2,
+.callout-info h3,
+.callout-info h4,
+.callout-info h5,
+.callout-info h6,
+.callout-warning h1,
+.callout-warning h2,
+.callout-warning h3,
+.callout-warning h4,
+.callout-warning h5,
+.callout-warning h6,
+.callout-danger h1,
+.callout-danger h2,
+.callout-danger h3,
+.callout-danger h4,
+.callout-danger h5,
+.callout-danger h6 {
+  color: #3a444e;
+  font-size: 1.555rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+/* Tighten up callout paragraph spacing. */
+.callout-default p,
+.callout-primary p,
+.callout-info p,
+.callout-success p,
+.callout-warning p,
+.callout-danger p {
+  margin-bottom: 0.8rem;
+}
+
+.callout-default p:last-child,
+.callout-primary p:last-child,
+.callout-info p:last-child,
+.callout-success p:last-child,
+.callout-warning p:last-child,
+.callout-danger p:last-child {
   margin-bottom: 0;
 }

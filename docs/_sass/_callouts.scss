@@ -3,52 +3,111 @@
    ========================================================================== */
 
 /**
- * Description
+ * General callout structure. This class should not be used.
  */
 .callout {
- border: 1px solid $gray-base;
- border-radius: 0.4rem;
- background-color: $gray-very-light;
- padding: 0.6rem;
- margin-bottom: 1.5rem;
+   border-radius: 0.4rem;
+   color: $gray-very-dark;
+   padding: 0.8rem;
+   margin-bottom: 1.5rem;
 }
 
 /**
- * Description.
+ * Various callout styles.
  */
- .callout-primary,
- .callout-info,
- .callout-success,
- .callout-warning,
- .callout-danger {
-
- }
-
-.callout-primary {
-  background-color: $gray-base;
-  border-color: darken($gray-base, 10%);
+.callout-default {
+  @extend .callout;
+  background-color: $white;
+  border: 1px solid $gray-light;
 }
 
+.callout-primary {
+  @extend .callout;
+  background-color: lighten($gray-base, 30%);
+  border-color: lighten($gray-base, 20%);
+}
 .callout-info {
-  background-color: $info-color;
-  border-color: darken($info-color, 10%);
+  @extend .callout;
+  background-color: lighten($info-color, 20%);
+  border-color: lighten($info-color, 10%);
 }
 
 .callout-success {
-  background-color: $success-color;
-  border-color: darken($success-color, 10%);
+  @extend .callout;
+  background-color: lighten($success-color, 25%);
+  border-color: lighten($success-color, 15%);
 }
 
 .callout-warning {
-  background-color: lighten($warning-color, 25%);
+  @extend .callout;
   border-color: lighten($warning-color, 15%);
+  background-color: lighten($warning-color, 25%);
 }
 
 .callout-danger {
-  background-color: $danger-color;
-  border-color: darken($danger-color, 10%);
+  @extend .callout;
+  background-color: lighten($danger-color, 35%);
+  border-color: lighten($danger-color, 25%);
 }
 
-.callout p:last-child {
+/* All heading levels in callouts are styled the same. */
+.callout-default h1,
+.callout-default h2,
+.callout-default h3,
+.callout-default h4,
+.callout-default h5,
+.callout-default h6,
+.callout-primary h1,
+.callout-primary h2,
+.callout-primary h3,
+.callout-primary h4,
+.callout-primary h5,
+.callout-primary h6,
+.callout-success h1,
+.callout-success h2,
+.callout-success h3,
+.callout-success h4,
+.callout-success h5,
+.callout-success h6,
+.callout-info h1,
+.callout-info h2,
+.callout-info h3,
+.callout-info h4,
+.callout-info h5,
+.callout-info h6,
+.callout-warning h1,
+.callout-warning h2,
+.callout-warning h3,
+.callout-warning h4,
+.callout-warning h5,
+.callout-warning h6,
+.callout-danger h1,
+.callout-danger h2,
+.callout-danger h3,
+.callout-danger h4,
+.callout-danger h5,
+.callout-danger h6 {
+  color: $gray-dark;
+  font-size: 1.555rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+/* Tighten up callout paragraph spacing. */
+.callout-default p,
+.callout-primary p,
+.callout-info p,
+.callout-success p,
+.callout-warning p,
+.callout-danger p {
+    margin-bottom: 0.8rem;
+}
+
+.callout-default p:last-child,
+.callout-primary p:last-child,
+.callout-info p:last-child,
+.callout-success p:last-child,
+.callout-warning p:last-child,
+.callout-danger p:last-child {
   margin-bottom: 0;
 }
