@@ -129,11 +129,12 @@ blockquote cite {
   display: block;
   font-size: 1.0rem;
   font-style: italic;
-  content:be
 }
 
 blockquote cite::before {
-    content: "– ";
+    content: "\2014 ";
+    margin-right: 0.4rem;
+    white-space: pre;
 }
 
 /**

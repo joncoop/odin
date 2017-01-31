@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*! odin-0.9.5.css | MIT License | https://github.com/joncoop/odin */
+/*! odin-0.10.1.css | MIT License | https://github.com/joncoop/odin */
 /* ==========================================================================
    Resets
    ========================================================================== */
@@ -865,11 +864,12 @@ blockquote cite {
   display: block;
   font-size: 1.0rem;
   font-style: italic;
-  content: be;
 }
 
 blockquote cite::before {
-  content: "ΓÇô ";
+  content: "\2014 ";
+  margin-right: 0.4rem;
+  white-space: pre;
 }
 
 /**
