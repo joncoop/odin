@@ -1,18 +1,31 @@
-/* grid styles */
+/* ==========================================================================
+   The Grid
+   ========================================================================== */
 
+/**
+ * The grid is based upon rows using flexbox.
+ */
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.row > *
-{
+/**
+ * Apply default stying to all elements in a row.
+ *
+ * This is a bit hackish. I'm assuming only columns will be direct decendants
+ * of a row. This syntax just saves some typing.
+ */
+.row > * {
   padding: $spacing-unit / 2;
   position: relative;
-  width: 100%;
+  width: 100%; /* why is this here? */
 }
 
+/**
+ * Allow for gutters between columns to be adjusted.
+ */
 .row.gutter-default > * {
   padding: $spacing-unit / 2;
 }
@@ -25,11 +38,9 @@
   padding: 0;
 }
 
-/* apply .show-gridlines to body when creating initial grid or when debugging */
-.show-gridlines .row > * {
-  border: 1px solid #bbb;
-}
-
+/**
+ * Base column classes.
+ */
 .col-xs-1 { width: 8.333333%; }
 .col-xs-2 { width: 16.666666%; }
 .col-xs-3 { width: 25%; }
@@ -43,6 +54,9 @@
 .col-xs-11 { width: 91.666666%; }
 .col-xs-12 { width: 100%; }
 
+/**
+ * Responsive column classes for small viewports and up.
+ */
 @media (min-width: $sm-min-width) {
   .col-sm-1 { width: 8.333333%; }
   .col-sm-2 { width: 16.666666%; }
@@ -58,6 +72,9 @@
   .col-sm-12 { width: 100%; }
 }
 
+/**
+ * Responsive column classes for medium viewports and up.
+ */
 @media (min-width: $md-min-width) {
   .col-md-1 { width: 8.333333%; }
   .col-md-2 { width: 16.666666%; }
@@ -73,6 +90,9 @@
   .col-md-12 { width: 100%; }
 }
 
+/**
+ * Responsive column classes for large viewports and up.
+ */
 @media (min-width: $lg-min-width) {
   .col-lg-1 { width: 8.333333%; }
   .col-lg-2 { width: 16.666666%; }
@@ -88,30 +108,47 @@
   .col-lg-12 { width: 100%; }
 }
 
+/**
+ * Reverse the order of columns within a row.
+ */
 .reverse {
   flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 @media (max-width: $xs-max-width) {
   .reverse-xs {
     flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
   }
 }
 
 @media (min-width: $sm-min-width) and (max-width: $sm-max-width) {
   .reverse-sm {
     flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
   }
 }
 
 @media (min-width: $md-min-width) and (max-width: $md-max-width) {
   .reverse-md {
     flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
   }
 }
 
 @media (min-width: $lg-min-width) {
   .reverse-lg {
     flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
   }
+}
+
+/**
+ * The .show-gridlines class can be applied to the body or any other element
+ * that contains rows. Gridlines aren't intended to be applied to final layouts,
+ * but they can be quite useful when creating the initial grid or debugging.
+ */
+.show-gridlines .row > * {
+  border: 1px solid #bbb;
 }

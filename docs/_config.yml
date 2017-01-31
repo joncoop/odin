@@ -18,3 +18,6 @@ github_username:  joncoop
 
 # Build settings
 markdown: kramdown
+
+sass:
+  style: expanded

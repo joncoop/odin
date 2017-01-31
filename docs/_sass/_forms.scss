@@ -1,8 +1,13 @@
-/* form styles
+/* ==========================================================================
+   Forms
+   ========================================================================== */
 
-  Note: form-basic button styling is in buttons.scss.
-*/
-
+/**
+ * Basic form styling.
+ *
+ * Nothing fancy here. Mostly just making sure styling is consistent across
+ * browsers.
+ */
 .form-basic input,
 .form-basic select,
 .form-basic textarea {
@@ -37,7 +42,6 @@
 
 .form-basic input[type="radio"]:focus,
 .form-basic input[type="checkbox"]:focus {
-  /* neat idea to implement later: http://www.hongkiat.com/blog/css3-checkbox-radio/ */
   outline: 1px solid $gray-light;
 }
 
@@ -86,6 +90,9 @@
   width: 100%;
 }
 
+/**
+ * Wide form elements expand to 100% of their container width.
+ */
 .form-wide input,
 .form-wide select,
 .form-wide textarea,
@@ -99,6 +106,9 @@
   width: auto;
 }
 
+/**
+ * Forcing form elemnts to block can make nice stacked forms.
+ */
 .form-stack input,
 .form-stack select,
 .form-stack textarea,
@@ -117,8 +127,11 @@
   margin-bottom: 0.8rem;
 }
 
+/**
+ * Utility for giving additional instructions for form fields.
+ */
 .form-hint {
   color: $gray-base;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-style: italic;
 }

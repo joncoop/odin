@@ -1,4 +1,19 @@
-/* image styles (but can be used on other stuff) */
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+/**
+ * Remove the border on linked images in IE.
+ */
+ img {
+   border-style: none;
+ }
+
+ /**
+  * Helper classes allow for rounded and circle images.
+  *
+  * These image styles can be used on elements other than images.
+  */
 .rounded {
   border-radius: 0.4rem;
 }

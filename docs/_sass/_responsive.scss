@@ -1,12 +1,29 @@
-/* responsive features */
+/* ==========================================================================
+   Responsive Utilities
+   ========================================================================== */
+
+/**
+ * Images, iframes, and video elements are responsive by default.
+ *
+ * TODO: Write classes that constrain responsive video and iframes to a fixed
+ *       aspect ratio.
+ */
 img,
 iframe,
 video {
   max-width: 100%;
 }
 
-/* responsive helper classes */
-
+/**
+ * Hide content based on viewport
+ *
+ * The .hidden-*-down classes hide the element when the viewport is at the given
+ * breakpoint or smaller. For example, .hidden-sm-down hides an element on small,
+ * and extra-small viewports.
+ *
+ * The .hidden-*-up classes hide the element when the viewport is at the given
+ * breakpoint or wider.
+ */
 @media (max-width: $xs-max-width) {
   .hide-xs-down {
     display: none;

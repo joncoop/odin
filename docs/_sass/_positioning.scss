@@ -1,7 +1,10 @@
-/* positioning helper classes
- * (Keep these last in CSS to avoid precedence issues.)
- */
+/* ==========================================================================
+   Positioning
+   ========================================================================== */
 
+/**
+ * Utilities for horizontally and vertically centering elements.
+ */
 .center-vertical,
 .center-horizontal,
 .push-left,
@@ -17,6 +20,9 @@
   justify-content: center;
 }
 
+/**
+ * Push element to the right or left edge of other elements.
+ */
 .push-left {
   justify-content: flex-start;
 }
@@ -25,6 +31,9 @@
   justify-content: flex-end;
 }
 
+/**
+ * Position elements in the corners of other elements.
+ */
 .upper-left,
 .upper-right,
 .lower-right,
@@ -96,6 +105,9 @@
   left: 0;
 }
 
+/**
+ * Utility classes for quicly applying floats to elements.
+ */
 .right {
   float: right;
   margin-left: 1.2rem;
@@ -112,7 +124,29 @@
   clear: both;
 }
 
+/**
+ * Center inline elements such as images.
+ */
 .center {
   display: block;
   margin: 0 auto;
+}
+
+/**
+ * Text alignment utilities.
+ */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }

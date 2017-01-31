@@ -1,6 +1,12 @@
-/* typography */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
+/**
+ * Apply default body styles.
+ */
 body {
+  background-color: $background-color;
   color: $text-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -8,6 +14,9 @@ body {
   line-height: $base-line-height;
 }
 
+/**
+ * Apply default heading styles.
+ */
 h1,
 h2,
 h3,
@@ -55,23 +64,29 @@ h6 {
   margin-bottom: 1.25rem;
 }
 
-p, ul, ol, pre, table, blockquote {
+/**
+ * Set vertical spacing for non-heading text elements.
+ */
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
   margin-top: 0rem;
   margin-bottom: 1.5rem;
 }
 
-ul ul, ol ol, ul ol, ol ul {
+ul ul,
+ol ol,
+ul ol,
+ol ul {
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
 
-/*
-a, b, i, strong, em, small, code {
-  line-height: 0;
-}
-*/
-
-sub, sup {
+sub,
+sup {
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -85,14 +100,18 @@ sub {
   bottom: -0.25em;
 }
 
-
-/* More custom styling */
+/**
+ * Make sure list indentation is consistent with other spacing.
+ */
 ol,
 ul {
   margin-left: $spacing-unit / 1.333;
   padding-left: $spacing-unit;
 }
 
+/**
+ * Style blockquotes and citations.
+ */
 blockquote {
   border-left: $spacing-unit / 4 solid $gray-very-light;
   font-size: 1.333rem;
@@ -117,46 +136,45 @@ blockquote cite::before {
     content: "– ";
 }
 
+/**
+ * Make the weight of bold text relative to the base font-weight.
+ *
+ * In all likelihood this has no effect, but it might if a very light base
+ * font-weight is used.
+ */
 b,
 strong {
   font-weight: bolder;
 }
 
-pre,
-code {
-  color: $gray-base;
-  font-family: monospace;
-  font-size: 1.0rem;
-}
-
+/**
+ * Make sure small text is rendered the same in all browsers.
+ */
 small {
   font-size: 80%;
 }
 
+/**
+ * Set the highlight color.
+ */
 mark {
   background-color: $highlight-color;
 }
 
-.important {
-  color: $important-color;
+/**
+ * Get the code and code-like elements.
+ */
+code,
+kbd,
+samp {
+  color: $gray-base;
+  font-family: monospace;
+  font-size: 1.0em;
 }
 
+/**
+ * Utilities for de-emphasizing text.
+ */
 .light {
   color: $gray-base;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: justify;
 }

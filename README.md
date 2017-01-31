@@ -20,16 +20,16 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - 0.9.2 - Evenly spaced navbar links are working. Not super pleased with the implementation, still incompatible with responsive features. (2017-01-29)
 - 0.9.3 - Fixed z-index bug with slideout menus. (2017-01-30)
 - 0.9.4 - Fixed another z-index bug with slideout menus. Fix Firefox/IE slideout navbar layout quirks. (2017-01-30)
+- 0.9.5 - Bug fixes, CSS reorganization, and lots of documentation comments added to CSS. (2017-01-30)
 
 ## To do
 
 ### for v1.0
-- Possibly simplify navbar markup. Make evenly spaced navbar compatible with responsive features.
-- Remove JQuery dependency for slideout menu.
+- Possibly simplify navbar markup. Give evenly spaced navbar compatible with responsive features.
 - General code cleanup, clean up color palette, minor styling tweaks, bug fixes.
-- Document the CSS really nicely, add some licensing info in the comments.
 
 ### for 1.0+
+- Remove JQuery dependency for slideout menu.
 - Add containers that snap to widths according to viewport.
 - Add 'sticky' features for header and footer elements.
 - Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)

@@ -1,13 +1,26 @@
-/* container styles */
+/* ==========================================================================
+   Containers
+   ========================================================================== */
 
+/**
+* Center container classes and give a little paddinn on the sides to keep
+* content from touching the edge of small screens.
+*/
 .container-sm,
 .container-md,
 .container-lg,
 .container-xl {
   margin: 0 auto;
-  padding: 0 0.7rem;
+  padding: 0 0.6rem;
 }
 
+/**
+ * Fluid containers expand to the max-width if space is available. Otherwise,
+ * they expand to the browser width.
+ *
+ * TODO: Create fixed-width responsive containers that snap to viewport
+ *       breakpoints.
+ */
 .container-sm {
   max-width: $sm-min-width;
 }

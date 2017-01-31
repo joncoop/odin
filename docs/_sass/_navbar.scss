@@ -1,4 +1,6 @@
-/* navbar styles */
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
 
 .navbar {
   align-items: center;
@@ -12,7 +14,7 @@
 .navbar-menu {
   display: flex;
   position: relative;
-  z-index: 998;
+  z-index: 998; /* make sure the menu stays in front of all other content */
 }
 
 .navbar-spread {
@@ -74,7 +76,7 @@
 
   /* http://stackoverflow.com/questions/29930933/absolute-positioned-item-in-a-flex-container-still-gets-considered-as-item-in-ie */
   margin: 0 0.2rem 0 auto;
-  
+
   padding: 0.2rem;
 }
 
@@ -89,7 +91,7 @@
   padding: 0.2rem;
   position: absolute;
   top: 0;
-  z-index: 999;
+  z-index: 999; /* make sure this is higher than the navbar-menu */
 }
 
 .navbar-slideout .navbar-menu,

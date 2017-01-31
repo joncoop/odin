@@ -1,281 +1,416 @@
 @charset "UTF-8";
-/* resets */
+/* ==========================================================================
+   Resets
+   ========================================================================== */
+/**
+ * Set box-sizing to border-box for all elements.
+ *
+ * Technique from:
+ * https://css-tricks.com/box-sizing/
+ */
 html, body {
   box-sizing: border-box;
-  height: 100%; }
+  height: 100%;
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
-  /* technique from https://css-tricks.com/box-sizing/ */ }
+  /*  */
+}
 
+/**
+ * Remove the margin on the body.
+ */
 body {
-  background-color: #fdfdfd;
-  margin: 0; }
+  margin: 0;
+}
 
-article,
-aside,
-footer,
-header,
-nav,
-section,
-figcaption,
-figure,
-main {
-  display: block; }
-
-img {
-  border-style: none; }
-
-/* grid styles */
+/* ==========================================================================
+   The Grid
+   ========================================================================== */
+/**
+ * The grid is based upon rows using flexbox.
+ */
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
+/**
+ * Apply default stying to all elements in a row.
+ *
+ * This is a bit hackish. I'm assuming only columns will be direct decendants
+ * of a row. This syntax just saves some typing.
+ */
 .row > * {
   padding: 12px;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  /* why is this here? */
+}
 
+/**
+ * Allow for gutters between columns to be adjusted.
+ */
 .row.gutter-default > * {
-  padding: 12px; }
+  padding: 12px;
+}
 
 .row.gutter-double > * {
-  padding: 24px; }
+  padding: 24px;
+}
 
 .row.gutter-none > * {
-  padding: 0; }
+  padding: 0;
+}
 
-/* apply .show-gridlines to body when creating initial grid or when debugging */
-.show-gridlines .row > * {
-  border: 1px solid #bbb; }
-
+/**
+ * Base column classes.
+ */
 .col-xs-1 {
-  width: 8.333333%; }
+  width: 8.333333%;
+}
 
 .col-xs-2 {
-  width: 16.666666%; }
+  width: 16.666666%;
+}
 
 .col-xs-3 {
-  width: 25%; }
+  width: 25%;
+}
 
 .col-xs-4 {
-  width: 33.333333%; }
+  width: 33.333333%;
+}
 
 .col-xs-5 {
-  width: 41.666666%; }
+  width: 41.666666%;
+}
 
 .col-xs-6 {
-  width: 50%; }
+  width: 50%;
+}
 
 .col-xs-7 {
-  width: 58.333333%; }
+  width: 58.333333%;
+}
 
 .col-xs-8 {
-  width: 66.666666%; }
+  width: 66.666666%;
+}
 
 .col-xs-9 {
-  width: 75%; }
+  width: 75%;
+}
 
 .col-xs-10 {
-  width: 83.333333%; }
+  width: 83.333333%;
+}
 
 .col-xs-11 {
-  width: 91.666666%; }
+  width: 91.666666%;
+}
 
 .col-xs-12 {
-  width: 100%; }
+  width: 100%;
+}
 
+/**
+ * Responsive column classes for small viewports and up.
+ */
 @media (min-width: 480px) {
   .col-sm-1 {
-    width: 8.333333%; }
+    width: 8.333333%;
+  }
 
   .col-sm-2 {
-    width: 16.666666%; }
+    width: 16.666666%;
+  }
 
   .col-sm-3 {
-    width: 25%; }
+    width: 25%;
+  }
 
   .col-sm-4 {
-    width: 33.333333%; }
+    width: 33.333333%;
+  }
 
   .col-sm-5 {
-    width: 41.666666%; }
+    width: 41.666666%;
+  }
 
   .col-sm-6 {
-    width: 50%; }
+    width: 50%;
+  }
 
   .col-sm-7 {
-    width: 58.333333%; }
+    width: 58.333333%;
+  }
 
   .col-sm-8 {
-    width: 66.666666%; }
+    width: 66.666666%;
+  }
 
   .col-sm-9 {
-    width: 75%; }
+    width: 75%;
+  }
 
   .col-sm-10 {
-    width: 83.333333%; }
+    width: 83.333333%;
+  }
 
   .col-sm-11 {
-    width: 91.666666%; }
+    width: 91.666666%;
+  }
 
   .col-sm-12 {
-    width: 100%; } }
+    width: 100%;
+  }
+}
+/**
+ * Responsive column classes for medium viewports and up.
+ */
 @media (min-width: 720px) {
   .col-md-1 {
-    width: 8.333333%; }
+    width: 8.333333%;
+  }
 
   .col-md-2 {
-    width: 16.666666%; }
+    width: 16.666666%;
+  }
 
   .col-md-3 {
-    width: 25%; }
+    width: 25%;
+  }
 
   .col-md-4 {
-    width: 33.333333%; }
+    width: 33.333333%;
+  }
 
   .col-md-5 {
-    width: 41.666666%; }
+    width: 41.666666%;
+  }
 
   .col-md-6 {
-    width: 50%; }
+    width: 50%;
+  }
 
   .col-md-7 {
-    width: 58.333333%; }
+    width: 58.333333%;
+  }
 
   .col-md-8 {
-    width: 66.666666%; }
+    width: 66.666666%;
+  }
 
   .col-md-9 {
-    width: 75%; }
+    width: 75%;
+  }
 
   .col-md-10 {
-    width: 83.333333%; }
+    width: 83.333333%;
+  }
 
   .col-md-11 {
-    width: 91.666666%; }
+    width: 91.666666%;
+  }
 
   .col-md-12 {
-    width: 100%; } }
+    width: 100%;
+  }
+}
+/**
+ * Responsive column classes for large viewports and up.
+ */
 @media (min-width: 960px) {
   .col-lg-1 {
-    width: 8.333333%; }
+    width: 8.333333%;
+  }
 
   .col-lg-2 {
-    width: 16.666666%; }
+    width: 16.666666%;
+  }
 
   .col-lg-3 {
-    width: 25%; }
+    width: 25%;
+  }
 
   .col-lg-4 {
-    width: 33.333333%; }
+    width: 33.333333%;
+  }
 
   .col-lg-5 {
-    width: 41.666666%; }
+    width: 41.666666%;
+  }
 
   .col-lg-6 {
-    width: 50%; }
+    width: 50%;
+  }
 
   .col-lg-7 {
-    width: 58.333333%; }
+    width: 58.333333%;
+  }
 
   .col-lg-8 {
-    width: 66.666666%; }
+    width: 66.666666%;
+  }
 
   .col-lg-9 {
-    width: 75%; }
+    width: 75%;
+  }
 
   .col-lg-10 {
-    width: 83.333333%; }
+    width: 83.333333%;
+  }
 
   .col-lg-11 {
-    width: 91.666666%; }
+    width: 91.666666%;
+  }
 
   .col-lg-12 {
-    width: 100%; } }
+    width: 100%;
+  }
+}
+/**
+ * Reverse the order of columns within a row.
+ */
 .reverse {
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
 
 @media (max-width: 479px) {
   .reverse-xs {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+}
 @media (min-width: 480px) and (max-width: 719px) {
   .reverse-sm {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+}
 @media (min-width: 720px) and (max-width: 959px) {
   .reverse-md {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+}
 @media (min-width: 960px) {
   .reverse-lg {
-    flex-direction: row-reverse; } }
-/* container styles */
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+}
+/**
+ * The .show-gridlines class can be applied to the body or any other element
+ * that contains rows. Gridlines aren't intended to be applied to final layouts,
+ * but they can be quite useful when creating the initial grid or debugging.
+ */
+.show-gridlines .row > * {
+  border: 1px solid #bbb;
+}
+
+/* ==========================================================================
+   Containers
+   ========================================================================== */
+/**
+* Center container classes and give a little paddinn on the sides to keep
+* content from touching the edge of small screens.
+*/
 .container-sm,
 .container-md,
 .container-lg,
 .container-xl {
   margin: 0 auto;
-  padding: 0 0.7rem; }
+  padding: 0 0.6rem;
+}
 
+/**
+ * Fluid containers expand to the max-width if space is available. Otherwise,
+ * they expand to the browser width.
+ *
+ * TODO: Create fixed-width responsive containers that snap to viewport
+ *       breakpoints.
+ */
 .container-sm {
-  max-width: 480px; }
+  max-width: 480px;
+}
 
 .container-md {
-  max-width: 720px; }
+  max-width: 720px;
+}
 
 .container-lg {
-  max-width: 960px; }
+  max-width: 960px;
+}
 
 .container-xl {
-  max-width: 1200px; }
+  max-width: 1200px;
+}
 
-/* navbar styles */
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
 .navbar {
   align-items: center;
   background-color: #d8dde2;
   display: flex;
   height: 3.0rem;
   justify-content: space-between;
-  padding: 0.4rem; }
+  padding: 0.4rem;
+}
 
 .navbar-menu {
   display: flex;
   position: relative;
-  z-index: 998; }
+  z-index: 998;
+  /* make sure the menu stays in front of all other content */
+}
 
 .navbar-spread {
   display: block;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .navbar-spread .navbar-menu {
-  display: block; }
+  display: block;
+}
 
 .navbar-spread .navbar-menu ul {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .navbar ul {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .navbar li {
-  padding: 0.4rem; }
+  padding: 0.4rem;
+}
 
 .navbar a:link,
 .navbar a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .navbar a:hover,
 .navbar a:active {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .navbar-brand {
   color: #0f1113;
   font-size: 2.0rem;
   font-weight: 500;
-  margin: 0 auto 0 0; }
+  margin: 0 auto 0 0;
+}
 
 .menu-toggle {
   background-color: transparent;
@@ -283,7 +418,8 @@ img {
   display: block;
   /* http://stackoverflow.com/questions/29930933/absolute-positioned-item-in-a-flex-container-still-gets-considered-as-item-in-ie */
   margin: 0 0.2rem 0 auto;
-  padding: 0.2rem; }
+  padding: 0.2rem;
+}
 
 .menu-dismiss {
   background-color: transparent;
@@ -296,7 +432,9 @@ img {
   padding: 0.2rem;
   position: absolute;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  /* make sure this is higher than the navbar-menu */
+}
 
 .navbar-slideout .navbar-menu,
 .navbar-slideout-xs .navbar-menu,
@@ -313,7 +451,8 @@ img {
   position: fixed;
   top: 0;
   transition: 0.4s;
-  width: 280px; }
+  width: 280px;
+}
 
 .navbar-slideout .navbar-menu ul,
 .navbar-slideout-xs .navbar-menu ul,
@@ -321,7 +460,8 @@ img {
 .navbar-slideout-md .navbar-menu ul,
 .navbar-slideout-lg .navbar-menu ul,
 .navbar-slideout-xl .navbar-menu ul {
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .navbar-slideout .menu-shown,
 .navbar-slideout-xs .menu-shown,
@@ -330,7 +470,8 @@ img {
 .navbar-slideout-lg .menu-shown,
 .navbar-slideout-xl .menu-shown {
   left: 0;
-  transition: 0.4s; }
+  transition: 0.4s;
+}
 
 @media (min-width: 480px) {
   .navbar-slideout-sm .navbar-menu {
@@ -338,171 +479,279 @@ img {
     height: auto;
     overflow: auto;
     position: static;
-    width: auto; }
+    width: auto;
+  }
 
   .navbar-slideout-sm .navbar-menu ul {
-    flex-direction: row; }
+    flex-direction: row;
+  }
 
   .navbar-slideout-sm .menu-dismiss,
   .navbar-slideout-sm .menu-toggle {
-    display: none; } }
+    display: none;
+  }
+}
 @media (min-width: 720px) {
   .navbar-slideout-md .navbar-menu {
     background-color: transparent;
     height: auto;
     overflow: auto;
     position: static;
-    width: auto; }
+    width: auto;
+  }
 
   .navbar-slideout-md .navbar-menu ul {
-    flex-direction: row; }
+    flex-direction: row;
+  }
 
   .navbar-slideout-md .menu-dismiss,
   .navbar-slideout-md .menu-toggle {
-    display: none; } }
+    display: none;
+  }
+}
 @media (min-width: 960px) {
   .navbar-slideout-lg .navbar-menu {
     background-color: transparent;
     height: auto;
     overflow: auto;
     position: static;
-    width: auto; }
+    width: auto;
+  }
 
   .navbar-slideout-lg .navbar-menu ul {
-    flex-direction: row; }
+    flex-direction: row;
+  }
 
   .navbar-slideout-lg .menu-dismiss,
   .navbar-slideout-lg .menu-toggle {
-    display: none; } }
-/* positioning helper classes
- * (Keep these last in CSS to avoid precedence issues.)
+    display: none;
+  }
+}
+/* ==========================================================================
+   Positioning
+   ========================================================================== */
+/**
+ * Utilities for horizontally and vertically centering elements.
  */
 .center-vertical,
 .center-horizontal,
 .push-left,
 .push-right {
-  display: flex; }
+  display: flex;
+}
 
 .center-vertical {
-  align-items: center; }
+  align-items: center;
+}
 
 .center-horizontal {
-  justify-content: center; }
+  justify-content: center;
+}
 
+/**
+ * Push element to the right or left edge of other elements.
+ */
 .push-left {
-  justify-content: flex-start; }
+  justify-content: flex-start;
+}
 
 .push-right {
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
+/**
+ * Position elements in the corners of other elements.
+ */
 .upper-left,
 .upper-right,
 .lower-right,
 .lower-left {
-  position: absolute; }
+  position: absolute;
+}
 
 .upper-left,
 .gutter-default .upper-left {
   top: 12px;
-  left: 12px; }
+  left: 12px;
+}
 
 .gutter-double .upper-left {
   top: 24px;
-  left: 24px; }
+  left: 24px;
+}
 
 .gutter-none .upper-left {
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
 .upper-right,
 .gutter-default .upper-right {
   top: 12px;
-  right: 12px; }
+  right: 12px;
+}
 
 .gutter-double .upper-right {
   top: 24px;
-  right: 24px; }
+  right: 24px;
+}
 
 .gutter-none .upper-right {
   top: 0;
-  right: 0; }
+  right: 0;
+}
 
 .lower-right,
 .gutter-default .lower-right {
   bottom: 12px;
-  right: 12px; }
+  right: 12px;
+}
 
 .gutter-double .lower-right {
   bottom: 24px;
-  right: 24px; }
+  right: 24px;
+}
 
 .gutter-none .lower-right {
   bottom: 0;
-  right: 0; }
+  right: 0;
+}
 
 .lower-left,
 .gutter-default .lower-left {
   bottom: 12px;
-  left: 12px; }
+  left: 12px;
+}
 
 .gutter-double .lower-left {
   bottom: 24px;
-  left: 24px; }
+  left: 24px;
+}
 
 .gutter-none .lower-left {
   bottom: 0;
-  left: 0; }
+  left: 0;
+}
 
+/**
+ * Utility classes for quicly applying floats to elements.
+ */
 .right {
   float: right;
   margin-left: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem;
+}
 
 .left {
   float: left;
   margin-right: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem;
+}
 
 .clear {
-  clear: both; }
+  clear: both;
+}
 
+/**
+ * Center inline elements such as images.
+ */
 .center {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-/* responsive features */
+/**
+ * Text alignment utilities.
+ */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* ==========================================================================
+   Responsive Utilities
+   ========================================================================== */
+/**
+ * Images, iframes, and video elements are responsive by default.
+ *
+ * TODO: Write classes that constrain responsive video and iframes to a fixed
+ *       aspect ratio.
+ */
 img,
 iframe,
 video {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
-/* responsive helper classes */
+/**
+ * Hide content based on viewport
+ *
+ * The .hidden-*-down classes hide the element when the viewport is at the given
+ * breakpoint or smaller. For example, .hidden-sm-down hides an element on small,
+ * and extra-small viewports.
+ *
+ * The .hidden-*-up classes hide the element when the viewport is at the given
+ * breakpoint or wider.
+ */
 @media (max-width: 479px) {
   .hide-xs-down {
-    display: none; } }
+    display: none;
+  }
+}
 @media (max-width: 719px) {
   .hide-sm-down {
-    display: none; } }
+    display: none;
+  }
+}
 @media (max-width: 959px) {
   .hide-md-down {
-    display: none; } }
+    display: none;
+  }
+}
 @media (min-width: 480px) {
   .hide-sm-up {
-    display: none; } }
+    display: none;
+  }
+}
 @media (min-width: 720px) {
   .hide-md-up {
-    display: none; } }
+    display: none;
+  }
+}
 @media (min-width: 960px) {
   .hide-lg-up {
-    display: none; } }
-/* typography */
+    display: none;
+  }
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Apply default body styles.
+ */
 body {
+  background-color: #fdfdfd;
   color: #111;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
+/**
+ * Apply default heading styles.
+ */
 h1,
 h2,
 h3,
@@ -511,164 +760,233 @@ h5,
 h6 {
   color: #3a444e;
   font-weight: 500;
-  margin-top: 0rem; }
+  margin-top: 0rem;
+}
 
 h1 {
   font-size: 4.0rem;
   line-height: 4.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+}
 
 h2 {
   font-size: 2.555rem;
   line-height: 3.25rem;
-  margin-bottom: 1.75rem; }
+  margin-bottom: 1.75rem;
+}
 
 h3 {
   font-size: 2.0rem;
   line-height: 2.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+}
 
 h4 {
   font-size: 1.555rem;
   line-height: 2.0rem;
-  margin-bottom: 1.0rem; }
+  margin-bottom: 1.0rem;
+}
 
 h5 {
   font-size: 1.333rem;
   line-height: 1.75rem;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+}
 
 h6 {
   font-size: 1.111rem;
   line-height: 1.75rem;
-  margin-bottom: 1.25rem; }
-
-p, ul, ol, pre, table, blockquote {
-  margin-top: 0rem;
-  margin-bottom: 1.5rem; }
-
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0rem;
-  margin-bottom: 0rem; }
-
-/*
-a, b, i, strong, em, small, code {
-  line-height: 0;
+  margin-bottom: 1.25rem;
 }
-*/
-sub, sup {
+
+/**
+ * Set vertical spacing for non-heading text elements.
+ */
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+sub,
+sup {
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
-/* More custom styling */
+/**
+ * Make sure list indentation is consistent with other spacing.
+ */
 ol,
 ul {
   margin-left: 18.0045px;
-  padding-left: 24px; }
+  padding-left: 24px;
+}
 
+/**
+ * Style blockquotes and citations.
+ */
 blockquote {
   border-left: 6px solid #d8dde2;
   font-size: 1.333rem;
   line-height: 1.75rem;
   margin-left: 24px;
-  padding-left: 12px; }
+  padding-left: 12px;
+}
 
 blockquote p:last-of-type {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+}
 
 blockquote cite {
   color: #678;
   display: block;
   font-size: 1.0rem;
   font-style: italic;
-  content: be; }
+  content: be;
+}
 
 blockquote cite::before {
-  content: "ΓÇô "; }
+  content: "– ";
+}
 
+/**
+ * Make the weight of bold text relative to the base font-weight.
+ *
+ * In all likelihood this has no effect, but it might if a very light base
+ * font-weight is used.
+ */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: bolder;
+}
 
-pre,
-code {
+/**
+ * Make sure small text is rendered the same in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Set the highlight color.
+ */
+mark {
+  background-color: #ff8;
+}
+
+/**
+ * Get the code and code-like elements.
+ */
+code,
+kbd,
+samp {
   color: #678;
   font-family: monospace;
-  font-size: 1.0rem; }
+  font-size: 1.0em;
+}
 
-small {
-  font-size: 80%; }
-
-mark {
-  background-color: #ff8; }
-
-.important {
-  color: #b00; }
-
+/**
+ * Utilities for de-emphasizing text.
+ */
 .light {
-  color: #678; }
+  color: #678;
+}
 
-.text-left {
-  text-align: left; }
+/* ==========================================================================
+   Images
+   ========================================================================== */
+/**
+ * Remove the border on linked images in IE.
+ */
+img {
+  border-style: none;
+}
 
-.text-right {
-  text-align: right; }
-
-.text-center {
-  text-align: center; }
-
-.text-justify {
-  text-align: justify; }
-
-/* image styles (but can be used on other stuff) */
+/**
+ * Helper classes allow for rounded and circle images.
+ *
+ * These image styles can be used on elements other than images.
+ */
 .rounded {
-  border-radius: 0.4rem; }
+  border-radius: 0.4rem;
+}
 
 .circle {
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
-/* table styles */
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Just a little basic table styling. Nothing too fancy.
+ */
 table.table-basic {
   border-collapse: collapse;
-  color: #0f1113; }
+  color: #0f1113;
+}
 
 table.table-basic caption {
   color: #0f1113;
-  font-size: 1.4rem;
+  font-size: 1.333rem;
   font-weight: 500;
   padding: 0.4rem;
-  text-align: center; }
+  text-align: center;
+}
 
 table.table-basic tfoot {
   color: #3a444e;
   font-size: 0.85rem;
-  font-style: italic; }
+  font-style: italic;
+}
 
 table.table-basic tbody tr {
-  border-bottom: 1px solid #d8dde2; }
+  border-bottom: 1px solid #d8dde2;
+}
 
 table.table-basic td,
 table.table-basic th {
-  padding: 0.4rem 0.8rem; }
+  padding: 0.4rem 0.6rem;
+}
 
 table.table-basic th {
   border-bottom: 1px solid #678;
   border-top: 1px solid #678;
   color: #3a444e;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
-/* responsive table based on
+/**
+ * Make tables responsive.
+ *
+ * Technique from:
  * http://allthingssmitty.com/2016/10/03/responsive-table-layout/
  */
 table.table-stack {
-  width: 100%; }
+  width: 100%;
+}
 
 table.table-stack thead {
   border: none;
@@ -678,31 +996,37 @@ table.table-stack thead {
   overflow: hidden;
   padding: 0;
   position: absolute !important;
-  width: 1px; }
+  width: 1px;
+}
 
 table.table-stack tbody tr {
   border: 1px solid #9eaab6;
   display: block;
   margin-bottom: 0.4rem;
-  padding: 0.4rem; }
+  padding: 0.4rem;
+}
 
 table.table-stack td {
   display: block;
-  text-align: right; }
+  text-align: right;
+}
 
 table.table-stack td:before {
   content: attr(aria-label);
   float: left;
   font-weight: 500;
-  color: #3a444e; }
+  color: #3a444e;
+}
 
 table.table-stack tfoot td {
   display: block;
-  text-align: left; }
+  text-align: left;
+}
 
 @media (max-width: 479px) {
   table.table-stack-xs {
-    width: 100%; }
+    width: 100%;
+  }
 
   table.table-stack-xs thead {
     border: none;
@@ -712,30 +1036,37 @@ table.table-stack tfoot td {
     overflow: hidden;
     padding: 0;
     position: absolute !important;
-    width: 1px; }
+    width: 1px;
+  }
 
   table.table-stack-xs tbody tr {
     border: 1px solid #9eaab6;
     display: block;
     margin-bottom: 0.4rem;
-    padding: 0.4rem; }
+    padding: 0.4rem;
+  }
 
   table.table-stack-xs td {
     display: block;
-    text-align: right; }
+    text-align: right;
+  }
 
   table.table-stack-xs td:before {
     content: attr(aria-label);
     float: left;
     font-weight: 500;
-    color: #3a444e; }
+    color: #3a444e;
+  }
 
   table.table-stack-xs tfoot td {
     display: block;
-    text-align: left; } }
+    text-align: left;
+  }
+}
 @media (max-width: 719px) {
   table.table-stack-sm {
-    width: 100%; }
+    width: 100%;
+  }
 
   table.table-stack-sm thead {
     border: none;
@@ -745,30 +1076,37 @@ table.table-stack tfoot td {
     overflow: hidden;
     padding: 0;
     position: absolute !important;
-    width: 1px; }
+    width: 1px;
+  }
 
   table.table-stack-sm tbody tr {
     border: 1px solid #9eaab6;
     display: block;
     margin-bottom: 0.4rem;
-    padding: 0.4rem; }
+    padding: 0.4rem;
+  }
 
   table.table-stack-sm td {
     display: block;
-    text-align: right; }
+    text-align: right;
+  }
 
   table.table-stack-sm td:before {
     content: attr(aria-label);
     float: left;
     font-weight: 500;
-    color: #3a444e; }
+    color: #3a444e;
+  }
 
   table.table-stack-sm tfoot td {
     display: block;
-    text-align: left; } }
+    text-align: left;
+  }
+}
 @media (max-width: 959px) {
   table.table-stack-md {
-    width: 100%; }
+    width: 100%;
+  }
 
   table.table-stack-md thead {
     border: none;
@@ -778,34 +1116,47 @@ table.table-stack tfoot td {
     overflow: hidden;
     padding: 0;
     position: absolute !important;
-    width: 1px; }
+    width: 1px;
+  }
 
   table.table-stack-md tbody tr {
     border: 1px solid #9eaab6;
     display: block;
     margin-bottom: 0.4rem;
-    padding: 0.4rem; }
+    padding: 0.4rem;
+  }
 
   table.table-stack-md td {
     display: block;
-    text-align: right; }
+    text-align: right;
+  }
 
   table.table-stack-md td:before {
     content: attr(aria-label);
     float: left;
     font-weight: 500;
-    color: #3a444e; }
+    color: #3a444e;
+  }
 
   table.table-stack-md tfoot td {
     display: block;
-    text-align: left; } }
+    text-align: left;
+  }
+}
+/**
+ * Utility classes to shade table rows.
+ */
 table.shade-even-rows tbody tr:nth-child(even) {
-  background-color: #d8dde2; }
+  background-color: #d8dde2;
+}
 
 table.shade-odd-rows tbody tr:nth-child(odd) {
-  background-color: #d8dde2; }
+  background-color: #d8dde2;
+}
 
-/* buttons */
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 .button-primary,
 .button-secondary,
 .button-info,
@@ -833,7 +1184,8 @@ input[type="submit"].button-warning {
   outline: 0;
   padding: 0.6rem;
   text-decoration: none;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .button-primary:focus,
 .button-secondary:focus,
@@ -853,7 +1205,8 @@ input[type="submit"].button-info:focus,
 input[type="submit"].button-success:focus,
 input[type="submit"].button-danger:focus,
 input[type="submit"].button-warning:focus {
-  box-shadow: 0 0 6px #678; }
+  box-shadow: 0 0 6px #678;
+}
 
 .button-primary:disabled,
 .button-secondary:disabled,
@@ -864,7 +1217,8 @@ input[type="submit"].button-warning:focus {
 input[type="button"]:disabled,
 input[type="submit"]:disabled {
   color: #f2f2f2;
-  cursor: not-allowed; }
+  cursor: not-allowed;
+}
 
 .button-primary,
 .button-info,
@@ -872,77 +1226,103 @@ input[type="submit"]:disabled {
 .button-warning,
 .button-danger {
   border: none;
-  color: #FFF; }
+  color: #FFF;
+}
 
 .button-primary {
-  background-color: #678; }
+  background-color: #678;
+}
 
 .button-primary:hover {
-  background-color: #5b6a79; }
+  background-color: #5b6a79;
+}
 
 .button-primary:disabled {
-  background-color: #9eaab6; }
+  background-color: #9eaab6;
+}
 
 .button-secondary {
   background-color: #FFF;
   border: 1px solid #9eaab6;
-  color: #3a444e; }
+  color: #3a444e;
+}
 
 .button-secondary:hover {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+}
 
 .button-secondary:disabled {
   background-color: #FFF;
-  color: #9eaab6; }
+  color: #9eaab6;
+}
 
 .button-info {
-  background-color: #5be; }
+  background-color: #5be;
+}
 
 .button-info:hover {
-  background-color: #3eb2ec; }
+  background-color: #3eb2ec;
+}
 
 .button-info:disabled {
-  background-color: #b2e0f7; }
+  background-color: #b2e0f7;
+}
 
 .button-success {
-  background-color: #2c5; }
+  background-color: #2c5;
+}
 
 .button-success:hover {
-  background-color: #1eb64c; }
+  background-color: #1eb64c;
+}
 
 .button-success:disabled {
-  background-color: #6de792; }
+  background-color: #6de792;
+}
 
 .button-warning {
-  background-color: #d82; }
+  background-color: #d82;
+}
 
 .button-warning:hover {
-  background-color: #c77a1f; }
+  background-color: #c77a1f;
+}
 
 .button-warning:disabled {
-  background-color: #ebb87a; }
+  background-color: #ebb87a;
+}
 
 .button-danger {
-  background-color: #c00; }
+  background-color: #c00;
+}
 
 .button-danger:hover {
-  background-color: #b30000; }
+  background-color: #b30000;
+}
 
 .button-danger:disabled {
-  background-color: #ff6666; }
+  background-color: #ff6666;
+}
 
 .button-sm {
   font-size: 0.8rem;
-  padding: 0.2rem; }
+  padding: 0.2rem;
+}
 
 .button-lg {
   font-size: 2.0rem;
-  padding: 0.8rem; }
+  padding: 0.8rem;
+}
 
-/* form styles
-
-  Note: form-basic button styling is in buttons.scss.
-*/
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Basic form styling.
+ *
+ * Nothing fancy here. Mostly just making sure styling is consistent across
+ * browsers.
+ */
 .form-basic input,
 .form-basic select,
 .form-basic textarea {
@@ -952,58 +1332,68 @@ input[type="submit"]:disabled {
   display: inline-block;
   margin: 0.3rem 0;
   padding: 0.2rem;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .form-basic input[type="checkbox"],
 .form-basic input[type="radio"] {
   background-color: transparent;
   margin: 0.3rem 0.3rem 0.3rem 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .form-basic textarea {
   min-height: 6.0rem;
   resize: vertical;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 .form-basic input:focus,
 .form-basic select:focus,
 .form-basic textarea:focus {
   box-shadow: 0 0 6px #678;
-  outline: 0; }
+  outline: 0;
+}
 
 .form-basic input[type="radio"]:focus,
 .form-basic input[type="checkbox"]:focus {
-  /* neat idea to implement later: http://www.hongkiat.com/blog/css3-checkbox-radio/ */
-  outline: 1px solid #9eaab6; }
+  outline: 1px solid #9eaab6;
+}
 
 .form-basic input[disabled],
 .form-basic select[disabled],
 .form-basic textarea[disabled] {
   cursor: not-allowed;
-  background-color: #d8dde2; }
+  background-color: #d8dde2;
+}
 
 .form-basic input[readonly],
 .form-basic select[readonly],
 .form-basic textarea[readonly] {
   cursor: not-allowed;
-  background-color: #d8dde2; }
+  background-color: #d8dde2;
+}
 
 .form-basic input:focus:invalid,
 .form-basic textarea:focus:invalid,
 .form-basic select:focus:invalid {
   border-color: #a00;
-  color: #a00; }
+  color: #a00;
+}
 
 .form-basic input[type="file"]:focus:invalid:focus {
-  outline-color: #a00; }
+  outline-color: #a00;
+}
 
 .form-basic label {
-  margin: 0.3rem 0.3rem 0.3rem 0; }
+  margin: 0.3rem 0.3rem 0.3rem 0;
+}
 
 .form-basic fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .form-basic legend {
   border-bottom: 1px solid #9eaab6;
@@ -1012,35 +1402,51 @@ input[type="submit"]:disabled {
   font-weight: 500;
   padding: 0.4em 0;
   margin-bottom: 0.4em;
-  width: 100%; }
+  width: 100%;
+}
 
+/**
+ * Wide form elements expand to 100% of their container width.
+ */
 .form-wide input,
 .form-wide select,
 .form-wide textarea,
 .form-wide label {
   display: block;
-  width: 100%; }
+  width: 100%;
+}
 
 .form-wide input[type="checkbox"],
 .form-wide input[type="radio"] {
-  width: auto; }
+  width: auto;
+}
 
+/**
+ * Forcing form elemnts to block can make nice stacked forms.
+ */
 .form-stack input,
 .form-stack select,
 .form-stack textarea,
 .form-stack label {
-  display: block; }
+  display: block;
+}
 
 .form-stack input[type="checkbox"],
 .form-stack input[type="radio"] {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .form-stack input,
 .form-stack select,
 .form-stack textarea {
-  margin-bottom: 0.8rem; }
+  margin-bottom: 0.8rem;
+}
 
+/**
+ * Utility for giving additional instructions for form fields.
+ */
 .form-hint {
   color: #678;
-  font-size: 0.9rem;
-  font-style: italic; }
+  font-size: 0.8rem;
+  font-style: italic;
+}
