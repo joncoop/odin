@@ -27,6 +27,7 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 ### for v1.0
 - Possibly simplify navbar markup. Give evenly spaced navbar compatible with responsive features.
 - General code cleanup, clean up color palette, minor styling tweaks, bug fixes.
+- Add unstyled list class.
 
 ### for 1.0+
 - Remove JQuery dependency for slideout menu.
