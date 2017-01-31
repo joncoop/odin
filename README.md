@@ -22,6 +22,7 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - 0.9.4 - Fixed another z-index bug with slideout menus. Fix Firefox/IE slideout navbar layout quirks. (2017-01-30)
 - 0.9.5 - Bug fixes, CSS reorganization, and lots of documentation comments added to CSS. (2017-01-30)
 - 0.10.0 - Added call-outs.
+- 0.10.1 - Blockquote bug fixes.
 
 ## To do
 
