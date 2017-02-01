@@ -845,6 +845,16 @@ ul {
 }
 
 /**
+ * Unstyled lists.
+ */
+ol.list-unstyled,
+ul.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
  * Style blockquotes and citations.
  */
 blockquote {

@@ -23,6 +23,7 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - 0.9.5 - Bug fixes, CSS reorganization, and lots of documentation comments added to CSS. (2017-01-30)
 - 0.10.0 - Added call-outs. (2017-01-31)
 - 0.10.1 - Blockquote bug fixes. (2017-01-31)
+- 0.10.2 - Added unstyled list class. (2017-02-01)
 
 ## To do
 
@@ -31,7 +32,6 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - There's something that just doesn't feel right about the grid breakpoint/container sizing and naming relationship. Gotta do some math and think this through.
 - Possibly simplify navbar markup. Give evenly spaced navbar compatible with responsive features.
 - General code cleanup, clean up color palette, minor styling tweaks, bug fixes.
-- Add unstyled list class.
 - Remove JQuery dependency for slideout menu.
 - Add containers that snap to widths according to viewport.
 
