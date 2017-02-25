@@ -373,6 +373,10 @@ body {
   display: block;
 }
 
+.navbar-spread .navbar-menu {
+  display: block;
+}
+
 .navbar-spread .navbar-menu ul {
   display: flex;
   justify-content: space-around;
