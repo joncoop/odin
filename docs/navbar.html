@@ -256,16 +256,26 @@ permalink: /navbar/
 
 <h2>Custom navbar styling</h2>
 
-<p>blah</p>
+<p>To style a navbar, override the following Odin classes in a custom CSS file. Just be sure the overrides are loaded after the base odin.css file. Look in odin.css to see the base styling for each element. You only need to include override styles for properties that will be different.</p>
 
 <pre>
   <code>
     .navbar {
-      background-color: #F72;
+      background-color: #f72;
     }
 
     .navbar-brand {
       color: #fff;
+    }
+
+    .navbar-brand a:link,
+    .navbar-brand a:visited {
+
+    }
+
+    .navbar-brand a:hover,
+    .navbar-brand a:active {
+
     }
 
     .navbar-menu a:link,
@@ -283,7 +293,7 @@ permalink: /navbar/
 <h2>Styling the slideout menu</h2>
 
 <div class="callout-warning">
-The slideout styling CSS below only works on versions 0.10.4 and later.
+The slideout styling CSS below only works on versions 0.10.4 and later. You must upgrade if you want to use the code below to style your slideout navigation.
 </div>
 
 <p>By default, the slideout menu will be the same color as the navbar. Override the following Odin classes in a custom CSS file to style your navbar.</p>
@@ -294,13 +304,17 @@ The slideout styling CSS below only works on versions 0.10.4 and later.
       background-color: #333;
     }
 
+    .navbar-toggle {
+      color: #fff;
+    }
+
     .menu-dismiss {
       color: #fff;
     }
 
     .menu-shown a:link,
     .menu-shown a:visited {
-      color: #ff0;
+      color: #f72;
     }
 
     .menu-shown a:active,
