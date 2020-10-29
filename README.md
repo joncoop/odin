@@ -24,26 +24,24 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - 0.10.0 - Added call-outs. (2017-01-31)
 - 0.10.1 - Blockquote bug fixes. (2017-01-31)
 - 0.10.2 - Added unstyled list class. (2017-02-01)
+- 0.10.3 - Must have done something. (?)
+- 0.10.4 - Probably did something else. (?)
+- 0.11.0 - Added Slick carousel. (2020-10-29)
 
 ## To do
 
-### for v1.0
 - Fix row-reverse (possible just update documentation to show better usage)
 - There's something that just doesn't feel right about the grid breakpoint/container sizing and naming relationship. Gotta do some math and think this through.
 - Possibly simplify navbar markup. Give evenly spaced navbar compatible with responsive features.
 - General code cleanup, clean up color palette, minor styling tweaks, bug fixes.
-- Remove JQuery dependency for slideout menu.
 - Add containers that snap to widths according to viewport.
-
-### for 1.0+
 - Add 'sticky' features for header and footer elements.
-- Create row-10 class and corresponding col classes to have rows based on 10ths. (Or take advantage of flex for autosizing column classes.)
+- Use CDN to deliver minimized CSS and JS.
 
 ## more ideas (not to include in css/js, just write instructions)
 - Icon fonts
-- Image carousels (owl-carousel)
 - Add default code styling, syntax highlighting
 
 ## for fun
 - Make the docs much prettier
-- Work on theme template
+- Work on theme templates

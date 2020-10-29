@@ -1,4 +1,5 @@
-/*! odin-0.10.4.css | MIT License | https://github.com/joncoop/odin */
+@charset "UTF-8";
+/*! odin-0.10.5.css | MIT License | https://github.com/joncoop/odin */
 /* ==========================================================================
    Resets
    ========================================================================== */
@@ -123,51 +124,41 @@ body {
   .col-sm-1 {
     width: 8.333333%;
   }
-
   .col-sm-2 {
     width: 16.666666%;
   }
-
   .col-sm-3 {
     width: 25%;
   }
-
   .col-sm-4 {
     width: 33.333333%;
   }
-
   .col-sm-5 {
     width: 41.666666%;
   }
-
   .col-sm-6 {
     width: 50%;
   }
-
   .col-sm-7 {
     width: 58.333333%;
   }
-
   .col-sm-8 {
     width: 66.666666%;
   }
-
   .col-sm-9 {
     width: 75%;
   }
-
   .col-sm-10 {
     width: 83.333333%;
   }
-
   .col-sm-11 {
     width: 91.666666%;
   }
-
   .col-sm-12 {
     width: 100%;
   }
 }
+
 /**
  * Responsive column classes for medium viewports and up.
  */
@@ -175,51 +166,41 @@ body {
   .col-md-1 {
     width: 8.333333%;
   }
-
   .col-md-2 {
     width: 16.666666%;
   }
-
   .col-md-3 {
     width: 25%;
   }
-
   .col-md-4 {
     width: 33.333333%;
   }
-
   .col-md-5 {
     width: 41.666666%;
   }
-
   .col-md-6 {
     width: 50%;
   }
-
   .col-md-7 {
     width: 58.333333%;
   }
-
   .col-md-8 {
     width: 66.666666%;
   }
-
   .col-md-9 {
     width: 75%;
   }
-
   .col-md-10 {
     width: 83.333333%;
   }
-
   .col-md-11 {
     width: 91.666666%;
   }
-
   .col-md-12 {
     width: 100%;
   }
 }
+
 /**
  * Responsive column classes for large viewports and up.
  */
@@ -227,51 +208,41 @@ body {
   .col-lg-1 {
     width: 8.333333%;
   }
-
   .col-lg-2 {
     width: 16.666666%;
   }
-
   .col-lg-3 {
     width: 25%;
   }
-
   .col-lg-4 {
     width: 33.333333%;
   }
-
   .col-lg-5 {
     width: 41.666666%;
   }
-
   .col-lg-6 {
     width: 50%;
   }
-
   .col-lg-7 {
     width: 58.333333%;
   }
-
   .col-lg-8 {
     width: 66.666666%;
   }
-
   .col-lg-9 {
     width: 75%;
   }
-
   .col-lg-10 {
     width: 83.333333%;
   }
-
   .col-lg-11 {
     width: 91.666666%;
   }
-
   .col-lg-12 {
     width: 100%;
   }
 }
+
 /**
  * Reverse the order of columns within a row.
  */
@@ -286,24 +257,28 @@ body {
     flex-wrap: wrap-reverse;
   }
 }
+
 @media (min-width: 480px) and (max-width: 719px) {
   .reverse-sm {
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
   }
 }
+
 @media (min-width: 720px) and (max-width: 959px) {
   .reverse-md {
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
   }
 }
+
 @media (min-width: 960px) {
   .reverse-lg {
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
   }
 }
+
 /**
  * The .show-gridlines class can be applied to the body or any other element
  * that contains rows. Gridlines aren't intended to be applied to final layouts,
@@ -363,6 +338,7 @@ body {
 }
 
 .navbar-menu {
+  background-color: inherit;
   display: flex;
   position: relative;
   z-index: 998;
@@ -442,7 +418,6 @@ body {
 .navbar-slideout-md .navbar-menu,
 .navbar-slideout-lg .navbar-menu,
 .navbar-slideout-xl .navbar-menu {
-  background-color: #d8dde2;
   display: block;
   height: 100%;
   left: -280px;
@@ -450,7 +425,8 @@ body {
   overflow: auto;
   position: fixed;
   top: 0;
-  transition: 0.4s;
+  transition-property: left;
+  transition-duration: 0.4s;
   width: 280px;
 }
 
@@ -470,7 +446,8 @@ body {
 .navbar-slideout-lg .menu-shown,
 .navbar-slideout-xl .menu-shown {
   left: 0;
-  transition: 0.4s;
+  transition-property: left;
+  transition-duration: 0.4s;
 }
 
 @media (min-width: 480px) {
@@ -481,16 +458,15 @@ body {
     position: static;
     width: auto;
   }
-
   .navbar-slideout-sm .navbar-menu ul {
     flex-direction: row;
   }
-
   .navbar-slideout-sm .menu-dismiss,
-  .navbar-slideout-sm .menu-toggle {
+.navbar-slideout-sm .menu-toggle {
     display: none;
   }
 }
+
 @media (min-width: 720px) {
   .navbar-slideout-md .navbar-menu {
     background-color: transparent;
@@ -499,16 +475,15 @@ body {
     position: static;
     width: auto;
   }
-
   .navbar-slideout-md .navbar-menu ul {
     flex-direction: row;
   }
-
   .navbar-slideout-md .menu-dismiss,
-  .navbar-slideout-md .menu-toggle {
+.navbar-slideout-md .menu-toggle {
     display: none;
   }
 }
+
 @media (min-width: 960px) {
   .navbar-slideout-lg .navbar-menu {
     background-color: transparent;
@@ -517,16 +492,15 @@ body {
     position: static;
     width: auto;
   }
-
   .navbar-slideout-lg .navbar-menu ul {
     flex-direction: row;
   }
-
   .navbar-slideout-lg .menu-dismiss,
-  .navbar-slideout-lg .menu-toggle {
+.navbar-slideout-lg .menu-toggle {
     display: none;
   }
 }
+
 /* ==========================================================================
    Positioning
    ========================================================================== */
@@ -709,31 +683,37 @@ video {
     display: none;
   }
 }
+
 @media (max-width: 719px) {
   .hide-sm-down {
     display: none;
   }
 }
+
 @media (max-width: 959px) {
   .hide-md-down {
     display: none;
   }
 }
+
 @media (min-width: 480px) {
   .hide-sm-up {
     display: none;
   }
 }
+
 @media (min-width: 720px) {
   .hide-md-up {
     display: none;
   }
 }
+
 @media (min-width: 960px) {
   .hide-lg-up {
     display: none;
   }
 }
+
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -840,7 +820,7 @@ sub {
  */
 ol,
 ul {
-  margin-left: 18.0045px;
+  margin-left: 18.0045011253px;
   padding-left: 24px;
 }
 
@@ -936,10 +916,10 @@ img {
 }
 
 /**
- * Helper classes allow for rounded and circle images.
- *
- * These image styles can be used on elements other than images.
- */
+  * Helper classes allow for rounded and circle images.
+  *
+  * These image styles can be used on elements other than images.
+  */
 .rounded {
   border-radius: 0.4rem;
 }
@@ -1038,7 +1018,6 @@ table.table-stack tfoot td {
   table.table-stack-xs {
     width: 100%;
   }
-
   table.table-stack-xs thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -1049,36 +1028,32 @@ table.table-stack tfoot td {
     position: absolute !important;
     width: 1px;
   }
-
   table.table-stack-xs tbody tr {
     border: 1px solid #9eaab6;
     display: block;
     margin-bottom: 0.4rem;
     padding: 0.4rem;
   }
-
   table.table-stack-xs td {
     display: block;
     text-align: right;
   }
-
   table.table-stack-xs td:before {
     content: attr(aria-label);
     float: left;
     font-weight: 500;
     color: #3a444e;
   }
-
   table.table-stack-xs tfoot td {
     display: block;
     text-align: left;
   }
 }
+
 @media (max-width: 719px) {
   table.table-stack-sm {
     width: 100%;
   }
-
   table.table-stack-sm thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -1089,36 +1064,32 @@ table.table-stack tfoot td {
     position: absolute !important;
     width: 1px;
   }
-
   table.table-stack-sm tbody tr {
     border: 1px solid #9eaab6;
     display: block;
     margin-bottom: 0.4rem;
     padding: 0.4rem;
   }
-
   table.table-stack-sm td {
     display: block;
     text-align: right;
   }
-
   table.table-stack-sm td:before {
     content: attr(aria-label);
     float: left;
     font-weight: 500;
     color: #3a444e;
   }
-
   table.table-stack-sm tfoot td {
     display: block;
     text-align: left;
   }
 }
+
 @media (max-width: 959px) {
   table.table-stack-md {
     width: 100%;
   }
-
   table.table-stack-md thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -1129,31 +1100,28 @@ table.table-stack tfoot td {
     position: absolute !important;
     width: 1px;
   }
-
   table.table-stack-md tbody tr {
     border: 1px solid #9eaab6;
     display: block;
     margin-bottom: 0.4rem;
     padding: 0.4rem;
   }
-
   table.table-stack-md td {
     display: block;
     text-align: right;
   }
-
   table.table-stack-md td:before {
     content: attr(aria-label);
     float: left;
     font-weight: 500;
     color: #3a444e;
   }
-
   table.table-stack-md tfoot td {
     display: block;
     text-align: left;
   }
 }
+
 /**
  * Utility classes to shade table rows.
  */
@@ -1174,18 +1142,18 @@ table.shade-odd-rows tbody tr:nth-child(odd) {
 .button-success,
 .button-warning,
 .button-danger,
-input[type="button"].button-primary,
-input[type="button"].button-secondary,
-input[type="button"].button-info,
-input[type="button"].button-success,
-input[type="button"].button-danger,
-input[type="button"].button-warning,
-input[type="submit"].button-primary,
-input[type="submit"].button-secondary,
-input[type="submit"].button-info,
-input[type="submit"].button-success,
-input[type="submit"].button-danger,
-input[type="submit"].button-warning {
+input.button-primary[type="button"],
+input.button-secondary[type="button"],
+input.button-info[type="button"],
+input.button-success[type="button"],
+input.button-danger[type="button"],
+input.button-warning[type="button"],
+input.button-primary[type="submit"],
+input.button-secondary[type="submit"],
+input.button-info[type="submit"],
+input.button-success[type="submit"],
+input.button-danger[type="submit"],
+input.button-warning[type="submit"] {
   border-radius: 3px;
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1204,18 +1172,18 @@ input[type="submit"].button-warning {
 .button-success:focus,
 .button-warning:focus,
 .button-danger:focus,
-input[type="button"].button-primary:focus,
-input[type="button"].button-secondary:focus,
-input[type="button"].button-info:focus,
-input[type="button"].button-success:focus,
-input[type="button"].button-danger:focus,
-input[type="button"].button-warning:focus,
-input[type="submit"].button-primary:focus,
-input[type="submit"].button-secondary:focus,
-input[type="submit"].button-info:focus,
-input[type="submit"].button-success:focus,
-input[type="submit"].button-danger:focus,
-input[type="submit"].button-warning:focus {
+input.button-primary[type="button"]:focus,
+input.button-secondary[type="button"]:focus,
+input.button-info[type="button"]:focus,
+input.button-success[type="button"]:focus,
+input.button-danger[type="button"]:focus,
+input.button-warning[type="button"]:focus,
+input.button-primary[type="submit"]:focus,
+input.button-secondary[type="submit"]:focus,
+input.button-info[type="submit"]:focus,
+input.button-success[type="submit"]:focus,
+input.button-danger[type="submit"]:focus,
+input.button-warning[type="submit"]:focus {
   box-shadow: 0 0 6px #678;
 }
 
@@ -1468,7 +1436,7 @@ input[type="submit"]:disabled {
 /**
  * General callout structure. This class should not be used.
  */
-.callout, .callout-default, .callout-primary, .callout-info, .callout-success, .callout-warning, .callout-danger {
+.callout, .callout-danger, .callout-warning, .callout-success, .callout-info, .callout-primary, .callout-default {
   border-radius: 0.4rem;
   color: #0f1113;
   padding: 0.8rem;
@@ -1569,3 +1537,272 @@ input[type="submit"]:disabled {
 .callout-danger p:last-child {
   margin-bottom: 0;
 }
+
+/* ==========================================================================
+   Slick Carousel
+
+   Version: 1.8.0
+   Author: Ken Wheeler
+   Source: http://github.com/kenwheeler/slick
+   ========================================================================== */
+/* Slider */
+.slick-slider {
+  box-sizing: border-box;
+  display: block;
+  user-select: none;
+  position: relative;
+  touch-action: pan-y;
+}
+
+.slick-list {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  display: block;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* ==========================================================================
+   Slick Carousel Theme
+
+   Version: 1.8.0
+   Author: Ken Wheeler
+   Source: http://github.com/kenwheeler/slick
+   ========================================================================== */
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("../img/loading.gif") center center no-repeat;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+.slick-prev:before {
+  content: '<';
+}
+
+[dir='rtl'] .slick-prev:before {
+  content: '>';
+}
+
+.slick-next {
+  right: -25px;
+}
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+.slick-next:before {
+  content: '>';
+}
+
+[dir='rtl'] .slick-next:before {
+  content: '<';
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+/*# sourceMappingURL=odin-0.11.0.css.map */

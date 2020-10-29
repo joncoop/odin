@@ -1,4 +1,5 @@
-/*! odin-0.10.1.css | MIT License | https://github.com/joncoop/odin */
+/*! odin-0.11.0.css | MIT License | https://github.com/joncoop/odin */
+
 /* ==========================================================================
    Resets
    ========================================================================== */
@@ -363,7 +364,6 @@ body {
 }
 
 .navbar-menu {
-  background-color: inherit;
   display: flex;
   position: relative;
   z-index: 998;
@@ -443,6 +443,7 @@ body {
 .navbar-slideout-md .navbar-menu,
 .navbar-slideout-lg .navbar-menu,
 .navbar-slideout-xl .navbar-menu {
+  background-color: #d8dde2;
   display: block;
   height: 100%;
   left: -280px;
@@ -450,8 +451,7 @@ body {
   overflow: auto;
   position: fixed;
   top: 0;
-  transition-property: left;
-  transition-duration: 0.4s;
+  transition: 0.4s;
   width: 280px;
 }
 
@@ -471,8 +471,7 @@ body {
 .navbar-slideout-lg .menu-shown,
 .navbar-slideout-xl .menu-shown {
   left: 0;
-  transition-property: left;
-  transition-duration: 0.4s;
+  transition: 0.4s;
 }
 
 @media (min-width: 480px) {
