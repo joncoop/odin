@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! odin-0.10.5.css | MIT License | https://github.com/joncoop/odin */
+/*! odin-0.11.1.css | MIT License | https://github.com/joncoop/odin */
 /* ==========================================================================
    Resets
    ========================================================================== */
@@ -1640,6 +1640,17 @@ input[type="submit"]:disabled {
   display: none;
 }
 
+/* Custom overrides to put gaps between slides */
+.slick-list {
+  margin-left: -7px;
+  margin-right: -8px;
+}
+
+.slick-slide {
+  margin-left: 7px;
+  margin-right: 8px;
+}
+
 /* ==========================================================================
    Slick Carousel Theme
 
@@ -1805,4 +1816,4 @@ input[type="submit"]:disabled {
   color: black;
 }
 
-/*# sourceMappingURL=odin-0.11.0.css.map */
+/*# sourceMappingURL=odin-0.11.1.css.map */

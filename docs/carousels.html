@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Carousel
+title: Carousels
 permalink: /carousels/
 ---
 
-<h2>Carousels</h2>
+<h2>Slick</h2>
 <p>Odin integrates <a href="http://kenwheeler.github.io/slick/">Slick</a> by Ken Wheeler. The example code below can be included without creating custom carousel classes or configuring any JavaScript. If you desire further customization, see the official documentation.</p>
 
-<h3>Single Item</h3>
+<h3>Basic Carousel</h3>
 
-<p>Create a single-item carousel by appling the class <span class="important">carousel-single-item</span> to a <code>div</code>  element. Images or other carousel content should be contained in nested <code>div</code> tags.</p>
+<p>Create a single-item carousel by appling the class <span class="important">carousel</span> to a <code>div</code> element. Images or other carousel content should be contained in nested <code>div</code> tags.</p>
 
-<div class="carousel-single-item">
+<div class="carousel">
   <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=1" alt=""></div>
   <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=2" alt=""></div>
   <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=3" alt=""></div>
@@ -19,7 +19,7 @@ permalink: /carousels/
 
 <pre>
   <code>
-      &lt;div class="<span class="important">carousel-single-item</span>"&gt;
+      &lt;div class="<span class="important">carousel</span>"&gt;
         &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
         &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
         &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
@@ -37,6 +37,53 @@ permalink: /carousels/
 </pre>
 
 <p>Be sure to that the paths and version numbers are correct for your site's file structure. JQuery must be loaded before the <code>odin.js</code> file. In this example, JQuery is being loaded from a CDN.</p>
+
+<h3>Customization</h3>
+
+<p>Use the <span class="important">data-slick</span> attribute to customize the carousel.</p>
+
+<h4>Autoplay</h4>
+
+<div class="carousel" data-slick='{"autoplay": true, "autoplaySpeed": 3000}'>
+  <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=1" alt=""></div>
+  <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=2" alt=""></div>
+  <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=3" alt=""></div>
+</div>
+
+<pre>
+  <code>
+      &lt;div class="carousel" <span class="important">data-slick='{"autoplay: true"}'</span>&gt;
+        &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
+      &lt;/div&gt;
+  </code>
+</pre>
+
+
+<h4>Multiple Items</h4>
+
+<div class="carousel" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+    <div><img src="https://dummyimage.com/300x300/bbb/fff/&text=1" alt=""></div>
+    <div><img src="https://dummyimage.com/300x300/bbb/fff/&text=2" alt=""></div>
+    <div><img src="https://dummyimage.com/300x300/bbb/fff/&text=3" alt=""></div>
+    <div><img src="https://dummyimage.com/300x300/bbb/fff/&text=4" alt=""></div>
+    <div><img src="https://dummyimage.com/300x300/bbb/fff/&text=5" alt=""></div>
+    <div><img src="https://dummyimage.com/300x300/bbb/fff/&text=6" alt=""></div>
+</div>
+
+<pre>
+  <code>
+      &lt;div class="carousel-multiple-items <span class="important">data-slick='{"slidesToShow": 3, "slidesToScroll": 3}</span>'"&gt;
+          &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;img src="image_4.jpg" alt=""&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;img src="image_5.jpg" alt=""&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;img src="image_6.jpg" alt=""&gt;&lt;/div&gt;
+      &lt;/div&gt;
+  </code>
+</pre>
 
 <h3>More</h3>
 

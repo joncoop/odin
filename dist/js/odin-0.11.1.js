@@ -1,4 +1,4 @@
-/*! odin-0.11.0.js | MIT License | https://github.com/joncoop/odin */
+/*! odin-0.11.1.js | MIT License | https://github.com/joncoop/odin */
 
 /* ==========================================================================
    Menu toggle/dismiss
@@ -2900,17 +2900,6 @@ $(document).ready(function(){
 
 }));
 
-
-/* ==========================================================================
-   Slick carousel configurations
-   ========================================================================== */
-
 $(document).ready(function() {
-    $('.carousel-single-item').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
+    $('.carousel').slick();
 });

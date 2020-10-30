@@ -27,6 +27,7 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - 0.10.3 - Must have done something. (?)
 - 0.10.4 - Probably did something else. (?)
 - 0.11.0 - Added Slick carousel. (2020-10-29)
+- 0.11.1 - Carousel refinements. (2020-10-30)
 
 ## To do
 
