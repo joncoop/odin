@@ -1,4 +1,6 @@
-/*! odin-0.11.1.js | MIT License | https://github.com/joncoop/odin */
+---
+---
+/*! odin-{{ site.version }}.js | MIT License | https://github.com/joncoop/odin */
 
 /* ==========================================================================
    Menu toggle/dismiss

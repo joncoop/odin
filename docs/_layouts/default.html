@@ -2,7 +2,24 @@
 
 <html lang="en">
 
-  {% include head.html %}
+  <head>
+      <!-- metadata -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+      <!-- page title -->
+      <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+
+      <!-- favicons -->
+      <link rel="icon" href="{{ site.github.url }}/img/valknut.png">
+
+      <!-- styles -->
+      <link rel="stylesheet" href="{{ "/css/odin-0.11.1.css" | prepend: site.github.url }}">
+      <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.github.url }}">
+      <link rel="stylesheet" href="{{ "/css/custom.css" | prepend: site.github.url }}">
+      <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.github.url }}">
+  </head>
 
   <body>
 

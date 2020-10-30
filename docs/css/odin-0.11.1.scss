@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+/*! odin-{{ site.version }}.css | MIT License | https://github.com/joncoop/odin */
+
 // Typography
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   18px;
@@ -49,7 +51,6 @@ $xl-min-width:    1200px;
 // Be sure that variables is the first import.
 @import
   "variables",
-  "info",
   "resets",
   "grid",
   "containers",
