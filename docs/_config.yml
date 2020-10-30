@@ -15,6 +15,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joncoop.github.io/odin/" # the base hostname & protocol for your site
 github_username:  joncoop
+version: 0.11.1
 
 # Build settings
 markdown: kramdown
