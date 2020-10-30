@@ -42,6 +42,23 @@ permalink: /carousels/
 
 <p>Use the <span class="important">data-slick</span> attribute to customize the carousel.</p>
 
+<h4>Navigation Dots</h4>
+
+<div class="carousel" data-slick='{"dots": true}'>
+  <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=1" alt=""></div>
+  <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=2" alt=""></div>
+  <div><img src="https://dummyimage.com/940x350/bbb/fff/&text=3" alt=""></div>
+</div>
+
+<pre>
+  <code>
+      &lt;div class="carousel" <span class="important">data-slick='{"dots": true}'</span>&gt;
+        &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
+      &lt;/div&gt;
+  </code>
+</pre>
 <h4>Autoplay</h4>
 
 <div class="carousel" data-slick='{"autoplay": true, "autoplaySpeed": 3000}'>
@@ -52,14 +69,13 @@ permalink: /carousels/
 
 <pre>
   <code>
-      &lt;div class="carousel" <span class="important">data-slick='{"autoplay: true"}'</span>&gt;
+      &lt;div class="carousel" <span class="important">data-slick='{"autoplay": true, "autoplaySpeed": 3000}'</span>&gt;
         &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
         &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
         &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
       &lt;/div&gt;
   </code>
 </pre>
-
 
 <h4>Multiple Items</h4>
 
@@ -74,7 +90,7 @@ permalink: /carousels/
 
 <pre>
   <code>
-      &lt;div class="carousel-multiple-items <span class="important">data-slick='{"slidesToShow": 3, "slidesToScroll": 3}</span>'"&gt;
+      &lt;div class="carousel" <span class="important">data-slick='{"slidesToShow": 3, "slidesToScroll": 3}</span>'"&gt;
           &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
           &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
           &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
@@ -85,6 +101,6 @@ permalink: /carousels/
   </code>
 </pre>
 
-<h3>More</h3>
+<h4>More</h4>
 
 <p>Additional usage examples will be posted soon!</p>
