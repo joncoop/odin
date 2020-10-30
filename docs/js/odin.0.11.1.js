@@ -2903,5 +2903,7 @@ $(document).ready(function(){
 }));
 
 $(document).ready(function() {
-    $('.carousel').slick();
+    $('.carousel').slick({
+        
+    });
 });
