@@ -1660,7 +1660,7 @@ input[type="submit"]:disabled {
    ========================================================================== */
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("../img/loading.gif") center center no-repeat;
+  background: #fff;
 }
 
 /* Arrows */
