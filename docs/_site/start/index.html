@@ -10,7 +10,7 @@
 ">
 
       <!-- page title -->
-      <title>Odin - Responsive utilities</title>
+      <title>Odin - Get started</title>
 
       <!-- favicons -->
       <link rel="icon" href="/img/valknut.png">
@@ -47,7 +47,7 @@
         <div class="container-xl">
           <div class="row">
             <div class="col-xs-12">
-              <h1>Responsive utilities</h1>
+              <h1>Get started</h1>
             </div>
           </div>
 
@@ -75,46 +75,70 @@
               </div>
 
               <div class="col-lg-9">
-                <h2>Default responsive elements</h2>
+                <h2>Starter template</h2>
 
-<p>The elements <code>img</code>, <code>iframe</code>, and <code>video</code> are given a max-width of 100% by default so that they will not overflow their containers. It is not necessary to apply any extra classes to make these elements responsive.</p>
+<p>The fastest way to get started is to simply copy the HTML template below. There is no need to download anything as  <code>odin.css</code> is served from the jsDelivr CDN. If you are integrating Odin into an existing project, make sure that you are including an HTML5 doctype declaration and a viewport meta tag so that your site will have proper responsive behaviors.</p>
 
-<h2>Hiding content</h2>
+<p>Any resets such as <code>normalize.css</code> should be linked before <code>odin.css</code>. Custom stylesheets and any stylesheets that override default Odin styling should be linked after. You will also need to link to <code>odin.js</code> and JQuery if you plan on using responsive navbars or carousels. Otherwise, the JavaScript referrences can be deleted.</p>
 
-<p>The following helper classes are provided to content on a given viewport size and down along with a given viewport size and up: <code class="important">hide-xs-down</code>, <code class="important">hide-sm-down</code>, <code class="important">hide-md-down</code>, <code class="important">hide-sm-up</code>, <code class="important">hide-md-up</code>, and <code class="important">hide-lg-up</code>. They can be applied to any element. Usage should be fairly obvious. Resize the browser window as you view the sentences below to see a demonstration.</p>
+<pre>
+  <code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;!-- metadata --&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+  &lt;!-- page title --&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+
+  &lt;!-- styles --&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/joncoop/odin@master/dist/css/odin.min.css"&gt;
+
+  &lt;!-- link to your custom stylesheets here --&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;!-- make your grid and add content here --&gt;
+
+
+
+
+
+  &lt;!-- include any javascript below this line --&gt;
+  &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+  &lt;script src="https://cdn.jsdelivr.net/gh/joncoop/odin@master/dist/js/odin.min.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+  </code>
+</pre>
+
+<h2>Download</h2>
+
+<p>If you'd rather have the source code stored locally, then you can download a template to get started. The framework is defined entirely in <code>odin.css</code>. The <code>main.css</code> file just contains a somewhat organized template for adding any custom CSS or applying overrides to Odin's default styling. The <code>index.html</code> file is already linked to each CSS and JavaScript file.</p>
+
+<pre>
+  <code>
+odin-template/
+├── css/
+│   ├── main.css
+│   └── odin.css
+├── js/
+│   └── odin.js
+└── index.html
+  </code>
+</pre>
 
 <p>
-<span class="hide-xs-down">This sentence is visible on the viewports: sm, md, lg.<br></span>
-<span class="hide-sm-down">This sentence is visible on the viewports: md, lg.<br></span>
-<span class="hide-md-down">This sentence is visible on the viewports: lg.<br></span>
-<span class="hide-sm-up">This sentence is visible on the viewports: xs.<br></span>
-<span class="hide-md-up">This sentence is visible on the viewports: xs, sm.<br></span>
-<span class="hide-lg-up">This sentence is visible on the viewports: xs, sm, md.</span>
+  <a class="button-primary" href="https://github.com/joncoop/odin/releases/download/v0.11.1/odin-template.zip"><i class="fa fa-download" aria-hidden="true"></i> Download (.zip)</a>
 </p>
-
-<pre>
-  <code>
-&lt;p class="<span class="important">hide-xs-down</span>"&gt;This sentence is visible on the viewports: sm, md, lg.&lt;/p&gt;
-&lt;p class="<span class="important">hide-sm-down</span>"&gt;This sentence is visible on the viewports: md, lg.&lt;/p&gt;
-&lt;p class="<span class="important">hide-md-down</span>"&gt;This sentence is visible on the viewports: lg.&lt;/p&gt;
-
-&lt;p class="<span class="important">hide-sm-up</span>"&gt;This sentence is visible on the viewports: xs.&lt;/p&gt;
-&lt;p class="<span class="important">hide-md-up</span>"&gt;This sentence is visible on the viewports: xs, sm&lt;/p&gt;
-&lt;p class="<span class="important">hide-lg-up</span>"&gt;This sentence is visible on the viewports: xs, sm, md.&lt;/p&gt;
-  </code>
-</pre>
-
-<p>You can combine classes to show content on a specific range of viewports.<p>
-
-<p class="hide-xs-down hide-lg-up">This sentence is visible on the following viewports: sm, md.</p>
-
-<pre>
-  <code>
-&lt;p class="<span class="important">hide-xs-down hide-lg-up</span>"&gt;This sentence is visible on the viewports: sm, md.&lt;/p&gt;
-  </code>
-</pre>
-
-<p>There are no classes to show content on specific viewports. You'll also need to write custom classes if you want to hide or show content on a non-contiguous range of viewports.</p>
 
               </div>
             

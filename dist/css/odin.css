@@ -1,5 +1,15 @@
 @charset "UTF-8";
-/*! odin-0.11.1.css | MIT License | https://github.com/joncoop/odin */
+
+/**
+ * odin.css
+ *
+ * Version: 0.11.1
+ * Author: Jon Cooper
+ * License: MIT
+ * Source: https://github.com/joncoop/odin
+ */
+
+
 /* ==========================================================================
    Resets
    ========================================================================== */
@@ -1816,4 +1826,4 @@ input[type="submit"]:disabled {
   color: black;
 }
 
-/*# sourceMappingURL=odin-0.11.1.css.map */
+/*# sourceMappingURL=odin.css.map */

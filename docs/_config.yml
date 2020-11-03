@@ -7,11 +7,8 @@
 
 # Site settings
 title: Odin
-email: joncoop1972@gmail.com
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  An easy-to-use CSS grid framework.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joncoop.github.io/odin/" # the base hostname & protocol for your site
 github_username:  joncoop

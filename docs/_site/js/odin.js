@@ -1,9 +1,16 @@
-/*! odin-0.11.1.js | MIT License | https://github.com/joncoop/odin */
+/**
+ * odin.js
+ *
+ * Version: 0.11.1
+ * Author:  Jon Cooper
+ * License: MIT
+ * Source:  https://github.com/joncoop/odin
+ */
 
-/* ==========================================================================
-   Menu toggle/dismiss
-   ========================================================================== */
 
+ /* ==========================================================================
+    Menu toggle/dismiss
+    ========================================================================== */
 $(document).ready(function(){
   $(".menu-toggle").click(function(){
     $(this).closest(".navbar").find(".navbar-menu").toggleClass("menu-shown");
@@ -19,8 +26,9 @@ $(document).ready(function(){
    Slick.js
 
    Version: 1.8.0
-   Author: Ken Wheeler
-   Source: http://github.com/kenwheeler/slick
+   Author:  Ken Wheeler
+   License: MIT
+   Source:  http://github.com/kenwheeler/slick
    ========================================================================== */
 
 /* global window, document, define, jQuery, setInterval, clearInterval */
@@ -205,6 +213,7 @@ $(document).ready(function(){
 
     };
 
+    /*
     Slick.prototype.addSlide = Slick.prototype.slickAdd = function(markup, index, addBefore) {
 
         var _ = this;
@@ -249,6 +258,7 @@ $(document).ready(function(){
         _.reinit();
 
     };
+    */
 
     Slick.prototype.animateHeight = function() {
         var _ = this;
@@ -990,7 +1000,7 @@ $(document).ready(function(){
         }
 
     };
-
+    /*
     Slick.prototype.filterSlides = Slick.prototype.slickFilter = function(filter) {
 
         var _ = this;
@@ -1010,6 +1020,7 @@ $(document).ready(function(){
         }
 
     };
+    */
 
     Slick.prototype.focusHandler = function() {
 
@@ -1855,6 +1866,7 @@ $(document).ready(function(){
         }
     };
 
+    /*
     Slick.prototype.removeSlide = Slick.prototype.slickRemove = function(index, removeBefore, removeAll) {
 
         var _ = this;
@@ -1889,6 +1901,7 @@ $(document).ready(function(){
         _.reinit();
 
     };
+    */
 
     Slick.prototype.setCSS = function(position) {
 
@@ -2901,5 +2914,7 @@ $(document).ready(function(){
 }));
 
 $(document).ready(function() {
-    $('.carousel').slick();
+    $('.carousel').slick({
+
+    });
 });

@@ -70,3 +70,16 @@ table h5,
 table h6 {
   margin: 0;
 }
+
+pre {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 7px;
+    color: #444;
+    font-family: monospace;
+    font-size: 15px;
+    margin: : 1.0rem 0;
+    overflow-x: auto;
+    padding: 0 15px;
+    width: 100%;
+}

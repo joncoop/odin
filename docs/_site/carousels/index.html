@@ -16,7 +16,7 @@
       <link rel="icon" href="/img/valknut.png">
 
       <!-- styles -->
-      <link rel="stylesheet" href="/css/odin-0.11.1.css">
+      <link rel="stylesheet" href="/css/odin.css">
       <link rel="stylesheet" href="/css/main.css">
       <link rel="stylesheet" href="/css/custom.css">
       <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -35,7 +35,6 @@
 
         <ul>
           <li><a href="/">About</a></li>
-          <li><a href="/download">Download</a></li>
           <li><a href="/grid/">Docs</a></li>
         </ul>
       </div>
@@ -58,18 +57,19 @@
                 <h2>Contents</h2>
 
 <ol>
-  <li><a href="/grid/">Grid</a></li>
-  <li><a href="/containers/">Containers</a></li>
-  <li><a href="/navbar/">Navbars</a></li>
-  <li><a href="/positioning/">Positioning</a></li>
-  <li><a href="/responsive/">Responsive</a></li>
-  <li><a href="/typography/">Typography</a></li>
-  <li><a href="/images/">Images</a></li>
-  <li><a href="/tables/">Tables</a></li>
-  <li><a href="/buttons/">Buttons</a></li>
-  <li><a href="/forms/">Forms</a></li>
-  <li><a href="/callouts/">Callouts</a></li>
-  <li><a href="/carousels/">Carousels</a></li>
+    <li><a href="/start/">Get Started</a></li>
+    <li><a href="/grid/">Grid</a></li>
+    <li><a href="/containers/">Containers</a></li>
+    <li><a href="/navbar/">Navbars</a></li>
+    <li><a href="/positioning/">Positioning</a></li>
+    <li><a href="/responsive/">Responsive</a></li>
+    <li><a href="/typography/">Typography</a></li>
+    <li><a href="/images/">Images</a></li>
+    <li><a href="/tables/">Tables</a></li>
+    <li><a href="/buttons/">Buttons</a></li>
+    <li><a href="/forms/">Forms</a></li>
+    <li><a href="/callouts/">Callouts</a></li>
+    <li><a href="/carousels/">Carousels</a></li>
 </ol>
 
               </div>
@@ -90,11 +90,11 @@
 
 <pre>
   <code>
-      &lt;div class="<span class="important">carousel</span>"&gt;
-        &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
-      &lt;/div&gt;
+&lt;div class="<span class="important">carousel</span>"&gt;
+  &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
+&lt;/div&gt;
   </code>
 </pre>
 
@@ -102,8 +102,8 @@
 
 <pre>
   <code>
-    &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
-    &lt;script src="path/to/odin.0.11.1.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/odin.0.11.1.js"&gt;&lt;/script&gt;
   </code>
 </pre>
 
@@ -123,11 +123,11 @@
 
 <pre>
   <code>
-      &lt;div class="carousel" <span class="important">data-slick='{"dots": true}'</span>&gt;
-        &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
-      &lt;/div&gt;
+&lt;div class="carousel" <span class="important">data-slick='{"dots": true}'</span>&gt;
+  &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
+&lt;/div&gt;
   </code>
 </pre>
 <h4>Autoplay</h4>
@@ -140,11 +140,11 @@
 
 <pre>
   <code>
-      &lt;div class="carousel" <span class="important">data-slick='{"autoplay": true, "autoplaySpeed": 3000}'</span>&gt;
-        &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
-      &lt;/div&gt;
+&lt;div class="carousel" <span class="important">data-slick='{"autoplay": true, "autoplaySpeed": 3000}'</span>&gt;
+  &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
+&lt;/div&gt;
   </code>
 </pre>
 
@@ -161,14 +161,14 @@
 
 <pre>
   <code>
-      &lt;div class="carousel" <span class="important">data-slick='{"slidesToShow": 3, "slidesToScroll": 3}</span>'"&gt;
-          &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
-          &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
-          &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
-          &lt;div&gt;&lt;img src="image_4.jpg" alt=""&gt;&lt;/div&gt;
-          &lt;div&gt;&lt;img src="image_5.jpg" alt=""&gt;&lt;/div&gt;
-          &lt;div&gt;&lt;img src="image_6.jpg" alt=""&gt;&lt;/div&gt;
-      &lt;/div&gt;
+&lt;div class="carousel" <span class="important">data-slick='{"slidesToShow": 3, "slidesToScroll": 3}</span>'"&gt;
+  &lt;div&gt;&lt;img src="image_1.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_2.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_3.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_4.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_5.jpg" alt=""&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;img src="image_6.jpg" alt=""&gt;&lt;/div&gt;
+&lt;/div&gt;
   </code>
 </pre>
 
@@ -202,7 +202,8 @@
 
 
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="/js/odin.0.11.1.js"></script>
+      <script src="/js/odin.js"></script>
+      <script src="/js/custom.js"></script>
   </body>
 
 </html>

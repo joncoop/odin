@@ -1,5 +1,15 @@
 @charset "UTF-8";
-/*! odin-0.11.1.css | MIT License | https://github.com/joncoop/odin */
+
+/**
+ *  odin.css
+ *
+ * Version: 0.11.1
+ * Author: Jon Cooper
+ * License: MIT
+ * Source: https://github.com/joncoop/odin
+ */
+
+
 /* ==========================================================================
    Resets
    ========================================================================== */
@@ -1660,7 +1670,7 @@ input[type="submit"]:disabled {
    ========================================================================== */
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("../img/loading.gif") center center no-repeat;
+  background: #fff;
 }
 
 /* Arrows */
@@ -1815,3 +1825,5 @@ input[type="submit"]:disabled {
   opacity: .75;
   color: black;
 }
+
+/*# sourceMappingURL=odin.css.map */

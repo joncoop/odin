@@ -1,0 +1,70 @@
+---
+layout: default
+title: Get started
+permalink: /start/
+---
+
+<h2>Starter template</h2>
+
+<p>The fastest way to get started is to simply copy the HTML template below. There is no need to download anything as  <code>odin.css</code> is served from the jsDelivr CDN. If you are integrating Odin into an existing project, make sure that you are including an HTML5 doctype declaration and a viewport meta tag so that your site will have proper responsive behaviors.</p>
+
+<p>Any resets such as <code>normalize.css</code> should be linked before <code>odin.css</code>. Custom stylesheets and any stylesheets that override default Odin styling should be linked after. You will also need to link to <code>odin.js</code> and JQuery if you plan on using responsive navbars or carousels. Otherwise, the JavaScript referrences can be deleted.</p>
+
+<pre>
+  <code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;!-- metadata --&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+  &lt;!-- page title --&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+
+  &lt;!-- styles --&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/joncoop/odin@master/dist/css/odin.min.css"&gt;
+
+  &lt;!-- link to your custom stylesheets here --&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;!-- make your grid and add content here --&gt;
+
+
+
+
+
+  &lt;!-- include any javascript below this line --&gt;
+  &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+  &lt;script src="https://cdn.jsdelivr.net/gh/joncoop/odin@master/dist/js/odin.min.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+  </code>
+</pre>
+
+<h2>Download</h2>
+
+<p>If you'd rather have the source code stored locally, then you can download a template to get started. The framework is defined entirely in <code>odin.css</code>. The <code>main.css</code> file just contains a somewhat organized template for adding any custom CSS or applying overrides to Odin's default styling. The <code>index.html</code> file is already linked to each CSS and JavaScript file.</p>
+
+<pre>
+  <code>
+odin-template/
+├── css/
+│   ├── main.css
+│   └── odin.css
+├── js/
+│   └── odin.js
+└── index.html
+  </code>
+</pre>
+
+<p>
+  <a class="button-primary" href="https://github.com/joncoop/odin/releases/download/v0.11.1/odin-template.zip"><i class="fa fa-download" aria-hidden="true"></i> Download (.zip)</a>
+</p>
