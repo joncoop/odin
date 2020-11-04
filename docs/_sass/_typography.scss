@@ -25,7 +25,7 @@ h5,
 h6 {
     color: $gray-dark;
     font-weight: $semi-bold;
-    margin-top: 0rem;
+    margin-top: 0.0rem;
 }
 
 h1 {
@@ -179,8 +179,9 @@ code,
 kbd,
 samp {
   color: $gray-base;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.0em;
+  line-height: 1.0;
 }
 
 /**

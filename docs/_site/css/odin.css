@@ -747,7 +747,7 @@ h5,
 h6 {
   color: #3a444e;
   font-weight: 500;
-  margin-top: 0rem;
+  margin-top: 0.0rem;
 }
 
 h1 {
@@ -901,8 +901,9 @@ code,
 kbd,
 samp {
   color: #678;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.0em;
+  line-height: 1.0;
 }
 
 /**
