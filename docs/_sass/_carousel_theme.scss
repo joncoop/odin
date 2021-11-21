@@ -112,8 +112,10 @@
 
 .slick-dots
 {
+    /* Removing as part of overslide fix
     position: absolute;
     bottom: -25px;
+    */
 
     display: block;
 
@@ -191,4 +193,16 @@
 {
     opacity: .75;
     color: black;
+}
+
+
+/* Custom overrides to put gaps between slides */
+.carousel {
+  background-color: #ffa;
+  margin: 0;
+  overflow: hidden;
+}
+
+.carousel-item {
+
 }

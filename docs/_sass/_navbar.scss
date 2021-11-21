@@ -77,7 +77,6 @@
 
   /* http://stackoverflow.com/questions/29930933/absolute-positioned-item-in-a-flex-container-still-gets-considered-as-item-in-ie */
   margin: 0 0.2rem 0 auto;
-
   padding: 0.6rem 0;
 }
 
@@ -186,6 +185,25 @@
 
   .navbar-slideout-lg .menu-dismiss,
   .navbar-slideout-lg .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $xl-min-width) {
+  .navbar-slideout-xl .navbar-menu {
+    background-color: transparent;
+    height: auto;
+    overflow: auto;
+    position: static;
+    width: auto;
+  }
+
+  .navbar-slideout-xl .navbar-menu ul {
+    flex-direction: row;
+  }
+
+  .navbar-slideout-xl .menu-dismiss,
+  .navbar-slideout-xl .menu-toggle {
     display: none;
   }
 }

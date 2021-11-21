@@ -223,6 +223,47 @@ table.table-stack tfoot td {
    }
 }
 
+@media (max-width: $lg-max-width) {
+   table.table-stack-lg {
+     width: 100%;
+   }
+
+   table.table-stack-lg thead {
+     border: none;
+     clip: rect(0 0 0 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute !important;
+     width: 1px;
+   }
+
+   table.table-stack-lg tbody tr {
+     border: 1px solid $gray-light;
+     display: block;
+     margin-bottom: 0.4rem;
+     padding: 0.4rem;
+   }
+
+   table.table-stack-lg td {
+     display: block;
+     text-align: right;
+   }
+
+   table.table-stack-lg td:before {
+     content: attr(aria-label);
+     float: left;
+     font-weight: $semi-bold;
+     color: $gray-dark;
+   }
+
+   table.table-stack-lg tfoot td {
+    display: block;
+    text-align: left;
+   }
+}
+
 /**
  * Utility classes to shade table rows.
  */

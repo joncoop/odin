@@ -28,16 +28,18 @@ Odin is a simple, easy-to-understand grid framework that can be used to quickly 
 - 0.10.4 - Probably did something else. (?)
 - 0.11.0 - Added Slick carousel. (2020-10-29)
 - 0.11.1 - Carousel refinements. (2020-10-30)
+- 0.11.2 - Addex xl grid columns and xxl container. (2021-11-21)
 
 ## To do
 
 - Fix row-reverse (possible just update documentation to show better usage)
 - There's something that just doesn't feel right about the grid breakpoint/container sizing and naming relationship. Gotta do some math and think this through.
 - Possibly simplify navbar markup. Give evenly spaced navbar compatible with responsive features.
+- Make it easy to have logos with navbar-brand.
 - General code cleanup, clean up color palette, minor styling tweaks, bug fixes.
 - Add containers that snap to widths according to viewport.
 - Add 'sticky' features for header and footer elements.
-- Use CDN to deliver minimized CSS and JS.
+- Add nifty copy buttons to code snippets.
 
 ## more ideas (not to include in css/js, just write instructions)
 - Icon fonts

@@ -1,7 +1,7 @@
 /**
  * odin.js
  *
- * Version: 0.11.1
+ * Version: 0.11.2
  * Author:  Jon Cooper
  * License: MIT
  * Source:  https://github.com/joncoop/odin
@@ -93,6 +93,7 @@ $(document).ready(function(){
                 slidesPerRow: 1,
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                spacing: 10,
                 speed: 500,
                 swipe: true,
                 swipeToSlide: false,
@@ -566,6 +567,9 @@ $(document).ready(function(){
             _.$list.addClass('draggable');
         }
 
+        // let's see if this does anything
+        //$("div.slick-slide").css("margin-right", _.options.spacing + "px");
+        //$("div.slick-list").css("margin-right", -1 * _.options.spacing + "px");
     };
 
     Slick.prototype.buildRows = function() {
@@ -1243,6 +1247,17 @@ $(document).ready(function(){
 
     };
 
+    Slick.prototype.setSpacing = function() {
+
+        var _ = this;
+
+
+          $("div.slick-slide").css("margin-right", _.options.spacing + "px");
+          $("div.slick-list").css("margin-right", -1 * _.options.spacing + "px");
+
+
+    };
+
     Slick.prototype.goTo = Slick.prototype.slickGoTo = function(slide, dontAnimate) {
 
         var _ = this;
@@ -1267,6 +1282,7 @@ $(document).ready(function(){
             _.buildRows();
             _.buildOut();
             _.setProps();
+            _.setSpacing();
             _.startLoad();
             _.loadSlider();
             _.initializeEvents();
@@ -1274,7 +1290,6 @@ $(document).ready(function(){
             _.updateDots();
             _.checkResponsive(true);
             _.focusHandler();
-
         }
 
         if (creation) {
@@ -1291,6 +1306,7 @@ $(document).ready(function(){
             _.autoPlay();
 
         }
+
 
     };
 
@@ -1824,6 +1840,7 @@ $(document).ready(function(){
         _.registerBreakpoints();
 
         _.setProps();
+        _.setSpacing();
         _.setupInfinite();
         _.buildArrows();
         _.updateArrows();

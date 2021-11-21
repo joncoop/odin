@@ -3,13 +3,14 @@
    ========================================================================== */
 
 /**
-* Center container classes and give a little paddinn on the sides to keep
+* Center container classes and give a little padding on the sides to keep
 * content from touching the edge of small screens.
 */
 .container-sm,
 .container-md,
 .container-lg,
-.container-xl {
+.container-xl,
+.container-xxl {
   margin: 0 auto;
   padding: 0 0.6rem;
 }
@@ -35,4 +36,7 @@
 
 .container-xl {
   max-width: $xl-min-width;
+}
+.container-xxl {
+  max-width: $xxl-min-width;
 }

@@ -109,6 +109,24 @@
 }
 
 /**
+ * Responsive column classes for extra-large viewports and up.
+ */
+@media (min-width: $xl-min-width) {
+  .col-xl-1 { width: 8.333333%; }
+  .col-xl-2 { width: 16.666666%; }
+  .col-xl-3 { width: 25%; }
+  .col-xl-4 { width: 33.333333%; }
+  .col-xl-5 { width: 41.666666%; }
+  .col-xl-6 { width: 50%; }
+  .col-xl-7 { width: 58.333333%; }
+  .col-xl-8 { width: 66.666666%; }
+  .col-xl-9 { width: 75%; }
+  .col-xl-10 { width: 83.333333%; }
+  .col-xl-11 { width: 91.666666%; }
+  .col-xl-12 { width: 100%; }
+}
+
+/**
  * Reverse the order of columns within a row.
  */
 .reverse {
@@ -137,8 +155,15 @@
   }
 }
 
-@media (min-width: $lg-min-width) {
+@media (min-width: $lg-min-width) and (max-width: $lg-max-width) {
   .reverse-lg {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media (min-width: $xl-min-width) {
+  .reverse-xl {
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
   }
